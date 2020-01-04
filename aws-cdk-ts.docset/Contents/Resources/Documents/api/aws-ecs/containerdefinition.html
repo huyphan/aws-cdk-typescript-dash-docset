@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ContainerDefinition
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ContainerDefinition
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs.ContainerDefinition">
+  
+  
+  <h1 id="aws_ecs_ContainerDefinition" data-uid="aws-ecs.ContainerDefinition">Class ContainerDefinition
+  </h1>
+  <div class="markdown level0 summary"><p>A container definition is used in a task definition to describe the containers that are launched as part of a task.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_ContainerDefinition_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the ContainerDefinition class.</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_containerDependencies">containerDependencies</a></td>
+        <td><p>An array dependencies defined for container startup and shutdown.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_containerName">containerName</a></td>
+        <td><p>The name of this container</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_containerPort">containerPort</a></td>
+        <td><p>The port the container will listen on.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_essential">essential</a></td>
+        <td><p>Specifies whether the container will be marked essential.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_ingressPort">ingressPort</a></td>
+        <td><p>The inbound rules associated with the security group the task or service will use.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_linuxParameters">linuxParameters</a></td>
+        <td><p>The Linux-specific modifications that are applied to the container, such as Linux kernel capabilities.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_memoryLimitSpecified">memoryLimitSpecified</a></td>
+        <td><p>Whether there was at least one memory limit specified in this definition</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_mountPoints">mountPoints</a></td>
+        <td><p>The mount points for data volumes in your container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_portMappings">portMappings</a></td>
+        <td><p>The list of port mappings for the container. Port mappings allow containers to access ports on the host container instance to send or receive traffic.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_taskDefinition">taskDefinition</a></td>
+        <td><p>The name of the task definition that includes this container definition.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_ulimits">ulimits</a></td>
+        <td><p>An array of ulimits to set in the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_volumesFrom">volumesFrom</a></td>
+        <td><p>The data volumes to mount from another container in the same task definition.</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addContainerDependencies">addContainerDependencies(containerDependencies)</a></td>
+        <td><p>This method adds one or more container dependencies to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addLink">addLink(container, alias)</a></td>
+        <td><p>This method adds a link which allows containers to communicate with each other without the need for port mappings.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addMountPoints">addMountPoints(mountPoints)</a></td>
+        <td><p>This method adds one or more mount points for data volumes to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addPortMappings">addPortMappings(portMappings)</a></td>
+        <td><p>This method adds one or more port mappings to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addScratch">addScratch(scratch)</a></td>
+        <td><p>This method mounts temporary disk space to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addToExecutionPolicy">addToExecutionPolicy(statement)</a></td>
+        <td><p>This method adds the specified statement to the IAM task execution policy in the task definition.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addUlimits">addUlimits(ulimits)</a></td>
+        <td><p>This method adds one or more ulimits to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_addVolumesFrom">addVolumesFrom(volumesFrom)</a></td>
+        <td><p>This method adds one or more volumes to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_findPortMapping">findPortMapping(containerPort, protocol)</a></td>
+        <td><p>Returns the host port for the requested container port if it exists</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition_renderContainerDefinition">renderContainerDefinition(taskDefinition)</a></td>
+        <td><p>Render this container definition to a CloudFormation object</p></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_constructor" data-uid="aws-ecs.ContainerDefinition.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the ContainerDefinition class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: cdk.Construct, id: string, props: ContainerDefinitionProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><span class="xref">cdk.Construct</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="containerdefinitionprops.html#aws_ecs_ContainerDefinitionProps">ContainerDefinitionProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_containerDependencies" data-uid="aws-ecs.ContainerDefinition.containerDependencies">containerDependencies</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An array dependencies defined for container startup and shutdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly containerDependencies: ContainerDependency[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ContainerDependency[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_containerName" data-uid="aws-ecs.ContainerDefinition.containerName">containerName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of this container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly containerName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_containerPort" data-uid="aws-ecs.ContainerDefinition.containerPort">containerPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The port the container will listen on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly containerPort: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_essential" data-uid="aws-ecs.ContainerDefinition.essential">essential</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether the container will be marked essential.</p>
+<p>If the essential parameter of a container is marked as true, and that container fails or stops for any reason, all other containers that are part of the task are stopped. If the essential parameter of a container is marked as false, then its failure does not affect the rest of the containers in a task.</p>
+<p>If this parameter isomitted, a container is assumed to be essential.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly essential: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_ingressPort" data-uid="aws-ecs.ContainerDefinition.ingressPort">ingressPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The inbound rules associated with the security group the task or service will use.</p>
+<p>This property is only used for tasks that use the awsvpc network mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly ingressPort: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_linuxParameters" data-uid="aws-ecs.ContainerDefinition.linuxParameters">linuxParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The Linux-specific modifications that are applied to the container, such as Linux kernel capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly linuxParameters?: LinuxParameters;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="linuxparameters.html#aws_ecs_LinuxParameters">LinuxParameters</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_memoryLimitSpecified" data-uid="aws-ecs.ContainerDefinition.memoryLimitSpecified">memoryLimitSpecified</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether there was at least one memory limit specified in this definition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly memoryLimitSpecified: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_mountPoints" data-uid="aws-ecs.ContainerDefinition.mountPoints">mountPoints</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The mount points for data volumes in your container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly mountPoints: MountPoint[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">MountPoint[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_portMappings" data-uid="aws-ecs.ContainerDefinition.portMappings">portMappings</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The list of port mappings for the container. Port mappings allow containers to access ports on the host container instance to send or receive traffic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly portMappings: PortMapping[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">PortMapping[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_taskDefinition" data-uid="aws-ecs.ContainerDefinition.taskDefinition">taskDefinition</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the task definition that includes this container definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly taskDefinition: TaskDefinition;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="taskdefinition.html#aws_ecs_TaskDefinition">TaskDefinition</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_ulimits" data-uid="aws-ecs.ContainerDefinition.ulimits">ulimits</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An array of ulimits to set in the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly ulimits: Ulimit[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">Ulimit[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_volumesFrom" data-uid="aws-ecs.ContainerDefinition.volumesFrom">volumesFrom</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The data volumes to mount from another container in the same task definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly volumesFrom: VolumeFrom[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">VolumeFrom[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addContainerDependencies" data-uid="aws-ecs.ContainerDefinition.addContainerDependencies">addContainerDependencies(containerDependencies)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds one or more container dependencies to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addContainerDependencies(...containerDependencies: ContainerDependency[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">containerDependencies</span> <span class="parametertype"><span class="xref">ContainerDependency[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addLink" data-uid="aws-ecs.ContainerDefinition.addLink">addLink(container, alias)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds a link which allows containers to communicate with each other without the need for port mappings.</p>
+<p>This parameter is only supported if the task definition is using the bridge network mode. Warning: The --link flag is a legacy feature of Docker. It may eventually be removed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addLink(container: ContainerDefinition, alias?: string): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">container</span> <span class="parametertype"><a class="xref" href="containerdefinition.html#aws_ecs_ContainerDefinition">ContainerDefinition</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">alias</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addMountPoints" data-uid="aws-ecs.ContainerDefinition.addMountPoints">addMountPoints(mountPoints)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds one or more mount points for data volumes to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addMountPoints(...mountPoints: MountPoint[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">mountPoints</span> <span class="parametertype"><span class="xref">MountPoint[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addPortMappings" data-uid="aws-ecs.ContainerDefinition.addPortMappings">addPortMappings(portMappings)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds one or more port mappings to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addPortMappings(...portMappings: PortMapping[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">portMappings</span> <span class="parametertype"><span class="xref">PortMapping[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addScratch" data-uid="aws-ecs.ContainerDefinition.addScratch">addScratch(scratch)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method mounts temporary disk space to the container.</p>
+<p>This adds the correct container mountPoint and task definition volume.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addScratch(scratch: ScratchSpace): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scratch</span> <span class="parametertype"><a class="xref" href="scratchspace.html#aws_ecs_ScratchSpace">ScratchSpace</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addToExecutionPolicy" data-uid="aws-ecs.ContainerDefinition.addToExecutionPolicy">addToExecutionPolicy(statement)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds the specified statement to the IAM task execution policy in the task definition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addToExecutionPolicy(statement: iam.PolicyStatement): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">statement</span> <span class="parametertype"><span class="xref">iam.PolicyStatement</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addUlimits" data-uid="aws-ecs.ContainerDefinition.addUlimits">addUlimits(ulimits)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds one or more ulimits to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addUlimits(...ulimits: Ulimit[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">ulimits</span> <span class="parametertype"><span class="xref">Ulimit[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_addVolumesFrom" data-uid="aws-ecs.ContainerDefinition.addVolumesFrom">addVolumesFrom(volumesFrom)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>This method adds one or more volumes to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addVolumesFrom(...volumesFrom: VolumeFrom[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">volumesFrom</span> <span class="parametertype"><span class="xref">VolumeFrom[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_findPortMapping" data-uid="aws-ecs.ContainerDefinition.findPortMapping">findPortMapping(containerPort, protocol)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Returns the host port for the requested container port if it exists</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">findPortMapping(containerPort: number, protocol: Protocol): PortMapping | undefined;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">containerPort</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">protocol</span> <span class="parametertype"><span class="xref">Protocol</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">PortMapping | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinition_renderContainerDefinition" data-uid="aws-ecs.ContainerDefinition.renderContainerDefinition">renderContainerDefinition(taskDefinition)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Render this container definition to a CloudFormation object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">renderContainerDefinition(taskDefinition?: TaskDefinition): CfnTaskDefinition.ContainerDefinitionProperty;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">taskDefinition</span> <span class="parametertype"><a class="xref" href="taskdefinition.html#aws_ecs_TaskDefinition">TaskDefinition</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">CfnTaskDefinition.ContainerDefinitionProperty</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

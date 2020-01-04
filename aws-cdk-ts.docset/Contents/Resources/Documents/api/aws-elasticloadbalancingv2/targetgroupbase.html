@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TargetGroupBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TargetGroupBase
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-elasticloadbalancingv2.TargetGroupBase">
+  
+  
+  <h1 id="aws_elasticloadbalancingv2_TargetGroupBase" data-uid="aws-elasticloadbalancingv2.TargetGroupBase">Class TargetGroupBase
+  </h1>
+  <div class="markdown level0 summary"><p>Define the target of a load balancer</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_elasticloadbalancingv2_TargetGroupBase_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_constructor">constructor(scope, id, baseProps, additionalProps)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase">TargetGroupBase</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_defaultPort">defaultPort</a></td>
+        <td><p>Default port configured for members of this target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_firstLoadBalancerFullName">firstLoadBalancerFullName</a></td>
+        <td><p>Full name of first load balancer</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_healthCheck">healthCheck</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerArns">loadBalancerArns</a></td>
+        <td><p>A token representing a list of ARNs of the load balancers that route traffic to this target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerAttached">loadBalancerAttached</a></td>
+        <td><p>List of constructs that need to be depended on to ensure the TargetGroup is associated to a load balancer</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerAttachedDependencies">loadBalancerAttachedDependencies</a></td>
+        <td><p>Configurable dependable with all resources that lead to load balancer attachment</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_targetGroupArn">targetGroupArn</a></td>
+        <td><p>The ARN of the target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_targetGroupFullName">targetGroupFullName</a></td>
+        <td><p>The full name of the target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_targetGroupLoadBalancerArns">targetGroupLoadBalancerArns</a></td>
+        <td><p>ARNs of load balancers load balancing to this TargetGroup</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_targetGroupName">targetGroupName</a></td>
+        <td><p>The name of the target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_targetType">targetType</a></td>
+        <td><p>The types of the directly registered members of this target group</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_addLoadBalancerTarget">addLoadBalancerTarget(props)</a></td>
+        <td><p>Register the given load balancing target as part of this group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_configureHealthCheck">configureHealthCheck(healthCheck)</a></td>
+        <td><p>Set/replace the target group&#39;s health check</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_setAttribute">setAttribute(key, value)</a></td>
+        <td><p>Set a non-standard attribute on the target group</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase_validate">validate()</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_constructor" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.constructor">constructor(scope, id, baseProps, additionalProps)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="targetgroupbase.html#aws_elasticloadbalancingv2_TargetGroupBase">TargetGroupBase</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: cdk.Construct, id: string, baseProps: BaseTargetGroupProps, additionalProps: any);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><span class="xref">cdk.Construct</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">baseProps</span> <span class="parametertype"><a class="xref" href="basetargetgroupprops.html#aws_elasticloadbalancingv2_BaseTargetGroupProps">BaseTargetGroupProps</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">additionalProps</span> <span class="parametertype"><span class="xref">any</span></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_defaultPort" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.defaultPort">defaultPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Default port configured for members of this target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected readonly defaultPort: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_firstLoadBalancerFullName" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.firstLoadBalancerFullName">firstLoadBalancerFullName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Full name of first load balancer</p>
+<p>This identifier is emitted as a dimensions of the metrics of this target group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly firstLoadBalancerFullName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_healthCheck" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.healthCheck">healthCheck</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">healthCheck: HealthCheck;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">HealthCheck</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerArns" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.loadBalancerArns">loadBalancerArns</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A token representing a list of ARNs of the load balancers that route traffic to this target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly loadBalancerArns: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerAttached" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.loadBalancerAttached">loadBalancerAttached</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>List of constructs that need to be depended on to ensure the TargetGroup is associated to a load balancer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly loadBalancerAttached: cdk.IDependable;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.IDependable</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_loadBalancerAttachedDependencies" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.loadBalancerAttachedDependencies">loadBalancerAttachedDependencies</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Configurable dependable with all resources that lead to load balancer attachment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected readonly loadBalancerAttachedDependencies: cdk.ConcreteDependable;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.ConcreteDependable</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_targetGroupArn" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.targetGroupArn">targetGroupArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The ARN of the target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetGroupArn: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_targetGroupFullName" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.targetGroupFullName">targetGroupFullName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The full name of the target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetGroupFullName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_targetGroupLoadBalancerArns" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.targetGroupLoadBalancerArns">targetGroupLoadBalancerArns</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>ARNs of load balancers load balancing to this TargetGroup</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetGroupLoadBalancerArns: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_targetGroupName" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.targetGroupName">targetGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetGroupName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_targetType" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.targetType">targetType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The types of the directly registered members of this target group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected targetType?: TargetType;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="targettype.html#aws_elasticloadbalancingv2_TargetType">TargetType</a></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_addLoadBalancerTarget" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.addLoadBalancerTarget">addLoadBalancerTarget(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Register the given load balancing target as part of this group</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected addLoadBalancerTarget(props: LoadBalancerTargetProps): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="loadbalancertargetprops.html#aws_elasticloadbalancingv2_LoadBalancerTargetProps">LoadBalancerTargetProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_configureHealthCheck" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.configureHealthCheck">configureHealthCheck(healthCheck)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Set/replace the target group&#39;s health check</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">configureHealthCheck(healthCheck: HealthCheck): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">healthCheck</span> <span class="parametertype"><span class="xref">HealthCheck</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_setAttribute" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.setAttribute">setAttribute(key, value)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Set a non-standard attribute on the target group</p>
+<p> https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html#target-group-attributes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">setAttribute(key: string, value: string | undefined): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">key</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">value</span> <span class="parametertype"><span class="xref">string | undefined</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_TargetGroupBase_validate" data-uid="aws-elasticloadbalancingv2.TargetGroupBase.validate">validate()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected validate(): string[];</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

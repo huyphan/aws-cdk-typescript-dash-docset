@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Bucket
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Bucket
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-s3.Bucket">
+  
+  
+  <h1 id="aws_s3_Bucket" data-uid="aws-s3.Bucket">Class Bucket
+  </h1>
+  <div class="markdown level0 summary"><p>An S3 bucket with associated policy objects</p>
+<p>This bucket does not yet have all features that exposed by the underlying BucketResource.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_s3_Bucket_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="bucket.html#aws_s3_Bucket">Bucket</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_autoCreatePolicy">autoCreatePolicy</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketArn">bucketArn</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketDomainName">bucketDomainName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketDualStackDomainName">bucketDualStackDomainName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketName">bucketName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketRegionalDomainName">bucketRegionalDomainName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketWebsiteDomainName">bucketWebsiteDomainName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_bucketWebsiteUrl">bucketWebsiteUrl</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_disallowPublicAccess">disallowPublicAccess</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_encryptionKey">encryptionKey</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_policy">policy</a></td>
+        <td></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addCorsRule">addCorsRule(rule)</a></td>
+        <td><p>Adds a cross-origin access configuration for objects in an Amazon S3 bucket</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addEventNotification">addEventNotification(event, dest, filters)</a></td>
+        <td><p>Adds a bucket notification event destination.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addLifecycleRule">addLifecycleRule(rule)</a></td>
+        <td><p>Add a lifecycle rule to the bucket</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addMetric">addMetric(metric)</a></td>
+        <td><p>Adds a metrics configuration for the CloudWatch request metrics from the bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addObjectCreatedNotification">addObjectCreatedNotification(dest, filters)</a></td>
+        <td><p>Subscribes a destination to receive notificatins when an object is created in the bucket. This is identical to calling <code>onEvent(EventType.ObjectCreated)</code><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_addObjectRemovedNotification">addObjectRemovedNotification(dest, filters)</a></td>
+        <td><p>Subscribes a destination to receive notificatins when an object is removed from the bucket. This is identical to calling <code>onEvent(EventType.ObjectRemoved)</code><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_fromBucketArn">fromBucketArn(scope, id, bucketArn)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_fromBucketAttributes">fromBucketAttributes(scope, id, attrs)</a></td>
+        <td><p>Creates a Bucket construct that represents an external bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucket.html#aws_s3_Bucket_fromBucketName">fromBucketName(scope, id, bucketName)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_s3_Bucket_constructor" data-uid="aws-s3.Bucket.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="bucket.html#aws_s3_Bucket">Bucket</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: Construct, id: string, props?: BucketProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="bucketprops.html#aws_s3_BucketProps">BucketProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_s3_Bucket_autoCreatePolicy" data-uid="aws-s3.Bucket.autoCreatePolicy">autoCreatePolicy</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected autoCreatePolicy: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketArn" data-uid="aws-s3.Bucket.bucketArn">bucketArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketArn: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketDomainName" data-uid="aws-s3.Bucket.bucketDomainName">bucketDomainName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketDomainName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketDualStackDomainName" data-uid="aws-s3.Bucket.bucketDualStackDomainName">bucketDualStackDomainName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketDualStackDomainName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketName" data-uid="aws-s3.Bucket.bucketName">bucketName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketRegionalDomainName" data-uid="aws-s3.Bucket.bucketRegionalDomainName">bucketRegionalDomainName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketRegionalDomainName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketWebsiteDomainName" data-uid="aws-s3.Bucket.bucketWebsiteDomainName">bucketWebsiteDomainName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketWebsiteDomainName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_bucketWebsiteUrl" data-uid="aws-s3.Bucket.bucketWebsiteUrl">bucketWebsiteUrl</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucketWebsiteUrl: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_disallowPublicAccess" data-uid="aws-s3.Bucket.disallowPublicAccess">disallowPublicAccess</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected disallowPublicAccess?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_encryptionKey" data-uid="aws-s3.Bucket.encryptionKey">encryptionKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly encryptionKey?: kms.IKey;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">kms.IKey</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_policy" data-uid="aws-s3.Bucket.policy">policy</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">policy?: BucketPolicy;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="bucketpolicy.html#aws_s3_BucketPolicy">BucketPolicy</a></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_s3_Bucket_addCorsRule" data-uid="aws-s3.Bucket.addCorsRule">addCorsRule(rule)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds a cross-origin access configuration for objects in an Amazon S3 bucket</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addCorsRule(rule: CorsRule): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">rule</span> <span class="parametertype"><a class="xref" href="corsrule.html#aws_s3_CorsRule">CorsRule</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_addEventNotification" data-uid="aws-s3.Bucket.addEventNotification">addEventNotification(event, dest, filters)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds a bucket notification event destination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addEventNotification(event: EventType, dest: IBucketNotificationDestination, ...filters: NotificationKeyFilter[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">event</span> <span class="parametertype"><a class="xref" href="eventtype.html#aws_s3_EventType">EventType</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">dest</span> <span class="parametertype"><a class="xref" href="ibucketnotificationdestination.html#aws_s3_IBucketNotificationDestination">IBucketNotificationDestination</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">filters</span> <span class="parametertype"><span class="xref">NotificationKeyFilter[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_addLifecycleRule" data-uid="aws-s3.Bucket.addLifecycleRule">addLifecycleRule(rule)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add a lifecycle rule to the bucket</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addLifecycleRule(rule: LifecycleRule): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">rule</span> <span class="parametertype"><span class="xref">LifecycleRule</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_addMetric" data-uid="aws-s3.Bucket.addMetric">addMetric(metric)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds a metrics configuration for the CloudWatch request metrics from the bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addMetric(metric: BucketMetrics): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">metric</span> <span class="parametertype"><a class="xref" href="bucketmetrics.html#aws_s3_BucketMetrics">BucketMetrics</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_addObjectCreatedNotification" data-uid="aws-s3.Bucket.addObjectCreatedNotification">addObjectCreatedNotification(dest, filters)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Subscribes a destination to receive notificatins when an object is created in the bucket. This is identical to calling <code>onEvent(EventType.ObjectCreated)</code><!-- -->.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addObjectCreatedNotification(dest: IBucketNotificationDestination, ...filters: NotificationKeyFilter[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">dest</span> <span class="parametertype"><a class="xref" href="ibucketnotificationdestination.html#aws_s3_IBucketNotificationDestination">IBucketNotificationDestination</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">filters</span> <span class="parametertype"><span class="xref">NotificationKeyFilter[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_addObjectRemovedNotification" data-uid="aws-s3.Bucket.addObjectRemovedNotification">addObjectRemovedNotification(dest, filters)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Subscribes a destination to receive notificatins when an object is removed from the bucket. This is identical to calling <code>onEvent(EventType.ObjectRemoved)</code><!-- -->.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addObjectRemovedNotification(dest: IBucketNotificationDestination, ...filters: NotificationKeyFilter[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">dest</span> <span class="parametertype"><a class="xref" href="ibucketnotificationdestination.html#aws_s3_IBucketNotificationDestination">IBucketNotificationDestination</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">filters</span> <span class="parametertype"><span class="xref">NotificationKeyFilter[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_fromBucketArn" data-uid="aws-s3.Bucket.fromBucketArn">fromBucketArn(scope, id, bucketArn)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromBucketArn(scope: Construct, id: string, bucketArn: string): IBucket;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">bucketArn</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="ibucket.html#aws_s3_IBucket">IBucket</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_fromBucketAttributes" data-uid="aws-s3.Bucket.fromBucketAttributes">fromBucketAttributes(scope, id, attrs)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Creates a Bucket construct that represents an external bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromBucketAttributes(scope: Construct, id: string, attrs: BucketAttributes): IBucket;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">attrs</span> <span class="parametertype"><a class="xref" href="bucketattributes.html#aws_s3_BucketAttributes">BucketAttributes</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="ibucket.html#aws_s3_IBucket">IBucket</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_Bucket_fromBucketName" data-uid="aws-s3.Bucket.fromBucketName">fromBucketName(scope, id, bucketName)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromBucketName(scope: Construct, id: string, bucketName: string): IBucket;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">bucketName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="ibucket.html#aws_s3_IBucket">IBucket</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

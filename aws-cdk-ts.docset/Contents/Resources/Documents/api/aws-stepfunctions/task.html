@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Task
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Task
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-stepfunctions.Task">
+  
+  
+  <h1 id="aws_stepfunctions_Task" data-uid="aws-stepfunctions.Task">Class Task
+  </h1>
+  <div class="markdown level0 summary"><p>Define a Task state in the state machine</p>
+<p>Reaching a Task state causes some work to be executed, represented by the Task&#39;s resource property. Task constructs represent a generic Amazon States Language Task.</p>
+<p>For some resource types, more specific subclasses of Task may be available which are more convenient to use.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_stepfunctions_Task_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="task.html#aws_stepfunctions_Task">Task</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_endStates">endStates</a></td>
+        <td></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_addCatch">addCatch(handler, props)</a></td>
+        <td><p>Add a recovery handler for this state</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_addRetry">addRetry(props)</a></td>
+        <td><p>Add retry configuration for this state</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metric">metric(metricName, props)</a></td>
+        <td><p>Return the given named metric for this Task</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricFailed">metricFailed(props)</a></td>
+        <td><p>Metric for the number of times this activity fails</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricHeartbeatTimedOut">metricHeartbeatTimedOut(props)</a></td>
+        <td><p>Metric for the number of times the heartbeat times out for this activity</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricRunTime">metricRunTime(props)</a></td>
+        <td><p>The interval, in milliseconds, between the time the Task starts and the time it closes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricScheduled">metricScheduled(props)</a></td>
+        <td><p>Metric for the number of times this activity is scheduled</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricScheduleTime">metricScheduleTime(props)</a></td>
+        <td><p>The interval, in milliseconds, for which the activity stays in the schedule state.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricStarted">metricStarted(props)</a></td>
+        <td><p>Metric for the number of times this activity is started</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricSucceeded">metricSucceeded(props)</a></td>
+        <td><p>Metric for the number of times this activity succeeds</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricTime">metricTime(props)</a></td>
+        <td><p>The interval, in milliseconds, between the time the activity is scheduled and the time it closes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_metricTimedOut">metricTimedOut(props)</a></td>
+        <td><p>Metric for the number of times this activity times out</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_next">next(next)</a></td>
+        <td><p>Continue normal execution with the given state</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_toStateJson">toStateJson()</a></td>
+        <td><p>Return the Amazon States Language object for this state</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="task.html#aws_stepfunctions_Task_whenBoundToGraph">whenBoundToGraph(graph)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_Task_constructor" data-uid="aws-stepfunctions.Task.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="task.html#aws_stepfunctions_Task">Task</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: cdk.Construct, id: string, props: TaskProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><span class="xref">cdk.Construct</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="taskprops.html#aws_stepfunctions_TaskProps">TaskProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_Task_endStates" data-uid="aws-stepfunctions.Task.endStates">endStates</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly endStates: INextable[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">INextable[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_Task_addCatch" data-uid="aws-stepfunctions.Task.addCatch">addCatch(handler, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add a recovery handler for this state</p>
+<p>When a particular error occurs, execution will continue at the error handler instead of failing the state machine execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addCatch(handler: IChainable, props?: CatchProps): Task;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">handler</span> <span class="parametertype"><a class="xref" href="ichainable.html#aws_stepfunctions_IChainable">IChainable</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="catchprops.html#aws_stepfunctions_CatchProps">CatchProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="task.html#aws_stepfunctions_Task">Task</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_addRetry" data-uid="aws-stepfunctions.Task.addRetry">addRetry(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add retry configuration for this state</p>
+<p>This controls if and how the execution will be retried if a particular error occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addRetry(props?: RetryProps): Task;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="retryprops.html#aws_stepfunctions_RetryProps">RetryProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="task.html#aws_stepfunctions_Task">Task</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metric" data-uid="aws-stepfunctions.Task.metric">metric(metricName, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the given named metric for this Task</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metric(metricName: string, props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">metricName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricFailed" data-uid="aws-stepfunctions.Task.metricFailed">metricFailed(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times this activity fails</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricFailed(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricHeartbeatTimedOut" data-uid="aws-stepfunctions.Task.metricHeartbeatTimedOut">metricHeartbeatTimedOut(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times the heartbeat times out for this activity</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHeartbeatTimedOut(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricRunTime" data-uid="aws-stepfunctions.Task.metricRunTime">metricRunTime(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The interval, in milliseconds, between the time the Task starts and the time it closes.</p>
+<p> average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricRunTime(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricScheduled" data-uid="aws-stepfunctions.Task.metricScheduled">metricScheduled(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times this activity is scheduled</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricScheduled(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricScheduleTime" data-uid="aws-stepfunctions.Task.metricScheduleTime">metricScheduleTime(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The interval, in milliseconds, for which the activity stays in the schedule state.</p>
+<p> average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricScheduleTime(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricStarted" data-uid="aws-stepfunctions.Task.metricStarted">metricStarted(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times this activity is started</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricStarted(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricSucceeded" data-uid="aws-stepfunctions.Task.metricSucceeded">metricSucceeded(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times this activity succeeds</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricSucceeded(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricTime" data-uid="aws-stepfunctions.Task.metricTime">metricTime(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The interval, in milliseconds, between the time the activity is scheduled and the time it closes.</p>
+<p> average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricTime(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_metricTimedOut" data-uid="aws-stepfunctions.Task.metricTimedOut">metricTimedOut(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Metric for the number of times this activity times out</p>
+<p> sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricTimedOut(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_next" data-uid="aws-stepfunctions.Task.next">next(next)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Continue normal execution with the given state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">next(next: IChainable): Chain;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">next</span> <span class="parametertype"><a class="xref" href="ichainable.html#aws_stepfunctions_IChainable">IChainable</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="chain.html#aws_stepfunctions_Chain">Chain</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_toStateJson" data-uid="aws-stepfunctions.Task.toStateJson">toStateJson()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the Amazon States Language object for this state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toStateJson(): object;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">object</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_Task_whenBoundToGraph" data-uid="aws-stepfunctions.Task.whenBoundToGraph">whenBoundToGraph(graph)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected whenBoundToGraph(graph: StateGraph): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">graph</span> <span class="parametertype"><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph">StateGraph</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

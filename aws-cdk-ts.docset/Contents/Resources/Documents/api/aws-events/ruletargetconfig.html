@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface RuleTargetConfig
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface RuleTargetConfig
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-events.RuleTargetConfig">
+  
+  
+  <h1 id="aws_events_RuleTargetConfig" data-uid="aws-events.RuleTargetConfig">Interface RuleTargetConfig
+  </h1>
+  <div class="markdown level0 summary"><p>Properties for an event rule target</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_events_RuleTargetConfig_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_arn">arn</a></td>
+        <td><p>The Amazon Resource Name (ARN) of the target.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_ecsParameters">ecsParameters</a></td>
+        <td><p>The Amazon ECS task definition and task count to use, if the event target is an Amazon ECS task.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_id">id</a></td>
+        <td><p>A unique, user-defined identifier for the target. Acceptable values include alphanumeric characters, periods (.), hyphens (-), and underscores (_).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_input">input</a></td>
+        <td><p>What input to send to the event target</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_kinesisParameters">kinesisParameters</a></td>
+        <td><p>Settings that control shard assignment, when the target is a Kinesis stream. If you don&#39;t include this parameter, eventId is used as the partition key.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_role">role</a></td>
+        <td><p>Role to use to invoke this event target</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_runCommandParameters">runCommandParameters</a></td>
+        <td><p>Parameters used when the rule invokes Amazon EC2 Systems Manager Run Command.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_sqsParameters">sqsParameters</a></td>
+        <td><p>Parameters used when the FIFO sqs queue is used an event target by the rule.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="ruletargetconfig.html#aws_events_RuleTargetConfig_targetResource">targetResource</a></td>
+        <td><p>The resource that is backing this target. This is the resource that will actually have some action performed on it when used as a target (for example, start a build for a CodeBuild project). We need it to determine whether the rule belongs to a different account than the target - if so, we generate a more complex setup, including an additional stack containing the EventBusPolicy.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_arn" data-uid="aws-events.RuleTargetConfig.arn">arn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The Amazon Resource Name (ARN) of the target.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly arn: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_ecsParameters" data-uid="aws-events.RuleTargetConfig.ecsParameters">ecsParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The Amazon ECS task definition and task count to use, if the event target is an Amazon ECS task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly ecsParameters?: CfnRule.EcsParametersProperty;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">CfnRule.EcsParametersProperty</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_id" data-uid="aws-events.RuleTargetConfig.id">id</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A unique, user-defined identifier for the target. Acceptable values include alphanumeric characters, periods (.), hyphens (-), and underscores (_).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly id: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_input" data-uid="aws-events.RuleTargetConfig.input">input</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>What input to send to the event target</p>
+<p> the entire event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly input?: RuleTargetInput;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="ruletargetinput.html#aws_events_RuleTargetInput">RuleTargetInput</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_kinesisParameters" data-uid="aws-events.RuleTargetConfig.kinesisParameters">kinesisParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Settings that control shard assignment, when the target is a Kinesis stream. If you don&#39;t include this parameter, eventId is used as the partition key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly kinesisParameters?: CfnRule.KinesisParametersProperty;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">CfnRule.KinesisParametersProperty</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_role" data-uid="aws-events.RuleTargetConfig.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Role to use to invoke this event target</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_runCommandParameters" data-uid="aws-events.RuleTargetConfig.runCommandParameters">runCommandParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Parameters used when the rule invokes Amazon EC2 Systems Manager Run Command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly runCommandParameters?: CfnRule.RunCommandParametersProperty;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">CfnRule.RunCommandParametersProperty</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_sqsParameters" data-uid="aws-events.RuleTargetConfig.sqsParameters">sqsParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Parameters used when the FIFO sqs queue is used an event target by the rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly sqsParameters?: CfnRule.SqsParametersProperty;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">CfnRule.SqsParametersProperty</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_events_RuleTargetConfig_targetResource" data-uid="aws-events.RuleTargetConfig.targetResource">targetResource</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The resource that is backing this target. This is the resource that will actually have some action performed on it when used as a target (for example, start a build for a CodeBuild project). We need it to determine whether the rule belongs to a different account than the target - if so, we generate a more complex setup, including an additional stack containing the EventBusPolicy.</p>
+<p> <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEvents-CrossAccountEventDelivery.html">https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/CloudWatchEvents-CrossAccountEventDelivery.html</a>  the target is not backed by any resource</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetResource?: IConstruct;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/iconstruct.html#core_IConstruct">IConstruct</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

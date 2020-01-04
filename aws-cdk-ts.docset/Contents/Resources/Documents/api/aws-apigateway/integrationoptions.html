@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IntegrationOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IntegrationOptions
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-apigateway.IntegrationOptions">
+  
+  
+  <h1 id="aws_apigateway_IntegrationOptions" data-uid="aws-apigateway.IntegrationOptions">Interface IntegrationOptions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_apigateway_IntegrationOptions_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_cacheKeyParameters">cacheKeyParameters</a></td>
+        <td><p>A list of request parameters whose values are to be cached. It determines request parameters that will make it into the cache key.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_cacheNamespace">cacheNamespace</a></td>
+        <td><p>An API-specific tag group of related cached parameters.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_connectionType">connectionType</a></td>
+        <td><p>The type of network connection to the integration endpoint.  ConnectionType.Internet</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_contentHandling">contentHandling</a></td>
+        <td><p>Specifies how to handle request payload content type conversions.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_credentialsPassthrough">credentialsPassthrough</a></td>
+        <td><p>Requires that the caller&#39;s identity be passed through from the request.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_credentialsRole">credentialsRole</a></td>
+        <td><p>An IAM role that API Gateway assumes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_integrationResponses">integrationResponses</a></td>
+        <td><p>The response that API Gateway provides after a method&#39;s backend completes processing a request. API Gateway intercepts the response from the backend so that you can control how API Gateway surfaces backend responses. For example, you can map the backend status codes to codes that you define.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_passthroughBehavior">passthroughBehavior</a></td>
+        <td><p>Specifies the pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the requestTemplates property on the Integration resource. There are three valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, and NEVER.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_requestParameters">requestParameters</a></td>
+        <td><p>The request parameters that API Gateway sends with the backend request. Specify request parameters as key-value pairs (string-to-string mappings), with a destination as the key and a source as the value.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_requestTemplates">requestTemplates</a></td>
+        <td><p>A map of Apache Velocity templates that are applied on the request payload. The template that API Gateway uses is based on the value of the Content-Type header that&#39;s sent by the client. The content type value is the key, and the template is the value (specified as a string), such as the following snippet:</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="integrationoptions.html#aws_apigateway_IntegrationOptions_vpcLink">vpcLink</a></td>
+        <td><p>The VpcLink used for the integration. Required if connectionType is VPC_LINK</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_cacheKeyParameters" data-uid="aws-apigateway.IntegrationOptions.cacheKeyParameters">cacheKeyParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A list of request parameters whose values are to be cached. It determines request parameters that will make it into the cache key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cacheKeyParameters?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_cacheNamespace" data-uid="aws-apigateway.IntegrationOptions.cacheNamespace">cacheNamespace</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An API-specific tag group of related cached parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cacheNamespace?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_connectionType" data-uid="aws-apigateway.IntegrationOptions.connectionType">connectionType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The type of network connection to the integration endpoint.  ConnectionType.Internet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly connectionType?: ConnectionType;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="connectiontype.html#aws_apigateway_ConnectionType">ConnectionType</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_contentHandling" data-uid="aws-apigateway.IntegrationOptions.contentHandling">contentHandling</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies how to handle request payload content type conversions.</p>
+<p> none if this property isn&#39;t defined, the request payload is passed through from the method request to the integration request without modification, provided that the <code>passthroughBehaviors</code> property is configured to support payload pass-through.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentHandling?: ContentHandling;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="contenthandling.html#aws_apigateway_ContentHandling">ContentHandling</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_credentialsPassthrough" data-uid="aws-apigateway.IntegrationOptions.credentialsPassthrough">credentialsPassthrough</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Requires that the caller&#39;s identity be passed through from the request.</p>
+<p> Caller identity is not passed through</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly credentialsPassthrough?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_credentialsRole" data-uid="aws-apigateway.IntegrationOptions.credentialsRole">credentialsRole</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An IAM role that API Gateway assumes.</p>
+<p>Mutually exclusive with <code>credentialsPassThrough</code><!-- -->.</p>
+<p> A role is not assumed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly credentialsRole?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_integrationResponses" data-uid="aws-apigateway.IntegrationOptions.integrationResponses">integrationResponses</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The response that API Gateway provides after a method&#39;s backend completes processing a request. API Gateway intercepts the response from the backend so that you can control how API Gateway surfaces backend responses. For example, you can map the backend status codes to codes that you define.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly integrationResponses?: IntegrationResponse[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">IntegrationResponse[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_passthroughBehavior" data-uid="aws-apigateway.IntegrationOptions.passthroughBehavior">passthroughBehavior</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies the pass-through behavior for incoming requests based on the Content-Type header in the request, and the available mapping templates specified as the requestTemplates property on the Integration resource. There are three valid values: WHEN_NO_MATCH, WHEN_NO_TEMPLATES, and NEVER.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly passthroughBehavior?: PassthroughBehavior;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="passthroughbehavior.html#aws_apigateway_PassthroughBehavior">PassthroughBehavior</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_requestParameters" data-uid="aws-apigateway.IntegrationOptions.requestParameters">requestParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The request parameters that API Gateway sends with the backend request. Specify request parameters as key-value pairs (string-to-string mappings), with a destination as the key and a source as the value.</p>
+<p>Specify the destination by using the following pattern integration.request.location.name, where location is querystring, path, or header, and name is a valid, unique parameter name.</p>
+<p>The source must be an existing method request parameter or a static value. You must enclose static values in single quotation marks and pre-encode these values based on their destination in the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly requestParameters?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [dest: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_requestTemplates" data-uid="aws-apigateway.IntegrationOptions.requestTemplates">requestTemplates</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A map of Apache Velocity templates that are applied on the request payload. The template that API Gateway uses is based on the value of the Content-Type header that&#39;s sent by the client. The content type value is the key, and the template is the value (specified as a string), such as the following snippet:</p>
+<p>{ &quot;application/json&quot;: &quot;{\n &quot;statusCode&quot;: &quot;200&quot;\n}&quot; }</p>
+<p> <a href="http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html">http://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-mapping-template-reference.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly requestTemplates?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [contentType: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_apigateway_IntegrationOptions_vpcLink" data-uid="aws-apigateway.IntegrationOptions.vpcLink">vpcLink</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The VpcLink used for the integration. Required if connectionType is VPC_LINK</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly vpcLink?: VpcLink;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="vpclink.html#aws_apigateway_VpcLink">VpcLink</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

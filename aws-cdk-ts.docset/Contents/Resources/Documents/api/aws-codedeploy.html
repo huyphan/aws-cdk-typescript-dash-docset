@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace @aws-cdk/aws-codedeploy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace @aws-cdk/aws-codedeploy
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-codedeploy">
+  
+  <h1 id="aws_codedeploy" data-uid="aws-codedeploy" class="text-break">Namespace @aws-cdk/aws-codedeploy
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfnapplication.html#aws_codedeploy_CfnApplication">CfnApplication</a></td>
+        <td><p>A CloudFormation <code>AWS::CodeDeploy::Application</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfndeploymentconfig.html#aws_codedeploy_CfnDeploymentConfig">CfnDeploymentConfig</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfndeploymentgroup.html#aws_codedeploy_CfnDeploymentGroup">CfnDeploymentGroup</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ecsapplication.html#aws_codedeploy_EcsApplication">EcsApplication</a></td>
+        <td><p>A CodeDeploy Application that deploys to an Amazon ECS service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ecsdeploymentconfig.html#aws_codedeploy_EcsDeploymentConfig">EcsDeploymentConfig</a></td>
+        <td><p>A custom Deployment Configuration for an ECS Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ecsdeploymentgroup.html#aws_codedeploy_EcsDeploymentGroup">EcsDeploymentGroup</a></td>
+        <td><p>Note: This class currently stands as a namespaced container for importing an ECS Deployment Group defined outside the CDK app until CloudFormation supports provisioning ECS Deployment Groups. Until then it is closed (private constructor) and does not extend cdk.Construct<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/instancetagset.html#aws_codedeploy_InstanceTagSet">InstanceTagSet</a></td>
+        <td><p>Represents a set of instance tag groups. An instance will match a set if it matches all of the groups in the set - in other words, sets follow &#39;and&#39; semantics. You can have a maximum of 3 tag groups inside a set.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdaapplication.html#aws_codedeploy_LambdaApplication">LambdaApplication</a></td>
+        <td><p>A CodeDeploy Application that deploys to an AWS Lambda function.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdadeploymentconfig.html#aws_codedeploy_LambdaDeploymentConfig">LambdaDeploymentConfig</a></td>
+        <td><p>A custom Deployment Configuration for a Lambda Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdadeploymentgroup.html#aws_codedeploy_LambdaDeploymentGroup">LambdaDeploymentGroup</a></td>
+        <td><p>AWS::CodeDeploy::DeploymentGroup</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/loadbalancer.html#aws_codedeploy_LoadBalancer">LoadBalancer</a></td>
+        <td><p>An interface of an abstract load balancer, as needed by CodeDeploy. Create instances using the static factory methods: {@link}, {@link} and {@link}.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/minimumhealthyhosts.html#aws_codedeploy_MinimumHealthyHosts">MinimumHealthyHosts</a></td>
+        <td><p>Minimum number of healthy hosts for a server deployment.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverapplication.html#aws_codedeploy_ServerApplication">ServerApplication</a></td>
+        <td><p>A CodeDeploy Application that deploys to EC2/on-premise instances.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverdeploymentconfig.html#aws_codedeploy_ServerDeploymentConfig">ServerDeploymentConfig</a></td>
+        <td><p>A custom Deployment Configuration for an EC2/on-premise Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverdeploymentgroup.html#aws_codedeploy_ServerDeploymentGroup">ServerDeploymentGroup</a></td>
+        <td><p>A CodeDeploy Deployment Group that deploys to EC2/on-premise instances.  AWS::CodeDeploy::DeploymentGroup</p></td>
+    </tr>
+  </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/autorollbackconfig.html#aws_codedeploy_AutoRollbackConfig">AutoRollbackConfig</a></td>
+        <td><p>The configuration for automatically rolling back deployments in a given Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfnapplicationprops.html#aws_codedeploy_CfnApplicationProps">CfnApplicationProps</a></td>
+        <td><p>Properties for defining a <code>AWS::CodeDeploy::Application</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfndeploymentconfigprops.html#aws_codedeploy_CfnDeploymentConfigProps">CfnDeploymentConfigProps</a></td>
+        <td><p>Properties for defining a <code>AWS::CodeDeploy::DeploymentConfig</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/cfndeploymentgroupprops.html#aws_codedeploy_CfnDeploymentGroupProps">CfnDeploymentGroupProps</a></td>
+        <td><p>Properties for defining a <code>AWS::CodeDeploy::DeploymentGroup</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ecsapplicationprops.html#aws_codedeploy_EcsApplicationProps">EcsApplicationProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="aws-codedeploy/ecsapplication.html#aws_codedeploy_EcsApplication">EcsApplication</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ecsdeploymentgroupattributes.html#aws_codedeploy_EcsDeploymentGroupAttributes">EcsDeploymentGroupAttributes</a></td>
+        <td><p>Properties of a reference to a CodeDeploy ECS Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iecsapplication.html#aws_codedeploy_IEcsApplication">IEcsApplication</a></td>
+        <td><p>Represents a reference to a CodeDeploy Application deploying to Amazon ECS.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iecsdeploymentconfig.html#aws_codedeploy_IEcsDeploymentConfig">IEcsDeploymentConfig</a></td>
+        <td><p>The Deployment Configuration of an ECS Deployment Group. The default, pre-defined Configurations are available as constants on the <a class="xref" href="aws-codedeploy/ecsdeploymentconfig.html#aws_codedeploy_EcsDeploymentConfig">EcsDeploymentConfig</a> class (for example, <code>EcsDeploymentConfig.AllAtOnce</code><!-- -->).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iecsdeploymentgroup.html#aws_codedeploy_IEcsDeploymentGroup">IEcsDeploymentGroup</a></td>
+        <td><p>Interface for an ECS deployment group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ilambdaapplication.html#aws_codedeploy_ILambdaApplication">ILambdaApplication</a></td>
+        <td><p>Represents a reference to a CodeDeploy Application deploying to AWS Lambda.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ilambdadeploymentconfig.html#aws_codedeploy_ILambdaDeploymentConfig">ILambdaDeploymentConfig</a></td>
+        <td><p>The Deployment Configuration of a Lambda Deployment Group. The default, pre-defined Configurations are available as constants on the <a class="xref" href="aws-codedeploy/lambdadeploymentconfig.html#aws_codedeploy_LambdaDeploymentConfig">LambdaDeploymentConfig</a> class (<code>LambdaDeploymentConfig.AllAtOnce</code><!-- -->, <code>LambdaDeploymentConfig.Canary10Percent30Minutes</code><!-- -->, etc.).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/ilambdadeploymentgroup.html#aws_codedeploy_ILambdaDeploymentGroup">ILambdaDeploymentGroup</a></td>
+        <td><p>Interface for a Lambda deployment groups.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iserverapplication.html#aws_codedeploy_IServerApplication">IServerApplication</a></td>
+        <td><p>Represents a reference to a CodeDeploy Application deploying to EC2/on-premise instances.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iserverdeploymentconfig.html#aws_codedeploy_IServerDeploymentConfig">IServerDeploymentConfig</a></td>
+        <td><p>The Deployment Configuration of an EC2/on-premise Deployment Group. The default, pre-defined Configurations are available as constants on the <a class="xref" href="aws-codedeploy/serverdeploymentconfig.html#aws_codedeploy_ServerDeploymentConfig">ServerDeploymentConfig</a> class (<code>ServerDeploymentConfig.HalfAtATime</code><!-- -->, <code>ServerDeploymentConfig.AllAtOnce</code><!-- -->, etc.). To create a custom Deployment Configuration, instantiate the <a class="xref" href="aws-codedeploy/serverdeploymentconfig.html#aws_codedeploy_ServerDeploymentConfig">ServerDeploymentConfig</a> Construct.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/iserverdeploymentgroup.html#aws_codedeploy_IServerDeploymentGroup">IServerDeploymentGroup</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdaapplicationprops.html#aws_codedeploy_LambdaApplicationProps">LambdaApplicationProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="aws-codedeploy/lambdaapplication.html#aws_codedeploy_LambdaApplication">LambdaApplication</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdadeploymentconfigimportprops.html#aws_codedeploy_LambdaDeploymentConfigImportProps">LambdaDeploymentConfigImportProps</a></td>
+        <td><p>Properties of a reference to a CodeDeploy Lambda Deployment Configuration.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdadeploymentgroupattributes.html#aws_codedeploy_LambdaDeploymentGroupAttributes">LambdaDeploymentGroupAttributes</a></td>
+        <td><p>Properties of a reference to a CodeDeploy Lambda Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/lambdadeploymentgroupprops.html#aws_codedeploy_LambdaDeploymentGroupProps">LambdaDeploymentGroupProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="aws-codedeploy/lambdadeploymentgroup.html#aws_codedeploy_LambdaDeploymentGroup">LambdaDeploymentGroup</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverapplicationprops.html#aws_codedeploy_ServerApplicationProps">ServerApplicationProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="aws-codedeploy/serverapplication.html#aws_codedeploy_ServerApplication">ServerApplication</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverdeploymentconfigprops.html#aws_codedeploy_ServerDeploymentConfigProps">ServerDeploymentConfigProps</a></td>
+        <td><p>Construction properties of <a class="xref" href="aws-codedeploy/serverdeploymentconfig.html#aws_codedeploy_ServerDeploymentConfig">ServerDeploymentConfig</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverdeploymentgroupattributes.html#aws_codedeploy_ServerDeploymentGroupAttributes">ServerDeploymentGroupAttributes</a></td>
+        <td><p>Properties of a reference to a CodeDeploy EC2/on-premise Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps">ServerDeploymentGroupProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="aws-codedeploy/serverdeploymentgroup.html#aws_codedeploy_ServerDeploymentGroup">ServerDeploymentGroup</a><!-- -->.</p></td>
+    </tr>
+  </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codedeploy/loadbalancergeneration.html#aws_codedeploy_LoadBalancerGeneration">LoadBalancerGeneration</a></td>
+        <td><p>The generations of AWS load balancing solutions.</p></td>
+    </tr>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface HealthCheck
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface HealthCheck
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-elasticloadbalancingv2.HealthCheck">
+  
+  
+  <h1 id="aws_elasticloadbalancingv2_HealthCheck" data-uid="aws-elasticloadbalancingv2.HealthCheck">Interface HealthCheck
+  </h1>
+  <div class="markdown level0 summary"><p>Properties for configuring a health check</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_elasticloadbalancingv2_HealthCheck_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_healthyHttpCodes">healthyHttpCodes</a></td>
+        <td><p>HTTP code to use when checking for a successful response from a target.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_healthyThresholdCount">healthyThresholdCount</a></td>
+        <td><p>The number of consecutive health checks successes required before considering an unhealthy target healthy.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_interval">interval</a></td>
+        <td><p>The approximate number of seconds between health checks for an individual target.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_path">path</a></td>
+        <td><p>The ping path destination where Elastic Load Balancing sends health check requests.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_port">port</a></td>
+        <td><p>The port that the load balancer uses when performing health checks on the targets.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_protocol">protocol</a></td>
+        <td><p>The protocol the load balancer uses when performing health checks on targets.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_timeout">timeout</a></td>
+        <td><p>The amount of time, in seconds, during which no response from a target means a failed health check.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="healthcheck.html#aws_elasticloadbalancingv2_HealthCheck_unhealthyThresholdCount">unhealthyThresholdCount</a></td>
+        <td><p>The number of consecutive health check failures required before considering a target unhealthy.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_healthyHttpCodes" data-uid="aws-elasticloadbalancingv2.HealthCheck.healthyHttpCodes">healthyHttpCodes</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>HTTP code to use when checking for a successful response from a target.</p>
+<p>For Application Load Balancers, you can specify values between 200 and 499, and the default value is 200. You can specify multiple values (for example, &quot;200,202&quot;) or a range of values (for example, &quot;200-299&quot;).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly healthyHttpCodes?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_healthyThresholdCount" data-uid="aws-elasticloadbalancingv2.HealthCheck.healthyThresholdCount">healthyThresholdCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of consecutive health checks successes required before considering an unhealthy target healthy.</p>
+<p>For Application Load Balancers, the default is 5. For Network Load Balancers, the default is 3.</p>
+<p> 5 for ALBs, 3 for NLBs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly healthyThresholdCount?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_interval" data-uid="aws-elasticloadbalancingv2.HealthCheck.interval">interval</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The approximate number of seconds between health checks for an individual target.</p>
+<p> Duration.seconds(30)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly interval?: cdk.Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.Duration</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_path" data-uid="aws-elasticloadbalancingv2.HealthCheck.path">path</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The ping path destination where Elastic Load Balancing sends health check requests.</p>
+<p> /</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly path?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_port" data-uid="aws-elasticloadbalancingv2.HealthCheck.port">port</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The port that the load balancer uses when performing health checks on the targets.</p>
+<p> &#39;traffic-port&#39;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly port?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_protocol" data-uid="aws-elasticloadbalancingv2.HealthCheck.protocol">protocol</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The protocol the load balancer uses when performing health checks on targets.</p>
+<p>The TCP protocol is supported for health checks only if the protocol of the target group is TCP, TLS, UDP, or TCP_UDP. The TLS, UDP, and TCP_UDP protocols are not supported for health checks.</p>
+<p> HTTP for ALBs, TCP for NLBs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly protocol?: Protocol;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">Protocol</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_timeout" data-uid="aws-elasticloadbalancingv2.HealthCheck.timeout">timeout</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The amount of time, in seconds, during which no response from a target means a failed health check.</p>
+<p>For Application Load Balancers, the range is 2-60 seconds and the default is 5 seconds. For Network Load Balancers, this is 10 seconds for TCP and HTTPS health checks and 6 seconds for HTTP health checks.</p>
+<p> Duration.seconds(5) for ALBs, Duration.seconds(10) or Duration.seconds(6) for NLBs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly timeout?: cdk.Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.Duration</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_HealthCheck_unhealthyThresholdCount" data-uid="aws-elasticloadbalancingv2.HealthCheck.unhealthyThresholdCount">unhealthyThresholdCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of consecutive health check failures required before considering a target unhealthy.</p>
+<p>For Application Load Balancers, the default is 2. For Network Load Balancers, this value must be the same as the healthy threshold count.</p>
+<p> 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly unhealthyThresholdCount?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

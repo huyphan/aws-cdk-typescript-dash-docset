@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface SyslogLogDriverProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface SyslogLogDriverProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs.SyslogLogDriverProps">
+  
+  
+  <h1 id="aws_ecs_SyslogLogDriverProps" data-uid="aws-ecs.SyslogLogDriverProps">Interface SyslogLogDriverProps
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies the syslog log driver configuration options.</p>
+<p>[Source](<a href="https://docs.docker.com/config/containers/logging/syslog/">https://docs.docker.com/config/containers/logging/syslog/</a>)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_SyslogLogDriverProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_address">address</a></td>
+        <td><p>The address of an external syslog server. The URI specifier may be [tcp|udp|tcp+tls]://host:port, unix://path, or unixgram://path.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_facility">facility</a></td>
+        <td><p>The syslog facility to use. Can be the number or name for any valid syslog facility. See the syslog documentation: https://tools.ietf.org/html/rfc5424#section-6.2.1.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_format">format</a></td>
+        <td><p>The syslog message format to use. If not specified the local UNIX syslog format is used, without a specified hostname. Specify rfc3164 for the RFC-3164 compatible format, rfc5424 for RFC-5424 compatible format, or rfc5424micro for RFC-5424 compatible format with microsecond timestamp resolution.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_tlsCaCert">tlsCaCert</a></td>
+        <td><p>The absolute path to the trust certificates signed by the CA. Ignored if the address protocol is not tcp+tls.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_tlsCert">tlsCert</a></td>
+        <td><p>The absolute path to the TLS certificate file. Ignored if the address protocol is not tcp+tls.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_tlsKey">tlsKey</a></td>
+        <td><p>The absolute path to the TLS key file. Ignored if the address protocol is not tcp+tls.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sysloglogdriverprops.html#aws_ecs_SyslogLogDriverProps_tlsSkipVerify">tlsSkipVerify</a></td>
+        <td><p>If set to true, TLS verification is skipped when connecting to the syslog daemon. Ignored if the address protocol is not tcp+tls.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_address" data-uid="aws-ecs.SyslogLogDriverProps.address">address</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The address of an external syslog server. The URI specifier may be [tcp|udp|tcp+tls]://host:port, unix://path, or unixgram://path.</p>
+<ul>
+<li>If the transport is tcp, udp, or tcp+tls, the default port is 514.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly address?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_facility" data-uid="aws-ecs.SyslogLogDriverProps.facility">facility</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The syslog facility to use. Can be the number or name for any valid syslog facility. See the syslog documentation: https://tools.ietf.org/html/rfc5424#section-6.2.1.</p>
+<ul>
+<li>facility not set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly facility?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_format" data-uid="aws-ecs.SyslogLogDriverProps.format">format</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The syslog message format to use. If not specified the local UNIX syslog format is used, without a specified hostname. Specify rfc3164 for the RFC-3164 compatible format, rfc5424 for RFC-5424 compatible format, or rfc5424micro for RFC-5424 compatible format with microsecond timestamp resolution.</p>
+<ul>
+<li>format not set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly format?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_tlsCaCert" data-uid="aws-ecs.SyslogLogDriverProps.tlsCaCert">tlsCaCert</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The absolute path to the trust certificates signed by the CA. Ignored if the address protocol is not tcp+tls.</p>
+<ul>
+<li>tlsCaCert not set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tlsCaCert?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_tlsCert" data-uid="aws-ecs.SyslogLogDriverProps.tlsCert">tlsCert</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The absolute path to the TLS certificate file. Ignored if the address protocol is not tcp+tls.</p>
+<ul>
+<li>tlsCert not set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tlsCert?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_tlsKey" data-uid="aws-ecs.SyslogLogDriverProps.tlsKey">tlsKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The absolute path to the TLS key file. Ignored if the address protocol is not tcp+tls.</p>
+<ul>
+<li>tlsKey not set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tlsKey?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SyslogLogDriverProps_tlsSkipVerify" data-uid="aws-ecs.SyslogLogDriverProps.tlsSkipVerify">tlsSkipVerify</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>If set to true, TLS verification is skipped when connecting to the syslog daemon. Ignored if the address protocol is not tcp+tls.</p>
+<ul>
+<li>false</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tlsSkipVerify?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

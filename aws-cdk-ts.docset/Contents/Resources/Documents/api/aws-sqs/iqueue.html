@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IQueue
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IQueue
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-sqs.IQueue">
+  
+  
+  <h1 id="aws_sqs_IQueue" data-uid="aws-sqs.IQueue">Interface IQueue
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_sqs_IQueue_synopsis">Synopsis</h3>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metric">metric(metricName, props)</a></td>
+        <td><p>Return the given named metric for this Queue</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricApproximateAgeOfOldestMessage">metricApproximateAgeOfOldestMessage(props)</a></td>
+        <td><p>The approximate age of the oldest non-deleted message in the queue.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricApproximateNumberOfMessagesDelayed">metricApproximateNumberOfMessagesDelayed(props)</a></td>
+        <td><p>The number of messages in the queue that are delayed and not available for reading immediately.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricApproximateNumberOfMessagesNotVisible">metricApproximateNumberOfMessagesNotVisible(props)</a></td>
+        <td><p>The number of messages that are in flight.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricApproximateNumberOfMessagesVisible">metricApproximateNumberOfMessagesVisible(props)</a></td>
+        <td><p>The number of messages available for retrieval from the queue.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricNumberOfEmptyReceives">metricNumberOfEmptyReceives(props)</a></td>
+        <td><p>The number of ReceiveMessage API calls that did not return a message.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricNumberOfMessagesDeleted">metricNumberOfMessagesDeleted(props)</a></td>
+        <td><p>The number of messages deleted from the queue.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricNumberOfMessagesReceived">metricNumberOfMessagesReceived(props)</a></td>
+        <td><p>The number of messages returned by calls to the ReceiveMessage action.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricNumberOfMessagesSent">metricNumberOfMessagesSent(props)</a></td>
+        <td><p>The number of messages added to a queue.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="iqueue.html#aws_sqs_IQueue_metricSentMessageSize">metricSentMessageSize(props)</a></td>
+        <td><p>The size of messages added to a queue.</p></td>
+    </tr>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_sqs_IQueue_metric" data-uid="aws-sqs.IQueue.metric">metric(metricName, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the given named metric for this Queue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metric(metricName: string, props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">metricName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricApproximateAgeOfOldestMessage" data-uid="aws-sqs.IQueue.metricApproximateAgeOfOldestMessage">metricApproximateAgeOfOldestMessage(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The approximate age of the oldest non-deleted message in the queue.</p>
+<p>Maximum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricApproximateAgeOfOldestMessage(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricApproximateNumberOfMessagesDelayed" data-uid="aws-sqs.IQueue.metricApproximateNumberOfMessagesDelayed">metricApproximateNumberOfMessagesDelayed(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages in the queue that are delayed and not available for reading immediately.</p>
+<p>Maximum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricApproximateNumberOfMessagesDelayed(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricApproximateNumberOfMessagesNotVisible" data-uid="aws-sqs.IQueue.metricApproximateNumberOfMessagesNotVisible">metricApproximateNumberOfMessagesNotVisible(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages that are in flight.</p>
+<p>Maximum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricApproximateNumberOfMessagesNotVisible(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricApproximateNumberOfMessagesVisible" data-uid="aws-sqs.IQueue.metricApproximateNumberOfMessagesVisible">metricApproximateNumberOfMessagesVisible(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages available for retrieval from the queue.</p>
+<p>Maximum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricApproximateNumberOfMessagesVisible(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricNumberOfEmptyReceives" data-uid="aws-sqs.IQueue.metricNumberOfEmptyReceives">metricNumberOfEmptyReceives(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of ReceiveMessage API calls that did not return a message.</p>
+<p>Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricNumberOfEmptyReceives(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricNumberOfMessagesDeleted" data-uid="aws-sqs.IQueue.metricNumberOfMessagesDeleted">metricNumberOfMessagesDeleted(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages deleted from the queue.</p>
+<p>Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricNumberOfMessagesDeleted(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricNumberOfMessagesReceived" data-uid="aws-sqs.IQueue.metricNumberOfMessagesReceived">metricNumberOfMessagesReceived(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages returned by calls to the ReceiveMessage action.</p>
+<p>Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricNumberOfMessagesReceived(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricNumberOfMessagesSent" data-uid="aws-sqs.IQueue.metricNumberOfMessagesSent">metricNumberOfMessagesSent(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of messages added to a queue.</p>
+<p>Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricNumberOfMessagesSent(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_sqs_IQueue_metricSentMessageSize" data-uid="aws-sqs.IQueue.metricSentMessageSize">metricSentMessageSize(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The size of messages added to a queue.</p>
+<p>Average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricSentMessageSize(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

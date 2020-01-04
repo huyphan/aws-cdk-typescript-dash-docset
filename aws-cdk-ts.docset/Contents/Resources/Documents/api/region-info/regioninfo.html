@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RegionInfo
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RegionInfo
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="region-info.RegionInfo">
+  
+  
+  <h1 id="region_info_RegionInfo" data-uid="region-info.RegionInfo">Class RegionInfo
+  </h1>
+  <div class="markdown level0 summary"><p>Information pertaining to an AWS region.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="region_info_RegionInfo_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_cdkMetadataResourceAvailable">cdkMetadataResourceAvailable</a></td>
+        <td><p>Whether the <code>AWS::CDK::Metadata</code> CloudFormation Resource is available in this region or not.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_domainSuffix">domainSuffix</a></td>
+        <td><p>The domain name suffix (e.g: amazonaws.com) for this region.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_name">name</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_partition">partition</a></td>
+        <td><p>The name of the ARN partition for this region (e.g: aws).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_regions">regions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_s3StaticWebsiteEndpoint">s3StaticWebsiteEndpoint</a></td>
+        <td><p>The endpoint used by S3 static website hosting in this region (e.g: s3-static-website-us-east-1.amazonaws.com)</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_s3StaticWebsiteHostedZoneId">s3StaticWebsiteHostedZoneId</a></td>
+        <td><p>The hosted zone ID used by Route 53 to alias a S3 static website in this region (e.g: Z2O1EMRO9K5GLX)</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_get">get(name)</a></td>
+        <td><p>Obtain region info for a given region name.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="regioninfo.html#region_info_RegionInfo_servicePrincipal">servicePrincipal(service)</a></td>
+        <td><p>The name of the service principal for a given service in this region.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="region_info_RegionInfo_cdkMetadataResourceAvailable" data-uid="region-info.RegionInfo.cdkMetadataResourceAvailable">cdkMetadataResourceAvailable</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether the <code>AWS::CDK::Metadata</code> CloudFormation Resource is available in this region or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cdkMetadataResourceAvailable: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_domainSuffix" data-uid="region-info.RegionInfo.domainSuffix">domainSuffix</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The domain name suffix (e.g: amazonaws.com) for this region.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly domainSuffix: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_name" data-uid="region-info.RegionInfo.name">name</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly name: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_partition" data-uid="region-info.RegionInfo.partition">partition</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the ARN partition for this region (e.g: aws).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly partition: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_regions" data-uid="region-info.RegionInfo.regions">regions</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static readonly regions: RegionInfo[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">RegionInfo[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_s3StaticWebsiteEndpoint" data-uid="region-info.RegionInfo.s3StaticWebsiteEndpoint">s3StaticWebsiteEndpoint</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The endpoint used by S3 static website hosting in this region (e.g: s3-static-website-us-east-1.amazonaws.com)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly s3StaticWebsiteEndpoint: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_s3StaticWebsiteHostedZoneId" data-uid="region-info.RegionInfo.s3StaticWebsiteHostedZoneId">s3StaticWebsiteHostedZoneId</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The hosted zone ID used by Route 53 to alias a S3 static website in this region (e.g: Z2O1EMRO9K5GLX)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly s3StaticWebsiteHostedZoneId: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="region_info_RegionInfo_get" data-uid="region-info.RegionInfo.get">get(name)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Obtain region info for a given region name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static get(name: string): RegionInfo;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">name</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="regioninfo.html#region_info_RegionInfo">RegionInfo</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="region_info_RegionInfo_servicePrincipal" data-uid="region-info.RegionInfo.servicePrincipal">servicePrincipal(service)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the service principal for a given service in this region.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">servicePrincipal(service: string): string | undefined;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">service</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface SagemakerTrainTaskProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface SagemakerTrainTaskProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps">
+  
+  
+  <h1 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps">Interface SagemakerTrainTaskProps
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_algorithmSpecification">algorithmSpecification</a></td>
+        <td><p>Identifies the training algorithm to use.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_hyperparameters">hyperparameters</a></td>
+        <td><p>Hyperparameters to be used for the train job.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_inputDataConfig">inputDataConfig</a></td>
+        <td><p>Describes the various datasets (e.g. train, validation, test) and the Amazon S3 location where stored.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_integrationPattern">integrationPattern</a></td>
+        <td><p>The service integration pattern indicates different ways to call SageMaker APIs.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_outputDataConfig">outputDataConfig</a></td>
+        <td><p>Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_resourceConfig">resourceConfig</a></td>
+        <td><p>Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_role">role</a></td>
+        <td><p>Role for the Training Job. The role must be granted all necessary permissions for the SageMaker training job to be able to operate.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_stoppingCondition">stoppingCondition</a></td>
+        <td><p>Sets a time limit for training.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_tags">tags</a></td>
+        <td><p>Tags to be applied to the train job.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_trainingJobName">trainingJobName</a></td>
+        <td><p>Training Job Name.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="sagemakertraintaskprops.html#aws_stepfunctions_tasks_SagemakerTrainTaskProps_vpcConfig">vpcConfig</a></td>
+        <td><p>Specifies the VPC that you want your training job to connect to.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_algorithmSpecification" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.algorithmSpecification">algorithmSpecification</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Identifies the training algorithm to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly algorithmSpecification: AlgorithmSpecification;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="algorithmspecification.html#aws_stepfunctions_tasks_AlgorithmSpecification">AlgorithmSpecification</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_hyperparameters" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.hyperparameters">hyperparameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Hyperparameters to be used for the train job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly hyperparameters?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_inputDataConfig" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.inputDataConfig">inputDataConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Describes the various datasets (e.g. train, validation, test) and the Amazon S3 location where stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly inputDataConfig: Channel[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">Channel[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_integrationPattern" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.integrationPattern">integrationPattern</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The service integration pattern indicates different ways to call SageMaker APIs.</p>
+<p>The valid value is either FIRE_AND_FORGET or SYNC.</p>
+<p> FIRE_AND_FORGET</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly integrationPattern?: sfn.ServiceIntegrationPattern;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">sfn.ServiceIntegrationPattern</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_outputDataConfig" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.outputDataConfig">outputDataConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Identifies the Amazon S3 location where you want Amazon SageMaker to save the results of model training.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly outputDataConfig: OutputDataConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="outputdataconfig.html#aws_stepfunctions_tasks_OutputDataConfig">OutputDataConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_resourceConfig" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.resourceConfig">resourceConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Identifies the resources, ML compute instances, and ML storage volumes to deploy for model training.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly resourceConfig?: ResourceConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="resourceconfig.html#aws_stepfunctions_tasks_ResourceConfig">ResourceConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_role" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Role for the Training Job. The role must be granted all necessary permissions for the SageMaker training job to be able to operate.</p>
+<p>See https://docs.aws.amazon.com/fr_fr/sagemaker/latest/dg/sagemaker-roles.html#sagemaker-roles-createtrainingjob-perms</p>
+<ul>
+<li>a role with appropriate permissions will be created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_stoppingCondition" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.stoppingCondition">stoppingCondition</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Sets a time limit for training.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly stoppingCondition?: StoppingCondition;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="stoppingcondition.html#aws_stepfunctions_tasks_StoppingCondition">StoppingCondition</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_tags" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.tags">tags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Tags to be applied to the train job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tags?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_trainingJobName" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.trainingJobName">trainingJobName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Training Job Name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly trainingJobName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_SagemakerTrainTaskProps_vpcConfig" data-uid="aws-stepfunctions-tasks.SagemakerTrainTaskProps.vpcConfig">vpcConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies the VPC that you want your training job to connect to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly vpcConfig?: VpcConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="vpcconfig.html#aws_stepfunctions_tasks_VpcConfig">VpcConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

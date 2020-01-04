@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace @aws-cdk/core
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace @aws-cdk/core
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="core">
+  
+  <h1 id="core" data-uid="core" class="text-break">Namespace @aws-cdk/core
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="core/app.html#core_App">App</a></td>
+        <td><p>A construct which represents an entire CDK app. This construct is normally the root of the construct tree.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/arn.html#core_Arn">Arn</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/aws.html#core_Aws">Aws</a></td>
+        <td><p>Accessor for pseudo parameters</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfncondition.html#core_CfnCondition">CfnCondition</a></td>
+        <td><p>Represents a CloudFormation condition, for resources which must be conditionally created and the determination must be made at deploy time.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfndynamicreference.html#core_CfnDynamicReference">CfnDynamicReference</a></td>
+        <td><p>References a dynamically retrieved value</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnelement.html#core_CfnElement">CfnElement</a></td>
+        <td><p>An element of a CloudFormation stack.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfninclude.html#core_CfnInclude">CfnInclude</a></td>
+        <td><p>Includes a CloudFormation template into a stack. All elements of the template will be merged into the current stack, together with any elements created programmatically.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnmapping.html#core_CfnMapping">CfnMapping</a></td>
+        <td><p>Represents a CloudFormation mapping.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnoutput.html#core_CfnOutput">CfnOutput</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnparameter.html#core_CfnParameter">CfnParameter</a></td>
+        <td><p>A CloudFormation parameter.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnrefelement.html#core_CfnRefElement">CfnRefElement</a></td>
+        <td><p>Base class for referenceable CloudFormation constructs which are not Resources</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnresource.html#core_CfnResource">CfnResource</a></td>
+        <td><p>Represents a CloudFormation resource.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnrule.html#core_CfnRule">CfnRule</a></td>
+        <td><p>The Rules that define template constraints in an AWS Service Catalog portfolio describe when end users can use the template and which values they can specify for parameters that are declared in the AWS CloudFormation template used to create the product they are attempting to use. Rules are useful for preventing end users from inadvertently specifying an incorrect value. For example, you can add a rule to verify whether end users specified a valid subnet in a given VPC or used m1.small instance types for test environments. AWS CloudFormation uses rules to validate parameter values before it creates the resources for the product.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/concretedependable.html#core_ConcreteDependable">ConcreteDependable</a></td>
+        <td><p>A set of constructs to be used as a dependable</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/construct.html#core_Construct">Construct</a></td>
+        <td><p>Represents the building block of the construct graph.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/constructnode.html#core_ConstructNode">ConstructNode</a></td>
+        <td><p>Represents the construct node in the scope tree.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/contextprovider.html#core_ContextProvider">ContextProvider</a></td>
+        <td><p>Base class for the model side of context providers</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/defaulttokenresolver.html#core_DefaultTokenResolver">DefaultTokenResolver</a></td>
+        <td><p>Default resolver implementation</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/dependabletrait.html#core_DependableTrait">DependableTrait</a></td>
+        <td><p>Trait for IDependable</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/duration.html#core_Duration">Duration</a></td>
+        <td><p>Represents a length of time.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/fn.html#core_Fn">Fn</a></td>
+        <td><p>CloudFormation intrinsic functions. <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html">http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html</a></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/intrinsic.html#core_Intrinsic">Intrinsic</a></td>
+        <td><p>Token subclass that represents values intrinsic to the target document language</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/lazy.html#core_Lazy">Lazy</a></td>
+        <td><p>Lazily produce a value</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/physicalname.html#core_PhysicalName">PhysicalName</a></td>
+        <td><p>Includes special markers for automatic generation of physical names.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/reference.html#core_Reference">Reference</a></td>
+        <td><p>An intrinsic Token that represents a reference to a construct.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/removetag.html#core_RemoveTag">RemoveTag</a></td>
+        <td><p>The RemoveTag Aspect will handle removing tags from this node and children</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/resource.html#core_Resource">Resource</a></td>
+        <td><p>A construct which represents an AWS resource.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/scopedaws.html#core_ScopedAws">ScopedAws</a></td>
+        <td><p>Accessor for scoped pseudo parameters</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/secretvalue.html#core_SecretValue">SecretValue</a></td>
+        <td><p>Work with secret values in the CDK</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/stack.html#core_Stack">Stack</a></td>
+        <td><p>A root construct which represents a single CloudFormation stack.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/stringconcat.html#core_StringConcat">StringConcat</a></td>
+        <td><p>Converts all fragments to strings and concats those</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tag.html#core_Tag">Tag</a></td>
+        <td><p>The Tag Aspect will handle adding a tag to this node and cascading tags to children</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tagmanager.html#core_TagManager">TagManager</a></td>
+        <td><p>TagManager facilitates a common implementation of tagging for Constructs.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/token.html#core_Token">Token</a></td>
+        <td><p>Represents a special or lazily-evaluated value.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tokenization.html#core_Tokenization">Tokenization</a></td>
+        <td><p>Less oft-needed functions to manipulate Tokens</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tokenizedstringfragments.html#core_TokenizedStringFragments">TokenizedStringFragments</a></td>
+        <td><p>Fragments of a concatenated string containing stringified Tokens</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/treeinspector.html#core_TreeInspector">TreeInspector</a></td>
+        <td><p>Inspector that maintains an attribute bag</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/validationresult.html#core_ValidationResult">ValidationResult</a></td>
+        <td><p>Representation of validation results</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/validationresults.html#core_ValidationResults">ValidationResults</a></td>
+        <td><p>A collection of validation results</p></td>
+    </tr>
+  </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="core/appprops.html#core_AppProps">AppProps</a></td>
+        <td><p>Initialization props for apps.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/arncomponents.html#core_ArnComponents">ArnComponents</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnautoscalingreplacingupdate.html#core_CfnAutoScalingReplacingUpdate">CfnAutoScalingReplacingUpdate</a></td>
+        <td><p>Specifies whether an Auto Scaling group and the instances it contains are replaced during an update. During replacement, AWS CloudFormation retains the old group until it finishes creating the new one. If the update fails, AWS CloudFormation can roll back to the old Auto Scaling group and delete the new Auto Scaling group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnautoscalingrollingupdate.html#core_CfnAutoScalingRollingUpdate">CfnAutoScalingRollingUpdate</a></td>
+        <td><p>To specify how AWS CloudFormation handles rolling updates for an Auto Scaling group, use the AutoScalingRollingUpdate policy. Rolling updates enable you to specify whether AWS CloudFormation updates instances that are in an Auto Scaling group in batches or all at once.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnautoscalingscheduledaction.html#core_CfnAutoScalingScheduledAction">CfnAutoScalingScheduledAction</a></td>
+        <td><p>With scheduled actions, the group size properties of an Auto Scaling group can change at any time. When you update a stack with an Auto Scaling group and scheduled action, AWS CloudFormation always sets the group size property values of your Auto Scaling group to the values that are defined in the AWS::AutoScaling::AutoScalingGroup resource of your template, even if a scheduled action is in effect.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfncodedeploylambdaaliasupdate.html#core_CfnCodeDeployLambdaAliasUpdate">CfnCodeDeployLambdaAliasUpdate</a></td>
+        <td><p>To perform an AWS CodeDeploy deployment when the version changes on an AWS::Lambda::Alias resource, use the CodeDeployLambdaAliasUpdate update policy.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnconditionprops.html#core_CfnConditionProps">CfnConditionProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfncreationpolicy.html#core_CfnCreationPolicy">CfnCreationPolicy</a></td>
+        <td><p>Associate the CreationPolicy attribute with a resource to prevent its status from reaching create complete until AWS CloudFormation receives a specified number of success signals or the timeout period is exceeded. To signal a resource, you can use the cfn-signal helper script or SignalResource API. AWS CloudFormation publishes valid signals to the stack events so that you track the number of signals sent.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfndynamicreferenceprops.html#core_CfnDynamicReferenceProps">CfnDynamicReferenceProps</a></td>
+        <td><p>Properties for a Dynamic Reference</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnincludeprops.html#core_CfnIncludeProps">CfnIncludeProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnmappingprops.html#core_CfnMappingProps">CfnMappingProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnoutputprops.html#core_CfnOutputProps">CfnOutputProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnparameterprops.html#core_CfnParameterProps">CfnParameterProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnresourceautoscalingcreationpolicy.html#core_CfnResourceAutoScalingCreationPolicy">CfnResourceAutoScalingCreationPolicy</a></td>
+        <td><p>For an Auto Scaling group replacement update, specifies how many instances must signal success for the update to succeed.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnresourceprops.html#core_CfnResourceProps">CfnResourceProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnresourcesignal.html#core_CfnResourceSignal">CfnResourceSignal</a></td>
+        <td><p>When AWS CloudFormation creates the associated resource, configures the number of required success signals and the length of time that AWS CloudFormation waits for those signals.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnruleassertion.html#core_CfnRuleAssertion">CfnRuleAssertion</a></td>
+        <td><p>A rule assertion.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnruleprops.html#core_CfnRuleProps">CfnRuleProps</a></td>
+        <td><p>A rule can include a RuleCondition property and must include an Assertions property. For each rule, you can define only one rule condition; you can define one or more asserts within the Assertions property. You define a rule condition and assertions by using rule-specific intrinsic functions.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfntag.html#core_CfnTag">CfnTag</a></td>
+        <td><p><a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html">http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html</a></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfnupdatepolicy.html#core_CfnUpdatePolicy">CfnUpdatePolicy</a></td>
+        <td><p>Use the UpdatePolicy attribute to specify how AWS CloudFormation handles updates to the AWS::AutoScaling::AutoScalingGroup resource. AWS CloudFormation invokes one of three update policies depending on the type of change you make or whether a scheduled action is associated with the Auto Scaling group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/dependency.html#core_Dependency">Dependency</a></td>
+        <td><p>A single dependency</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/dockerimageassetlocation.html#core_DockerImageAssetLocation">DockerImageAssetLocation</a></td>
+        <td><p>The location of the published docker image. This is where the image can be consumed at runtime.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/dockerimageassetsource.html#core_DockerImageAssetSource">DockerImageAssetSource</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/encodingoptions.html#core_EncodingOptions">EncodingOptions</a></td>
+        <td><p>Properties to string encodings</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/environment.html#core_Environment">Environment</a></td>
+        <td><p>The deployment environment for a stack.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/fileassetlocation.html#core_FileAssetLocation">FileAssetLocation</a></td>
+        <td><p>The location of the published file asset. This is where the asset can be consumed at runtime.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/fileassetsource.html#core_FileAssetSource">FileAssetSource</a></td>
+        <td><p>Represents the source for a file asset.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/getcontextkeyoptions.html#core_GetContextKeyOptions">GetContextKeyOptions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/getcontextkeyresult.html#core_GetContextKeyResult">GetContextKeyResult</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/getcontextvalueoptions.html#core_GetContextValueOptions">GetContextValueOptions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/getcontextvalueresult.html#core_GetContextValueResult">GetContextValueResult</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/ianyproducer.html#core_IAnyProducer">IAnyProducer</a></td>
+        <td><p>Interface for lazy untyped value producers</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iaspect.html#core_IAspect">IAspect</a></td>
+        <td><p>Represents an Aspect</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/icfnconditionexpression.html#core_ICfnConditionExpression">ICfnConditionExpression</a></td>
+        <td><p>Represents a CloudFormation element that can be used within a Condition.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/icfnresourceoptions.html#core_ICfnResourceOptions">ICfnResourceOptions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iconstruct.html#core_IConstruct">IConstruct</a></td>
+        <td><p>Represents a construct.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/idependable.html#core_IDependable">IDependable</a></td>
+        <td><p>Trait marker for classes that can be depended upon</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/ifragmentconcatenator.html#core_IFragmentConcatenator">IFragmentConcatenator</a></td>
+        <td><p>Function used to concatenate symbols in the target document language</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iinspectable.html#core_IInspectable">IInspectable</a></td>
+        <td><p>Interface for examining a construct and exposing metadata.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/ilistproducer.html#core_IListProducer">IListProducer</a></td>
+        <td><p>Interface for lazy list producers</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/inumberproducer.html#core_INumberProducer">INumberProducer</a></td>
+        <td><p>Interface for lazy number producers</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/ipostprocessor.html#core_IPostProcessor">IPostProcessor</a></td>
+        <td><p>A Token that can post-process the complete resolved value, after resolve() has recursed over it</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iresolvable.html#core_IResolvable">IResolvable</a></td>
+        <td><p>Interface for values that can be resolvable later</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iresolvecontext.html#core_IResolveContext">IResolveContext</a></td>
+        <td><p>Current resolution context for tokens</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/iresource.html#core_IResource">IResource</a></td>
+        <td><p>Interface for the Resource construct.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/istringproducer.html#core_IStringProducer">IStringProducer</a></td>
+        <td><p>Interface for lazy string producers</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/isynthesissession.html#core_ISynthesisSession">ISynthesisSession</a></td>
+        <td><p>Represents a single session of synthesis. Passed into <code>Construct.synthesize()</code> methods.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/itaggable.html#core_ITaggable">ITaggable</a></td>
+        <td><p>Interface to implement tags.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/itemplateoptions.html#core_ITemplateOptions">ITemplateOptions</a></td>
+        <td><p>CloudFormation template options for a stack.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/itokenmapper.html#core_ITokenMapper">ITokenMapper</a></td>
+        <td><p>Interface to apply operation to tokens in a string</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/itokenresolver.html#core_ITokenResolver">ITokenResolver</a></td>
+        <td><p>How to resolve tokens</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/lazyanyvalueoptions.html#core_LazyAnyValueOptions">LazyAnyValueOptions</a></td>
+        <td><p>Options for creating lazy untyped tokens</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/lazylistvalueoptions.html#core_LazyListValueOptions">LazyListValueOptions</a></td>
+        <td><p>Options for creating a lazy list token</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/lazystringvalueoptions.html#core_LazyStringValueOptions">LazyStringValueOptions</a></td>
+        <td><p>Options for creating a lazy string token</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/removalpolicyoptions.html#core_RemovalPolicyOptions">RemovalPolicyOptions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/resolveoptions.html#core_ResolveOptions">ResolveOptions</a></td>
+        <td><p>Options to the resolve() operation</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/resourceprops.html#core_ResourceProps">ResourceProps</a></td>
+        <td><p>Construction properties for <a class="xref" href="core/resource.html#core_Resource">Resource</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/secretsmanagersecretoptions.html#core_SecretsManagerSecretOptions">SecretsManagerSecretOptions</a></td>
+        <td><p>Options for referencing a secret value from Secrets Manager.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/stackprops.html#core_StackProps">StackProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/synthesisoptions.html#core_SynthesisOptions">SynthesisOptions</a></td>
+        <td><p>Options for synthesis.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tagprops.html#core_TagProps">TagProps</a></td>
+        <td><p>Properties for a tag</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></td>
+        <td><p>Options for how to convert time to a different unit.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/validationerror.html#core_ValidationError">ValidationError</a></td>
+        <td><p>An error returned during the validation phase.</p></td>
+    </tr>
+  </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="core/cfndeletionpolicy.html#core_CfnDeletionPolicy">CfnDeletionPolicy</a></td>
+        <td><p>With the DeletionPolicy attribute you can preserve or (in some cases) backup a resource when its stack is deleted. You specify a DeletionPolicy attribute for each resource that you want to control. If a resource has no DeletionPolicy attribute, AWS CloudFormation deletes the resource by default. Note that this capability also applies to update operations that lead to resources being removed.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/cfndynamicreferenceservice.html#core_CfnDynamicReferenceService">CfnDynamicReferenceService</a></td>
+        <td><p>The service to retrieve the dynamic reference from</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/constructorder.html#core_ConstructOrder">ConstructOrder</a></td>
+        <td><p>In what order to return constructs</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/fileassetpackaging.html#core_FileAssetPackaging">FileAssetPackaging</a></td>
+        <td><p>Packaging modes for file assets.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/removalpolicy.html#core_RemovalPolicy">RemovalPolicy</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="core/tagtype.html#core_TagType">TagType</a></td>
+        <td></td>
+    </tr>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

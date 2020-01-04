@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace @aws-cdk/aws-codebuild
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace @aws-cdk/aws-codebuild
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-codebuild">
+  
+  <h1 id="aws_codebuild" data-uid="aws-codebuild" class="text-break">Namespace @aws-cdk/aws-codebuild
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codebuild/artifacts.html#aws_codebuild_Artifacts">Artifacts</a></td>
+        <td><p>Artifacts definition for a CodeBuild Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/buildspec.html#aws_codebuild_BuildSpec">BuildSpec</a></td>
+        <td><p>BuildSpec for CodeBuild projects</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/cache.html#aws_codebuild_Cache">Cache</a></td>
+        <td><p>Cache options for CodeBuild Project. A cache can store reusable pieces of your build environment and use them across multiple builds.  <a href="https://docs.aws.amazon.com/codebuild/latest/userguide/build-caching.html">https://docs.aws.amazon.com/codebuild/latest/userguide/build-caching.html</a></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/cfnproject.html#aws_codebuild_CfnProject">CfnProject</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/cfnsourcecredential.html#aws_codebuild_CfnSourceCredential">CfnSourceCredential</a></td>
+        <td><p>A CloudFormation <code>AWS::CodeBuild::SourceCredential</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/filtergroup.html#aws_codebuild_FilterGroup">FilterGroup</a></td>
+        <td><p>An object that represents a group of filter conditions for a webhook. Every condition in a given FilterGroup must be true in order for the whole group to be true. You construct instances of it by calling the {@link} static factory method, and then calling various <code>andXyz</code> instance methods to create modified instances of it (this class is immutable).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/linuxbuildimage.html#aws_codebuild_LinuxBuildImage">LinuxBuildImage</a></td>
+        <td><p>A CodeBuild image running Linux.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/phasechangeevent.html#aws_codebuild_PhaseChangeEvent">PhaseChangeEvent</a></td>
+        <td><p>Event fields for the CodeBuild &quot;phase change&quot; event</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/pipelineproject.html#aws_codebuild_PipelineProject">PipelineProject</a></td>
+        <td><p>A convenience class for CodeBuild Projects that are used in CodePipeline.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/project.html#aws_codebuild_Project">Project</a></td>
+        <td><p>A representation of a CodeBuild Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/source.html#aws_codebuild_Source">Source</a></td>
+        <td><p>Source provider definition for a CodeBuild Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/statechangeevent.html#aws_codebuild_StateChangeEvent">StateChangeEvent</a></td>
+        <td><p>Event fields for the CodeBuild &quot;state change&quot; event</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/windowsbuildimage.html#aws_codebuild_WindowsBuildImage">WindowsBuildImage</a></td>
+        <td><p>A CodeBuild image running Windows.</p></td>
+    </tr>
+  </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codebuild/artifactsconfig.html#aws_codebuild_ArtifactsConfig">ArtifactsConfig</a></td>
+        <td><p>The type returned from bind<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/artifactsprops.html#aws_codebuild_ArtifactsProps">ArtifactsProps</a></td>
+        <td><p>Properties common to all Artifacts classes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/bindtocodepipelineoptions.html#aws_codebuild_BindToCodePipelineOptions">BindToCodePipelineOptions</a></td>
+        <td><p>The extra options passed to the IProject.bindToCodePipeline method.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/bitbucketsourceprops.html#aws_codebuild_BitBucketSourceProps">BitBucketSourceProps</a></td>
+        <td><p>Construction properties for BitBucketSource<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/bucketcacheoptions.html#aws_codebuild_BucketCacheOptions">BucketCacheOptions</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/buildenvironment.html#aws_codebuild_BuildEnvironment">BuildEnvironment</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/buildenvironmentvariable.html#aws_codebuild_BuildEnvironmentVariable">BuildEnvironmentVariable</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/cfnprojectprops.html#aws_codebuild_CfnProjectProps">CfnProjectProps</a></td>
+        <td><p>Properties for defining a <code>AWS::CodeBuild::Project</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/cfnsourcecredentialprops.html#aws_codebuild_CfnSourceCredentialProps">CfnSourceCredentialProps</a></td>
+        <td><p>Properties for defining a <code>AWS::CodeBuild::SourceCredential</code></p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/codecommitsourceprops.html#aws_codebuild_CodeCommitSourceProps">CodeCommitSourceProps</a></td>
+        <td><p>Construction properties for CodeCommitSource<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/commonprojectprops.html#aws_codebuild_CommonProjectProps">CommonProjectProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/dockerimageoptions.html#aws_codebuild_DockerImageOptions">DockerImageOptions</a></td>
+        <td><p>The options when creating a CodeBuild Docker build image using <a class="xref" href="aws-codebuild/linuxbuildimage.html#aws_codebuild_LinuxBuildImage_fromDockerRegistry">LinuxBuildImage.fromDockerRegistry</a> or <a class="xref" href="aws-codebuild/windowsbuildimage.html#aws_codebuild_WindowsBuildImage_fromDockerRegistry">WindowsBuildImage.fromDockerRegistry</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/githubenterprisesourceprops.html#aws_codebuild_GitHubEnterpriseSourceProps">GitHubEnterpriseSourceProps</a></td>
+        <td><p>Construction properties for GitHubEnterpriseSource<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/githubsourceprops.html#aws_codebuild_GitHubSourceProps">GitHubSourceProps</a></td>
+        <td><p>Construction properties for GitHubSource and GitHubEnterpriseSource<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/iartifacts.html#aws_codebuild_IArtifacts">IArtifacts</a></td>
+        <td><p>The abstract interface of a CodeBuild build output. Implemented by <a class="xref" href="aws-codebuild/artifacts.html#aws_codebuild_Artifacts">Artifacts</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/ibuildimage.html#aws_codebuild_IBuildImage">IBuildImage</a></td>
+        <td><p>Represents a Docker image used for the CodeBuild Project builds. Use the concrete subclasses, either: <a class="xref" href="aws-codebuild/linuxbuildimage.html#aws_codebuild_LinuxBuildImage">LinuxBuildImage</a> or <a class="xref" href="aws-codebuild/windowsbuildimage.html#aws_codebuild_WindowsBuildImage">WindowsBuildImage</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/iproject.html#aws_codebuild_IProject">IProject</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/isource.html#aws_codebuild_ISource">ISource</a></td>
+        <td><p>The abstract interface of a CodeBuild source. Implemented by <a class="xref" href="aws-codebuild/source.html#aws_codebuild_Source">Source</a><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/pipelineprojectprops.html#aws_codebuild_PipelineProjectProps">PipelineProjectProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/projectprops.html#aws_codebuild_ProjectProps">ProjectProps</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/s3artifactsprops.html#aws_codebuild_S3ArtifactsProps">S3ArtifactsProps</a></td>
+        <td><p>Construction properties for S3Artifacts<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/s3sourceprops.html#aws_codebuild_S3SourceProps">S3SourceProps</a></td>
+        <td><p>Construction properties for S3Source<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/sourceconfig.html#aws_codebuild_SourceConfig">SourceConfig</a></td>
+        <td><p>The type returned from bind<!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/sourceprops.html#aws_codebuild_SourceProps">SourceProps</a></td>
+        <td><p>Properties common to all Source classes.</p></td>
+    </tr>
+  </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="aws-codebuild/buildenvironmentvariabletype.html#aws_codebuild_BuildEnvironmentVariableType">BuildEnvironmentVariableType</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/computetype.html#aws_codebuild_ComputeType">ComputeType</a></td>
+        <td><p>Build machine compute type.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/eventaction.html#aws_codebuild_EventAction">EventAction</a></td>
+        <td><p>The types of webhook event actions.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/imagepullprincipaltype.html#aws_codebuild_ImagePullPrincipalType">ImagePullPrincipalType</a></td>
+        <td><p>The type of principal CodeBuild will use to pull your build Docker image.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="aws-codebuild/localcachemode.html#aws_codebuild_LocalCacheMode">LocalCacheMode</a></td>
+        <td><p>Local cache modes to enable for the CodeBuild Project</p></td>
+    </tr>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CfnCacheCluster
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CfnCacheCluster
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-elasticache.CfnCacheCluster">
+  
+  
+  <h1 id="aws_elasticache_CfnCacheCluster" data-uid="aws-elasticache.CfnCacheCluster">Class CfnCacheCluster
+  </h1>
+  <div class="markdown level0 summary"><p>A CloudFormation <code>AWS::ElastiCache::CacheCluster</code></p>
+<p> AWS::ElastiCache::CacheCluster  external  <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html">http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_elasticache_CfnCacheCluster_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Create a new <code>AWS::ElastiCache::CacheCluster</code><!-- -->.</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_attrConfigurationEndpointAddress">attrConfigurationEndpointAddress</a></td>
+        <td><p>ConfigurationEndpoint.Address</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_attrConfigurationEndpointPort">attrConfigurationEndpointPort</a></td>
+        <td><p>ConfigurationEndpoint.Port</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_attrRedisEndpointAddress">attrRedisEndpointAddress</a></td>
+        <td><p>RedisEndpoint.Address</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_attrRedisEndpointPort">attrRedisEndpointPort</a></td>
+        <td><p>RedisEndpoint.Port</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_autoMinorVersionUpgrade">autoMinorVersionUpgrade</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.AutoMinorVersionUpgrade</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_azMode">azMode</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.AZMode</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_cacheNodeType">cacheNodeType</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.CacheNodeType</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_cacheParameterGroupName">cacheParameterGroupName</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.CacheParameterGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_cacheSecurityGroupNames">cacheSecurityGroupNames</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.CacheSecurityGroupNames</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_cacheSubnetGroupName">cacheSubnetGroupName</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.CacheSubnetGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_cfnProperties">cfnProperties</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_clusterName">clusterName</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.ClusterName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_engine">engine</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.Engine</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_engineVersion">engineVersion</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.EngineVersion</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_notificationTopicArn">notificationTopicArn</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.NotificationTopicArn</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_numCacheNodes">numCacheNodes</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.NumCacheNodes</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_port">port</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.Port</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_preferredAvailabilityZone">preferredAvailabilityZone</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.PreferredAvailabilityZone</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_preferredAvailabilityZones">preferredAvailabilityZones</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.PreferredAvailabilityZones</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_preferredMaintenanceWindow">preferredMaintenanceWindow</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.PreferredMaintenanceWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_snapshotArns">snapshotArns</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.SnapshotArns</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_snapshotName">snapshotName</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.SnapshotName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_snapshotRetentionLimit">snapshotRetentionLimit</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.SnapshotRetentionLimit</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_snapshotWindow">snapshotWindow</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.SnapshotWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_tags">tags</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.Tags</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-tags</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_vpcSecurityGroupIds">vpcSecurityGroupIds</a></td>
+        <td><p><code>AWS::ElastiCache::CacheCluster.VpcSecurityGroupIds</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-vpcsecuritygroupids</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_inspect">inspect(inspector)</a></td>
+        <td><p>Examines the CloudFormation resource and discloses attributes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfncachecluster.html#aws_elasticache_CfnCacheCluster_renderProperties">renderProperties(props)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_constructor" data-uid="aws-elasticache.CfnCacheCluster.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Create a new <code>AWS::ElastiCache::CacheCluster</code><!-- -->.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: cdk.Construct, id: string, props: CfnCacheClusterProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><span class="xref">cdk.Construct</span></span></dt>
+    <dd><p>scope in which this resource is defined</p>
+</dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd><p>scoped id of the resource</p>
+</dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="cfncacheclusterprops.html#aws_elasticache_CfnCacheClusterProps">CfnCacheClusterProps</a></span></dt>
+    <dd><p>resource properties</p>
+</dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_attrConfigurationEndpointAddress" data-uid="aws-elasticache.CfnCacheCluster.attrConfigurationEndpointAddress">attrConfigurationEndpointAddress</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>ConfigurationEndpoint.Address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrConfigurationEndpointAddress: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_attrConfigurationEndpointPort" data-uid="aws-elasticache.CfnCacheCluster.attrConfigurationEndpointPort">attrConfigurationEndpointPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>ConfigurationEndpoint.Port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrConfigurationEndpointPort: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_attrRedisEndpointAddress" data-uid="aws-elasticache.CfnCacheCluster.attrRedisEndpointAddress">attrRedisEndpointAddress</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>RedisEndpoint.Address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrRedisEndpointAddress: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_attrRedisEndpointPort" data-uid="aws-elasticache.CfnCacheCluster.attrRedisEndpointPort">attrRedisEndpointPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>RedisEndpoint.Port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrRedisEndpointPort: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_autoMinorVersionUpgrade" data-uid="aws-elasticache.CfnCacheCluster.autoMinorVersionUpgrade">autoMinorVersionUpgrade</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.AutoMinorVersionUpgrade</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-autominorversionupgrade</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">autoMinorVersionUpgrade: boolean | cdk.IResolvable | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean | cdk.IResolvable | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_azMode" data-uid="aws-elasticache.CfnCacheCluster.azMode">azMode</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.AZMode</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-azmode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">azMode: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_cacheNodeType" data-uid="aws-elasticache.CfnCacheCluster.cacheNodeType">cacheNodeType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.CacheNodeType</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachenodetype</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">cacheNodeType: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_cacheParameterGroupName" data-uid="aws-elasticache.CfnCacheCluster.cacheParameterGroupName">cacheParameterGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.CacheParameterGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cacheparametergroupname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">cacheParameterGroupName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_cacheSecurityGroupNames" data-uid="aws-elasticache.CfnCacheCluster.cacheSecurityGroupNames">cacheSecurityGroupNames</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.CacheSecurityGroupNames</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesecuritygroupnames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">cacheSecurityGroupNames: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_cacheSubnetGroupName" data-uid="aws-elasticache.CfnCacheCluster.cacheSubnetGroupName">cacheSubnetGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.CacheSubnetGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-cachesubnetgroupname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">cacheSubnetGroupName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_cfnProperties" data-uid="aws-elasticache.CfnCacheCluster.cfnProperties">cfnProperties</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected readonly cfnProperties:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_clusterName" data-uid="aws-elasticache.CfnCacheCluster.clusterName">clusterName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.ClusterName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-clustername</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">clusterName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_engine" data-uid="aws-elasticache.CfnCacheCluster.engine">engine</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.Engine</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">engine: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_engineVersion" data-uid="aws-elasticache.CfnCacheCluster.engineVersion">engineVersion</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.EngineVersion</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-engineversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">engineVersion: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_notificationTopicArn" data-uid="aws-elasticache.CfnCacheCluster.notificationTopicArn">notificationTopicArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.NotificationTopicArn</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-notificationtopicarn</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">notificationTopicArn: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_numCacheNodes" data-uid="aws-elasticache.CfnCacheCluster.numCacheNodes">numCacheNodes</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.NumCacheNodes</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-numcachenodes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">numCacheNodes: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_port" data-uid="aws-elasticache.CfnCacheCluster.port">port</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.Port</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">port: number | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_preferredAvailabilityZone" data-uid="aws-elasticache.CfnCacheCluster.preferredAvailabilityZone">preferredAvailabilityZone</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.PreferredAvailabilityZone</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">preferredAvailabilityZone: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_preferredAvailabilityZones" data-uid="aws-elasticache.CfnCacheCluster.preferredAvailabilityZones">preferredAvailabilityZones</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.PreferredAvailabilityZones</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredavailabilityzones</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">preferredAvailabilityZones: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_preferredMaintenanceWindow" data-uid="aws-elasticache.CfnCacheCluster.preferredMaintenanceWindow">preferredMaintenanceWindow</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.PreferredMaintenanceWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-preferredmaintenancewindow</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">preferredMaintenanceWindow: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_snapshotArns" data-uid="aws-elasticache.CfnCacheCluster.snapshotArns">snapshotArns</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.SnapshotArns</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotarns</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">snapshotArns: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_snapshotName" data-uid="aws-elasticache.CfnCacheCluster.snapshotName">snapshotName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.SnapshotName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">snapshotName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_snapshotRetentionLimit" data-uid="aws-elasticache.CfnCacheCluster.snapshotRetentionLimit">snapshotRetentionLimit</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.SnapshotRetentionLimit</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotretentionlimit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">snapshotRetentionLimit: number | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_snapshotWindow" data-uid="aws-elasticache.CfnCacheCluster.snapshotWindow">snapshotWindow</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.SnapshotWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-snapshotwindow</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">snapshotWindow: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_tags" data-uid="aws-elasticache.CfnCacheCluster.tags">tags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.Tags</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-tags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tags: cdk.TagManager;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.TagManager</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_vpcSecurityGroupIds" data-uid="aws-elasticache.CfnCacheCluster.vpcSecurityGroupIds">vpcSecurityGroupIds</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::ElastiCache::CacheCluster.VpcSecurityGroupIds</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-cache-cluster.html#cfn-elasticache-cachecluster-vpcsecuritygroupids</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">vpcSecurityGroupIds: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_inspect" data-uid="aws-elasticache.CfnCacheCluster.inspect">inspect(inspector)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Examines the CloudFormation resource and discloses attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">inspect(inspector: cdk.TreeInspector): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">inspector</span> <span class="parametertype"><span class="xref">cdk.TreeInspector</span></span></dt>
+    <dd><p>tree inspector to collect and process attributes</p>
+<p> experimental</p>
+</dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticache_CfnCacheCluster_renderProperties" data-uid="aws-elasticache.CfnCacheCluster.renderProperties">renderProperties(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected renderProperties:</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

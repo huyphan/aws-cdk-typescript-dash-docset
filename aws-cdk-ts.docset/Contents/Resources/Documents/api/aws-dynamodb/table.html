@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Table
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Table
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-dynamodb.Table">
+  
+  
+  <h1 id="aws_dynamodb_Table" data-uid="aws-dynamodb.Table">Class Table
+  </h1>
+  <div class="markdown level0 summary"><p>Provides a DynamoDB table.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_dynamodb_Table_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="table.html#aws_dynamodb_Table">Table</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_tableArn">tableArn</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_tableName">tableName</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_tableStreamArn">tableStreamArn</a></td>
+        <td></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_addGlobalSecondaryIndex">addGlobalSecondaryIndex(props)</a></td>
+        <td><p>Add a global secondary index of table.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_addLocalSecondaryIndex">addLocalSecondaryIndex(props)</a></td>
+        <td><p>Add a local secondary index of table.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_autoScaleGlobalSecondaryIndexReadCapacity">autoScaleGlobalSecondaryIndexReadCapacity(indexName, props)</a></td>
+        <td><p>Enable read capacity scaling for the given GSI</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_autoScaleGlobalSecondaryIndexWriteCapacity">autoScaleGlobalSecondaryIndexWriteCapacity(indexName, props)</a></td>
+        <td><p>Enable write capacity scaling for the given GSI</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_autoScaleReadCapacity">autoScaleReadCapacity(props)</a></td>
+        <td><p>Enable read capacity scaling for this table</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_autoScaleWriteCapacity">autoScaleWriteCapacity(props)</a></td>
+        <td><p>Enable write capacity scaling for this table</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grant">grant(grantee, actions)</a></td>
+        <td><p>Adds an IAM policy statement associated with this table to an IAM principal&#39;s policy.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantFullAccess">grantFullAccess(grantee)</a></td>
+        <td><p>Permits all DynamoDB operations (&quot;dynamodb:*&quot;) to an IAM principal.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantListStreams">grantListStreams(grantee)</a></td>
+        <td><p>Permits an IAM Principal to list all DynamoDB Streams.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantReadData">grantReadData(grantee)</a></td>
+        <td><p>Permits an IAM principal all data read operations from this table: BatchGetItem, GetRecords, GetShardIterator, Query, GetItem, Scan.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantReadWriteData">grantReadWriteData(grantee)</a></td>
+        <td><p>Permits an IAM principal to all data read/write operations to this table. BatchGetItem, GetRecords, GetShardIterator, Query, GetItem, Scan, BatchWriteItem, PutItem, UpdateItem, DeleteItem</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantStream">grantStream(grantee, actions)</a></td>
+        <td><p>Adds an IAM policy statement associated with this table&#39;s stream to an IAM principal&#39;s policy.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantStreamRead">grantStreamRead(grantee)</a></td>
+        <td><p>Permits an IAM principal all stream data read operations for this table&#39;s stream: DescribeStream, GetRecords, GetShardIterator, ListStreams.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantTableListStreams">grantTableListStreams(grantee)</a></td>
+        <td><p>Permits an IAM Principal to list streams attached to current dynamodb table.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_grantWriteData">grantWriteData(grantee)</a></td>
+        <td><p>Permits an IAM principal all data write operations to this table: BatchWriteItem, PutItem, UpdateItem, DeleteItem.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="table.html#aws_dynamodb_Table_validate">validate()</a></td>
+        <td><p>Validate the table construct.</p></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_dynamodb_Table_constructor" data-uid="aws-dynamodb.Table.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="table.html#aws_dynamodb_Table">Table</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: Construct, id: string, props: TableProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">TableProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_dynamodb_Table_tableArn" data-uid="aws-dynamodb.Table.tableArn">tableArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tableArn: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_tableName" data-uid="aws-dynamodb.Table.tableName">tableName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tableName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_tableStreamArn" data-uid="aws-dynamodb.Table.tableStreamArn">tableStreamArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tableStreamArn: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_dynamodb_Table_addGlobalSecondaryIndex" data-uid="aws-dynamodb.Table.addGlobalSecondaryIndex">addGlobalSecondaryIndex(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add a global secondary index of table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addGlobalSecondaryIndex(props: GlobalSecondaryIndexProps): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="globalsecondaryindexprops.html#aws_dynamodb_GlobalSecondaryIndexProps">GlobalSecondaryIndexProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_addLocalSecondaryIndex" data-uid="aws-dynamodb.Table.addLocalSecondaryIndex">addLocalSecondaryIndex(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add a local secondary index of table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addLocalSecondaryIndex(props: LocalSecondaryIndexProps): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="localsecondaryindexprops.html#aws_dynamodb_LocalSecondaryIndexProps">LocalSecondaryIndexProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_autoScaleGlobalSecondaryIndexReadCapacity" data-uid="aws-dynamodb.Table.autoScaleGlobalSecondaryIndexReadCapacity">autoScaleGlobalSecondaryIndexReadCapacity(indexName, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable read capacity scaling for the given GSI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">autoScaleGlobalSecondaryIndexReadCapacity(indexName: string, props: EnableScalingProps): IScalableTableAttribute;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">indexName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">EnableScalingProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iscalabletableattribute.html#aws_dynamodb_IScalableTableAttribute">IScalableTableAttribute</a></p>
+  <p><p>An object to configure additional AutoScaling settings for this attribute</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_autoScaleGlobalSecondaryIndexWriteCapacity" data-uid="aws-dynamodb.Table.autoScaleGlobalSecondaryIndexWriteCapacity">autoScaleGlobalSecondaryIndexWriteCapacity(indexName, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable write capacity scaling for the given GSI</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">autoScaleGlobalSecondaryIndexWriteCapacity(indexName: string, props: EnableScalingProps): IScalableTableAttribute;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">indexName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">EnableScalingProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iscalabletableattribute.html#aws_dynamodb_IScalableTableAttribute">IScalableTableAttribute</a></p>
+  <p><p>An object to configure additional AutoScaling settings for this attribute</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_autoScaleReadCapacity" data-uid="aws-dynamodb.Table.autoScaleReadCapacity">autoScaleReadCapacity(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable read capacity scaling for this table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">autoScaleReadCapacity(props: EnableScalingProps): IScalableTableAttribute;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">EnableScalingProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iscalabletableattribute.html#aws_dynamodb_IScalableTableAttribute">IScalableTableAttribute</a></p>
+  <p><p>An object to configure additional AutoScaling settings</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_autoScaleWriteCapacity" data-uid="aws-dynamodb.Table.autoScaleWriteCapacity">autoScaleWriteCapacity(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable write capacity scaling for this table</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">autoScaleWriteCapacity(props: EnableScalingProps): IScalableTableAttribute;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">EnableScalingProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iscalabletableattribute.html#aws_dynamodb_IScalableTableAttribute">IScalableTableAttribute</a></p>
+  <p><p>An object to configure additional AutoScaling settings for this attribute</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grant" data-uid="aws-dynamodb.Table.grant">grant(grantee, actions)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds an IAM policy statement associated with this table to an IAM principal&#39;s policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grant(grantee: iam.IGrantable, ...actions: string[]): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">actions</span> <span class="parametertype"><span class="xref">string[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantFullAccess" data-uid="aws-dynamodb.Table.grantFullAccess">grantFullAccess(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits all DynamoDB operations (&quot;dynamodb:*&quot;) to an IAM principal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantFullAccess(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantListStreams" data-uid="aws-dynamodb.Table.grantListStreams">grantListStreams(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM Principal to list all DynamoDB Streams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static grantListStreams(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantReadData" data-uid="aws-dynamodb.Table.grantReadData">grantReadData(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM principal all data read operations from this table: BatchGetItem, GetRecords, GetShardIterator, Query, GetItem, Scan.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantReadData(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantReadWriteData" data-uid="aws-dynamodb.Table.grantReadWriteData">grantReadWriteData(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM principal to all data read/write operations to this table. BatchGetItem, GetRecords, GetShardIterator, Query, GetItem, Scan, BatchWriteItem, PutItem, UpdateItem, DeleteItem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantReadWriteData(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantStream" data-uid="aws-dynamodb.Table.grantStream">grantStream(grantee, actions)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds an IAM policy statement associated with this table&#39;s stream to an IAM principal&#39;s policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantStream(grantee: iam.IGrantable, ...actions: string[]): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">actions</span> <span class="parametertype"><span class="xref">string[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantStreamRead" data-uid="aws-dynamodb.Table.grantStreamRead">grantStreamRead(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM principal all stream data read operations for this table&#39;s stream: DescribeStream, GetRecords, GetShardIterator, ListStreams.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantStreamRead(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantTableListStreams" data-uid="aws-dynamodb.Table.grantTableListStreams">grantTableListStreams(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM Principal to list streams attached to current dynamodb table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantTableListStreams(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_grantWriteData" data-uid="aws-dynamodb.Table.grantWriteData">grantWriteData(grantee)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Permits an IAM principal all data write operations to this table: BatchWriteItem, PutItem, UpdateItem, DeleteItem.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">grantWriteData(grantee: iam.IGrantable): iam.Grant;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">grantee</span> <span class="parametertype"><span class="xref">iam.IGrantable</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">iam.Grant</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_dynamodb_Table_validate" data-uid="aws-dynamodb.Table.validate">validate()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Validate the table construct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected validate(): string[];</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p><p>an array of validation error message</p>
+</p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

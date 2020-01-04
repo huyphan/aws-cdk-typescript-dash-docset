@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StateGraph
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StateGraph
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-stepfunctions.StateGraph">
+  
+  
+  <h1 id="aws_stepfunctions_StateGraph" data-uid="aws-stepfunctions.StateGraph">Class StateGraph
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of connected states</p>
+<p>A StateGraph is used to keep track of all states that are connected (have transitions between them). It does not include the substatemachines in a Parallel&#39;s branches: those are their own StateGraphs, but the graphs themselves have a hierarchical relationship as well.</p>
+<p>By assigning states to a definintive StateGraph, we verify that no state machines are constructed. In particular:</p>
+<ul>
+<li>Every state object can only ever be in 1 StateGraph, and not inadvertently be used in two graphs. - Every stateId must be unique across all states in the entire state machine.</li>
+</ul>
+<p>All policy statements in all states in all substatemachines are bubbled so that the top-level StateMachine instantiation can read them all and add them to the IAM Role.</p>
+<p>You do not need to instantiate this class; it is used internally.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_stepfunctions_StateGraph_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_constructor">constructor(startState, graphDescription)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph">StateGraph</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_policyStatements">policyStatements</a></td>
+        <td><p>The accumulated policy statements</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_startState">startState</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_timeout">timeout</a></td>
+        <td><p>Set a timeout to render into the graph JSON.</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_registerPolicyStatement">registerPolicyStatement(statement)</a></td>
+        <td><p>Register a Policy Statement used by states in this graph</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_registerState">registerState(state)</a></td>
+        <td><p>Register a state as part of this graph</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_registerSuperGraph">registerSuperGraph(graph)</a></td>
+        <td><p>Register this graph as a child of the given graph</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph_toGraphJson">toGraphJson()</a></td>
+        <td><p>Return the Amazon States Language JSON for this graph</p></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_constructor" data-uid="aws-stepfunctions.StateGraph.constructor">constructor(startState, graphDescription)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph">StateGraph</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(startState: State, graphDescription: string);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">startState</span> <span class="parametertype"><a class="xref" href="state.html#aws_stepfunctions_State">State</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">graphDescription</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_policyStatements" data-uid="aws-stepfunctions.StateGraph.policyStatements">policyStatements</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The accumulated policy statements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly policyStatements: iam.PolicyStatement[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.PolicyStatement[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_startState" data-uid="aws-stepfunctions.StateGraph.startState">startState</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly startState: State;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="state.html#aws_stepfunctions_State">State</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_timeout" data-uid="aws-stepfunctions.StateGraph.timeout">timeout</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Set a timeout to render into the graph JSON.</p>
+<p>Read/write. Only makes sense on the top-level graph, subgraphs do not support this feature.</p>
+<p> No timeout</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">timeout?: Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/duration.html#core_Duration">Duration</a></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_registerPolicyStatement" data-uid="aws-stepfunctions.StateGraph.registerPolicyStatement">registerPolicyStatement(statement)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Register a Policy Statement used by states in this graph</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">registerPolicyStatement(statement: iam.PolicyStatement): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">statement</span> <span class="parametertype"><span class="xref">iam.PolicyStatement</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_registerState" data-uid="aws-stepfunctions.StateGraph.registerState">registerState(state)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Register a state as part of this graph</p>
+<p>Called by State.bindToGraph().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">registerState(state: State): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">state</span> <span class="parametertype"><a class="xref" href="state.html#aws_stepfunctions_State">State</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_registerSuperGraph" data-uid="aws-stepfunctions.StateGraph.registerSuperGraph">registerSuperGraph(graph)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Register this graph as a child of the given graph</p>
+<p>Resource changes will be bubbled up to the given graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">registerSuperGraph(graph: StateGraph): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">graph</span> <span class="parametertype"><a class="xref" href="stategraph.html#aws_stepfunctions_StateGraph">StateGraph</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_StateGraph_toGraphJson" data-uid="aws-stepfunctions.StateGraph.toGraphJson">toGraphJson()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the Amazon States Language JSON for this graph</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toGraphJson(): object;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">object</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

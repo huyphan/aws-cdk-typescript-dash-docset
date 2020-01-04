@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface BaseServiceOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface BaseServiceOptions
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs.BaseServiceOptions">
+  
+  
+  <h1 id="aws_ecs_BaseServiceOptions" data-uid="aws-ecs.BaseServiceOptions">Interface BaseServiceOptions
+  </h1>
+  <div class="markdown level0 summary"><p>The properties for the base Ec2Service or FargateService service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_BaseServiceOptions_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_cloudMapOptions">cloudMapOptions</a></td>
+        <td><p>The options for configuring an Amazon ECS service to use service discovery.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_cluster">cluster</a></td>
+        <td><p>The name of the cluster that hosts the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_deploymentController">deploymentController</a></td>
+        <td><p>Specifies which deployment controller to use for the service. For more information, see [Amazon ECS Deployment Types](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html</a>)</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_desiredCount">desiredCount</a></td>
+        <td><p>The desired number of instantiations of the task definition to keep running on the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_enableECSManagedTags">enableECSManagedTags</a></td>
+        <td><p>Specifies whether to enable Amazon ECS managed tags for the tasks within the service. For more information, see [Tagging Your Amazon ECS Resources](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html</a>)</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_healthCheckGracePeriod">healthCheckGracePeriod</a></td>
+        <td><p>The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_maxHealthyPercent">maxHealthyPercent</a></td>
+        <td><p>The maximum number of tasks, specified as a percentage of the Amazon ECS service&#39;s DesiredCount value, that can run in a service during a deployment.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_minHealthyPercent">minHealthyPercent</a></td>
+        <td><p>The minimum number of tasks, specified as a percentage of the Amazon ECS service&#39;s DesiredCount value, that must continue to run and remain healthy during a deployment.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_propagateTags">propagateTags</a></td>
+        <td><p>Specifies whether to propagate the tags from the task definition or the service to the tasks in the service</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="baseserviceoptions.html#aws_ecs_BaseServiceOptions_serviceName">serviceName</a></td>
+        <td><p>The name of the service.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_cloudMapOptions" data-uid="aws-ecs.BaseServiceOptions.cloudMapOptions">cloudMapOptions</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The options for configuring an Amazon ECS service to use service discovery.</p>
+<ul>
+<li>AWS Cloud Map service discovery is not enabled.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cloudMapOptions?: CloudMapOptions;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="cloudmapoptions.html#aws_ecs_CloudMapOptions">CloudMapOptions</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_cluster" data-uid="aws-ecs.BaseServiceOptions.cluster">cluster</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the cluster that hosts the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cluster: ICluster;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ICluster</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_deploymentController" data-uid="aws-ecs.BaseServiceOptions.deploymentController">deploymentController</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies which deployment controller to use for the service. For more information, see [Amazon ECS Deployment Types](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-types.html</a>)</p>
+<ul>
+<li>Rolling update (ECS)</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly deploymentController?: DeploymentController;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="deploymentcontroller.html#aws_ecs_DeploymentController">DeploymentController</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_desiredCount" data-uid="aws-ecs.BaseServiceOptions.desiredCount">desiredCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The desired number of instantiations of the task definition to keep running on the service.</p>
+<p> 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly desiredCount?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_enableECSManagedTags" data-uid="aws-ecs.BaseServiceOptions.enableECSManagedTags">enableECSManagedTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether to enable Amazon ECS managed tags for the tasks within the service. For more information, see [Tagging Your Amazon ECS Resources](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html</a>)</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly enableECSManagedTags?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_healthCheckGracePeriod" data-uid="aws-ecs.BaseServiceOptions.healthCheckGracePeriod">healthCheckGracePeriod</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started.</p>
+<ul>
+<li>defaults to 60 seconds if at least one load balancer is in-use and it is not already set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly healthCheckGracePeriod?: Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/duration.html#core_Duration">Duration</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_maxHealthyPercent" data-uid="aws-ecs.BaseServiceOptions.maxHealthyPercent">maxHealthyPercent</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The maximum number of tasks, specified as a percentage of the Amazon ECS service&#39;s DesiredCount value, that can run in a service during a deployment.</p>
+<ul>
+<li>100 if daemon, otherwise 200</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly maxHealthyPercent?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_minHealthyPercent" data-uid="aws-ecs.BaseServiceOptions.minHealthyPercent">minHealthyPercent</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The minimum number of tasks, specified as a percentage of the Amazon ECS service&#39;s DesiredCount value, that must continue to run and remain healthy during a deployment.</p>
+<ul>
+<li>0 if daemon, otherwise 50</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly minHealthyPercent?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_propagateTags" data-uid="aws-ecs.BaseServiceOptions.propagateTags">propagateTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether to propagate the tags from the task definition or the service to the tasks in the service</p>
+<p>Valid values are: PropagatedTagSource.SERVICE, PropagatedTagSource.TASK_DEFINITION or PropagatedTagSource.NONE</p>
+<p> PropagatedTagSource.NONE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly propagateTags?: PropagatedTagSource;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="propagatedtagsource.html#aws_ecs_PropagatedTagSource">PropagatedTagSource</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_BaseServiceOptions_serviceName" data-uid="aws-ecs.BaseServiceOptions.serviceName">serviceName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the service.</p>
+<ul>
+<li>CloudFormation-generated name.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly serviceName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

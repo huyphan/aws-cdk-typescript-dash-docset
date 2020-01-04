@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface BucketDeploymentProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface BucketDeploymentProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-s3-deployment.BucketDeploymentProps">
+  
+  
+  <h1 id="aws_s3_deployment_BucketDeploymentProps" data-uid="aws-s3-deployment.BucketDeploymentProps">Interface BucketDeploymentProps
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_s3_deployment_BucketDeploymentProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_cacheControl">cacheControl</a></td>
+        <td><p>System-defined cache-control metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_contentDisposition">contentDisposition</a></td>
+        <td><p>System-defined cache-disposition metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_contentEncoding">contentEncoding</a></td>
+        <td><p>System-defined content-encoding metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_contentLanguage">contentLanguage</a></td>
+        <td><p>System-defined content-language metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_contentType">contentType</a></td>
+        <td><p>System-defined content-type metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_destinationBucket">destinationBucket</a></td>
+        <td><p>The S3 bucket to sync the contents of the zip file to.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_destinationKeyPrefix">destinationKeyPrefix</a></td>
+        <td><p>Key prefix in the destination bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_distribution">distribution</a></td>
+        <td><p>The CloudFront distribution using the destination bucket as an origin. Files in the distribution&#39;s edge caches will be invalidated after files are uploaded to the destination bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_distributionPaths">distributionPaths</a></td>
+        <td><p>The file paths to invalidate in the CloudFront distribution.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_expires">expires</a></td>
+        <td><p>System-defined expires metadata to be set on all objects in the deployment.  - The objects in the distribution will not expire.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_memoryLimit">memoryLimit</a></td>
+        <td><p>The amount of memory (in MiB) to allocate to the AWS Lambda function which replicates the files from the CDK bucket to the destination bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_metadata">metadata</a></td>
+        <td><p>User-defined object metadata to be set on all objects in the deployment  - No user metadata is set  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#UserMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_retainOnDelete">retainOnDelete</a></td>
+        <td><p>If this is set to &quot;false&quot;, the destination files will be deleted when the resource is deleted or the destination is updated.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_role">role</a></td>
+        <td><p>Execution role associated with this function</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_serverSideEncryption">serverSideEncryption</a></td>
+        <td><p>System-defined x-amz-server-side-encryption metadata to be set on all objects in the deployment.  - Server side encryption is not used.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_serverSideEncryptionAwsKmsKeyId">serverSideEncryptionAwsKmsKeyId</a></td>
+        <td><p>System-defined x-amz-server-side-encryption-aws-kms-key-id metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_serverSideEncryptionCustomerAlgorithm">serverSideEncryptionCustomerAlgorithm</a></td>
+        <td><p>System-defined x-amz-server-side-encryption-customer-algorithm metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_sources">sources</a></td>
+        <td><p>The sources from which to deploy the contents of this bucket.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_storageClass">storageClass</a></td>
+        <td><p>System-defined x-amz-storage-class metadata to be set on all objects in the deployment.  - Default storage-class for the bucket is used.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="bucketdeploymentprops.html#aws_s3_deployment_BucketDeploymentProps_websiteRedirectLocation">websiteRedirectLocation</a></td>
+        <td><p>System-defined x-amz-website-redirect-location metadata to be set on all objects in the deployment.  - No website redirection.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_cacheControl" data-uid="aws-s3-deployment.BucketDeploymentProps.cacheControl">cacheControl</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined cache-control metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cacheControl?: CacheControl[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">CacheControl[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_contentDisposition" data-uid="aws-s3-deployment.BucketDeploymentProps.contentDisposition">contentDisposition</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined cache-disposition metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentDisposition?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_contentEncoding" data-uid="aws-s3-deployment.BucketDeploymentProps.contentEncoding">contentEncoding</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined content-encoding metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentEncoding?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_contentLanguage" data-uid="aws-s3-deployment.BucketDeploymentProps.contentLanguage">contentLanguage</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined content-language metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentLanguage?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_contentType" data-uid="aws-s3-deployment.BucketDeploymentProps.contentType">contentType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined content-type metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentType?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_destinationBucket" data-uid="aws-s3-deployment.BucketDeploymentProps.destinationBucket">destinationBucket</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The S3 bucket to sync the contents of the zip file to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly destinationBucket: s3.IBucket;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">s3.IBucket</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_destinationKeyPrefix" data-uid="aws-s3-deployment.BucketDeploymentProps.destinationKeyPrefix">destinationKeyPrefix</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Key prefix in the destination bucket.</p>
+<p> &quot;/&quot; (unzip to root of the destination bucket)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly destinationKeyPrefix?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_distribution" data-uid="aws-s3-deployment.BucketDeploymentProps.distribution">distribution</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The CloudFront distribution using the destination bucket as an origin. Files in the distribution&#39;s edge caches will be invalidated after files are uploaded to the destination bucket.</p>
+<ul>
+<li>No invalidation occurs</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly distribution?: cloudfront.IDistribution;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cloudfront.IDistribution</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_distributionPaths" data-uid="aws-s3-deployment.BucketDeploymentProps.distributionPaths">distributionPaths</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The file paths to invalidate in the CloudFront distribution.</p>
+<ul>
+<li>All files under the destination bucket key prefix will be invalidated.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly distributionPaths?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_expires" data-uid="aws-s3-deployment.BucketDeploymentProps.expires">expires</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined expires metadata to be set on all objects in the deployment.  - The objects in the distribution will not expire.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly expires?: Expires;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="expires.html#aws_s3_deployment_Expires">Expires</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_memoryLimit" data-uid="aws-s3-deployment.BucketDeploymentProps.memoryLimit">memoryLimit</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The amount of memory (in MiB) to allocate to the AWS Lambda function which replicates the files from the CDK bucket to the destination bucket.</p>
+<p>If you are deploying large files, you will need to increase this number accordingly.</p>
+<p> 128</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly memoryLimit?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_metadata" data-uid="aws-s3-deployment.BucketDeploymentProps.metadata">metadata</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>User-defined object metadata to be set on all objects in the deployment  - No user metadata is set  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#UserMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly metadata?: UserDefinedObjectMetadata;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="userdefinedobjectmetadata.html#aws_s3_deployment_UserDefinedObjectMetadata">UserDefinedObjectMetadata</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_retainOnDelete" data-uid="aws-s3-deployment.BucketDeploymentProps.retainOnDelete">retainOnDelete</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>If this is set to &quot;false&quot;, the destination files will be deleted when the resource is deleted or the destination is updated.</p>
+<p>NOTICE: if this is set to &quot;false&quot; and destination bucket/prefix is updated, all files in the previous destination will first be deleted and then uploaded to the new destination location. This could have availablity implications on your users.</p>
+<p> true - when resource is deleted/updated, files are retained</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly retainOnDelete?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_role" data-uid="aws-s3-deployment.BucketDeploymentProps.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Execution role associated with this function</p>
+<ul>
+<li>A role is automatically created</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_serverSideEncryption" data-uid="aws-s3-deployment.BucketDeploymentProps.serverSideEncryption">serverSideEncryption</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined x-amz-server-side-encryption metadata to be set on all objects in the deployment.  - Server side encryption is not used.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly serverSideEncryption?: ServerSideEncryption;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="serversideencryption.html#aws_s3_deployment_ServerSideEncryption">ServerSideEncryption</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_serverSideEncryptionAwsKmsKeyId" data-uid="aws-s3-deployment.BucketDeploymentProps.serverSideEncryptionAwsKmsKeyId">serverSideEncryptionAwsKmsKeyId</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined x-amz-server-side-encryption-aws-kms-key-id metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly serverSideEncryptionAwsKmsKeyId?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_serverSideEncryptionCustomerAlgorithm" data-uid="aws-s3-deployment.BucketDeploymentProps.serverSideEncryptionCustomerAlgorithm">serverSideEncryptionCustomerAlgorithm</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined x-amz-server-side-encryption-customer-algorithm metadata to be set on all objects in the deployment.  - Not set.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly serverSideEncryptionCustomerAlgorithm?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_sources" data-uid="aws-s3-deployment.BucketDeploymentProps.sources">sources</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The sources from which to deploy the contents of this bucket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly sources: ISource[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ISource[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_storageClass" data-uid="aws-s3-deployment.BucketDeploymentProps.storageClass">storageClass</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined x-amz-storage-class metadata to be set on all objects in the deployment.  - Default storage-class for the bucket is used.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly storageClass?: StorageClass;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">StorageClass</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_s3_deployment_BucketDeploymentProps_websiteRedirectLocation" data-uid="aws-s3-deployment.BucketDeploymentProps.websiteRedirectLocation">websiteRedirectLocation</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>System-defined x-amz-website-redirect-location metadata to be set on all objects in the deployment.  - No website redirection.  https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingMetadata.html#SysMetadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly websiteRedirectLocation?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

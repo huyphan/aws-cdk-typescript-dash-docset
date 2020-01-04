@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Project
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Project
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-codebuild.Project">
+  
+  
+  <h1 id="aws_codebuild_Project" data-uid="aws-codebuild.Project">Class Project
+  </h1>
+  <div class="markdown level0 summary"><p>A representation of a CodeBuild Project.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_codebuild_Project_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="project.html#aws_codebuild_Project">Project</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_grantPrincipal">grantPrincipal</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_projectArn">projectArn</a></td>
+        <td><p>The ARN of the project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_projectName">projectName</a></td>
+        <td><p>The name of the project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_role">role</a></td>
+        <td><p>The IAM role for this project.</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_addSecondaryArtifact">addSecondaryArtifact(secondaryArtifact)</a></td>
+        <td><p>Adds a secondary artifact to the Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_addSecondarySource">addSecondarySource(secondarySource)</a></td>
+        <td><p>Adds a secondary source to the Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_bindToCodePipeline">bindToCodePipeline(_scope, options)</a></td>
+        <td><p>A callback invoked when the given project is added to a CodePipeline.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_fromProjectArn">fromProjectArn(scope, id, projectArn)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_fromProjectName">fromProjectName(scope, id, projectName)</a></td>
+        <td><p>Import a Project defined either outside the CDK, or in a different CDK Stack (and exported using the export method).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_serializeEnvVariables">serializeEnvVariables(environmentVariables)</a></td>
+        <td><p>Convert the environment variables map of string to <a class="xref" href="buildenvironmentvariable.html#aws_codebuild_BuildEnvironmentVariable">BuildEnvironmentVariable</a><!-- -->, which is the customer-facing type, to a list of CfnProject.EnvironmentVariableProperty<!-- -->, which is the representation of environment variables in CloudFormation.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="project.html#aws_codebuild_Project_validate">validate()</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_codebuild_Project_constructor" data-uid="aws-codebuild.Project.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="project.html#aws_codebuild_Project">Project</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: Construct, id: string, props: ProjectProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="projectprops.html#aws_codebuild_ProjectProps">ProjectProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_codebuild_Project_grantPrincipal" data-uid="aws-codebuild.Project.grantPrincipal">grantPrincipal</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly grantPrincipal: iam.IPrincipal;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IPrincipal</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_projectArn" data-uid="aws-codebuild.Project.projectArn">projectArn</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The ARN of the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly projectArn: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_projectName" data-uid="aws-codebuild.Project.projectName">projectName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly projectName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_role" data-uid="aws-codebuild.Project.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The IAM role for this project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_codebuild_Project_addSecondaryArtifact" data-uid="aws-codebuild.Project.addSecondaryArtifact">addSecondaryArtifact(secondaryArtifact)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds a secondary artifact to the Project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addSecondaryArtifact(secondaryArtifact: IArtifacts): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">secondaryArtifact</span> <span class="parametertype"><a class="xref" href="iartifacts.html#aws_codebuild_IArtifacts">IArtifacts</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_addSecondarySource" data-uid="aws-codebuild.Project.addSecondarySource">addSecondarySource(secondarySource)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Adds a secondary source to the Project.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addSecondarySource(secondarySource: ISource): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">secondarySource</span> <span class="parametertype"><span class="xref">ISource</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_bindToCodePipeline" data-uid="aws-codebuild.Project.bindToCodePipeline">bindToCodePipeline(_scope, options)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A callback invoked when the given project is added to a CodePipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">bindToCodePipeline(_scope: Construct, options: BindToCodePipelineOptions): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">_scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">options</span> <span class="parametertype"><a class="xref" href="bindtocodepipelineoptions.html#aws_codebuild_BindToCodePipelineOptions">BindToCodePipelineOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_fromProjectArn" data-uid="aws-codebuild.Project.fromProjectArn">fromProjectArn(scope, id, projectArn)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromProjectArn(scope: Construct, id: string, projectArn: string): IProject;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">projectArn</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iproject.html#aws_codebuild_IProject">IProject</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_fromProjectName" data-uid="aws-codebuild.Project.fromProjectName">fromProjectName(scope, id, projectName)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Import a Project defined either outside the CDK, or in a different CDK Stack (and exported using the export method).</p>
+<p> if you&#39;re importing a CodeBuild Project for use in a CodePipeline, make sure the existing Project has permissions to access the S3 Bucket of that Pipeline - otherwise, builds in that Pipeline will always fail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromProjectName(scope: Construct, id: string, projectName: string): IProject;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">projectName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iproject.html#aws_codebuild_IProject">IProject</a></p>
+  <p><p>a reference to the existing Project</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_serializeEnvVariables" data-uid="aws-codebuild.Project.serializeEnvVariables">serializeEnvVariables(environmentVariables)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Convert the environment variables map of string to <a class="xref" href="buildenvironmentvariable.html#aws_codebuild_BuildEnvironmentVariable">BuildEnvironmentVariable</a><!-- -->, which is the customer-facing type, to a list of CfnProject.EnvironmentVariableProperty<!-- -->, which is the representation of environment variables in CloudFormation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static serializeEnvVariables(environmentVariables: {
+        [name: string]: BuildEnvironmentVariable;
+    }): CfnProject.EnvironmentVariableProperty[];</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">environmentVariables</span> <span class="parametertype"><span class="xref">{
+        [name: string]: BuildEnvironmentVariable;
+    }</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">CfnProject.EnvironmentVariableProperty[]</span></p>
+  <p><p>an array of CfnProject.EnvironmentVariableProperty instances</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_Project_validate" data-uid="aws-codebuild.Project.validate">validate()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">/** @override */
+protected validate(): string[];</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

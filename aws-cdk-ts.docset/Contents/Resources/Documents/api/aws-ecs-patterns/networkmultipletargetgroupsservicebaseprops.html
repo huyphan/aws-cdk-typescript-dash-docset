@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface NetworkMultipleTargetGroupsServiceBaseProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface NetworkMultipleTargetGroupsServiceBaseProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps">
+  
+  
+  <h1 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps">Interface NetworkMultipleTargetGroupsServiceBaseProps
+  </h1>
+  <div class="markdown level0 summary"><p>The properties for the base NetworkMultipleTargetGroupsEc2Service or NetworkMultipleTargetGroupsFargateService service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_cloudMapOptions">cloudMapOptions</a></td>
+        <td><p>The options for configuring an Amazon ECS service to use service discovery.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_cluster">cluster</a></td>
+        <td><p>The name of the cluster that hosts the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_desiredCount">desiredCount</a></td>
+        <td><p>The desired number of instantiations of the task definition to keep running on the service. The minimum value is 1</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_enableECSManagedTags">enableECSManagedTags</a></td>
+        <td><p>Specifies whether to enable Amazon ECS managed tags for the tasks within the service. For more information, see [Tagging Your Amazon ECS Resources](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html</a>)</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_healthCheckGracePeriod">healthCheckGracePeriod</a></td>
+        <td><p>The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_loadBalancers">loadBalancers</a></td>
+        <td><p>The network load balancer that will serve traffic to the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_propagateTags">propagateTags</a></td>
+        <td><p>Specifies whether to propagate the tags from the task definition or the service to the tasks in the service. Tags can only be propagated to the tasks within the service during service creation.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_serviceName">serviceName</a></td>
+        <td><p>Name of the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_targetGroups">targetGroups</a></td>
+        <td><p>Properties to specify NLB target groups.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_taskImageOptions">taskImageOptions</a></td>
+        <td><p>The properties required to create a new task definition. Only one of TaskDefinition or TaskImageOptions must be specified.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="networkmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_vpc">vpc</a></td>
+        <td><p>The VPC where the container instances will be launched or the elastic network interfaces (ENIs) will be deployed.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_cloudMapOptions" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.cloudMapOptions">cloudMapOptions</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The options for configuring an Amazon ECS service to use service discovery.</p>
+<ul>
+<li>AWS Cloud Map service discovery is not enabled.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cloudMapOptions?: CloudMapOptions;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-ecs/cloudmapoptions.html#aws_ecs_CloudMapOptions">CloudMapOptions</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_cluster" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.cluster">cluster</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the cluster that hosts the service.</p>
+<p>If a cluster is specified, the vpc construct should be omitted. Alternatively, you can omit both cluster and vpc.  - create a new cluster; if both cluster and vpc are omitted, a new VPC will be created for you.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cluster?: ICluster;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ICluster</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_desiredCount" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.desiredCount">desiredCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The desired number of instantiations of the task definition to keep running on the service. The minimum value is 1</p>
+<p> 1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly desiredCount?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_enableECSManagedTags" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.enableECSManagedTags">enableECSManagedTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether to enable Amazon ECS managed tags for the tasks within the service. For more information, see [Tagging Your Amazon ECS Resources](<a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html</a>)</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly enableECSManagedTags?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_healthCheckGracePeriod" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.healthCheckGracePeriod">healthCheckGracePeriod</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The period of time, in seconds, that the Amazon ECS service scheduler ignores unhealthy Elastic Load Balancing target health checks after a task has first started.</p>
+<ul>
+<li>defaults to 60 seconds if at least one load balancer is in-use and it is not already set</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly healthCheckGracePeriod?: Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/duration.html#core_Duration">Duration</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_loadBalancers" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.loadBalancers">loadBalancers</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The network load balancer that will serve traffic to the service.</p>
+<ul>
+<li>a new load balancer with a listener will be created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly loadBalancers?: NetworkLoadBalancerProps[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">NetworkLoadBalancerProps[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_propagateTags" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.propagateTags">propagateTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether to propagate the tags from the task definition or the service to the tasks in the service. Tags can only be propagated to the tasks within the service during service creation.</p>
+<ul>
+<li>none</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly propagateTags?: PropagatedTagSource;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-ecs/propagatedtagsource.html#aws_ecs_PropagatedTagSource">PropagatedTagSource</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_serviceName" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.serviceName">serviceName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Name of the service.</p>
+<ul>
+<li>CloudFormation-generated name.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly serviceName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_targetGroups" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.targetGroups">targetGroups</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Properties to specify NLB target groups.</p>
+<ul>
+<li>default portMapping registered as target group and attached to the first defined listener</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly targetGroups?: NetworkTargetProps[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">NetworkTargetProps[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_taskImageOptions" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.taskImageOptions">taskImageOptions</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The properties required to create a new task definition. Only one of TaskDefinition or TaskImageOptions must be specified.</p>
+<ul>
+<li>none</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly taskImageOptions?: NetworkLoadBalancedTaskImageProps;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="networkloadbalancedtaskimageprops.html#aws_ecs_patterns_NetworkLoadBalancedTaskImageProps">NetworkLoadBalancedTaskImageProps</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_NetworkMultipleTargetGroupsServiceBaseProps_vpc" data-uid="aws-ecs-patterns.NetworkMultipleTargetGroupsServiceBaseProps.vpc">vpc</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The VPC where the container instances will be launched or the elastic network interfaces (ENIs) will be deployed.</p>
+<p>If a vpc is specified, the cluster construct should be omitted. Alternatively, you can omit both vpc and cluster.  - uses the VPC defined in the cluster or creates a new VPC.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly vpc?: IVpc;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-ec2/ivpc.html#aws_ec2_IVpc">IVpc</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

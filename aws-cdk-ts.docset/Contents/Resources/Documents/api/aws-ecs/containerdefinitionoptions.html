@@ -1,0 +1,736 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ContainerDefinitionOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ContainerDefinitionOptions
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs.ContainerDefinitionOptions">
+  
+  
+  <h1 id="aws_ecs_ContainerDefinitionOptions" data-uid="aws-ecs.ContainerDefinitionOptions">Interface ContainerDefinitionOptions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_ContainerDefinitionOptions_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_command">command</a></td>
+        <td><p>The command that is passed to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_cpu">cpu</a></td>
+        <td><p>The minimum number of CPU units to reserve for the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_disableNetworking">disableNetworking</a></td>
+        <td><p>Specifies whether networking is disabled within the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_dnsSearchDomains">dnsSearchDomains</a></td>
+        <td><p>A list of DNS search domains that are presented to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_dnsServers">dnsServers</a></td>
+        <td><p>A list of DNS servers that are presented to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_dockerLabels">dockerLabels</a></td>
+        <td><p>A key/value map of labels to add to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_dockerSecurityOptions">dockerSecurityOptions</a></td>
+        <td><p>A list of strings to provide custom labels for SELinux and AppArmor multi-level security systems.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_entryPoint">entryPoint</a></td>
+        <td><p>The ENTRYPOINT value to pass to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_environment">environment</a></td>
+        <td><p>The environment variables to pass to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_essential">essential</a></td>
+        <td><p>Specifies whether the container is marked essential.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_extraHosts">extraHosts</a></td>
+        <td><p>A list of hostnames and IP address mappings to append to the /etc/hosts file on the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_gpuCount">gpuCount</a></td>
+        <td><p>The number of GPUs assigned to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_healthCheck">healthCheck</a></td>
+        <td><p>The health check command and associated configuration parameters for the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_hostname">hostname</a></td>
+        <td><p>The hostname to use for your container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_image">image</a></td>
+        <td><p>The image used to start a container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_linuxParameters">linuxParameters</a></td>
+        <td><p>Linux-specific modifications that are applied to the container, such as Linux kernel capabilities. For more information see [KernelCapabilities](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KernelCapabilities.html).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_logging">logging</a></td>
+        <td><p>The log configuration specification for the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_memoryLimitMiB">memoryLimitMiB</a></td>
+        <td><p>The amount (in MiB) of memory to present to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_memoryReservationMiB">memoryReservationMiB</a></td>
+        <td><p>The soft limit (in MiB) of memory to reserve for the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_privileged">privileged</a></td>
+        <td><p>Specifies whether the container is marked as privileged. When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_readonlyRootFilesystem">readonlyRootFilesystem</a></td>
+        <td><p>When this parameter is true, the container is given read-only access to its root file system.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_secrets">secrets</a></td>
+        <td><p>The secret environment variables to pass to the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_startTimeout">startTimeout</a></td>
+        <td><p>Time duration (in seconds) to wait before giving up on resolving dependencies for a container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_stopTimeout">stopTimeout</a></td>
+        <td><p>Time duration (in seconds) to wait before the container is forcefully killed if it doesn&#39;t exit normally on its own.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_user">user</a></td>
+        <td><p>The user name to use inside the container.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="containerdefinitionoptions.html#aws_ecs_ContainerDefinitionOptions_workingDirectory">workingDirectory</a></td>
+        <td><p>The working directory in which to run commands inside the container.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_command" data-uid="aws-ecs.ContainerDefinitionOptions.command">command</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The command that is passed to the container.</p>
+<p>If you provide a shell command as a single string, you have to quote command-line arguments.</p>
+<ul>
+<li>CMD value built into container image.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly command?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_cpu" data-uid="aws-ecs.ContainerDefinitionOptions.cpu">cpu</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The minimum number of CPU units to reserve for the container.</p>
+<ul>
+<li>No minimum CPU units reserved.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cpu?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_disableNetworking" data-uid="aws-ecs.ContainerDefinitionOptions.disableNetworking">disableNetworking</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether networking is disabled within the container.</p>
+<p>When this parameter is true, networking is disabled within the container.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly disableNetworking?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_dnsSearchDomains" data-uid="aws-ecs.ContainerDefinitionOptions.dnsSearchDomains">dnsSearchDomains</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A list of DNS search domains that are presented to the container.</p>
+<ul>
+<li>No search domains.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly dnsSearchDomains?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_dnsServers" data-uid="aws-ecs.ContainerDefinitionOptions.dnsServers">dnsServers</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A list of DNS servers that are presented to the container.</p>
+<ul>
+<li>Default DNS servers.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly dnsServers?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_dockerLabels" data-uid="aws-ecs.ContainerDefinitionOptions.dockerLabels">dockerLabels</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A key/value map of labels to add to the container.</p>
+<ul>
+<li>No labels.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly dockerLabels?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_dockerSecurityOptions" data-uid="aws-ecs.ContainerDefinitionOptions.dockerSecurityOptions">dockerSecurityOptions</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A list of strings to provide custom labels for SELinux and AppArmor multi-level security systems.</p>
+<ul>
+<li>No security labels.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly dockerSecurityOptions?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_entryPoint" data-uid="aws-ecs.ContainerDefinitionOptions.entryPoint">entryPoint</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The ENTRYPOINT value to pass to the container.</p>
+<p> https://docs.docker.com/engine/reference/builder/#entrypoint</p>
+<ul>
+<li>Entry point configured in container.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly entryPoint?: string[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_environment" data-uid="aws-ecs.ContainerDefinitionOptions.environment">environment</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The environment variables to pass to the container.</p>
+<ul>
+<li>No environment variables.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly environment?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_essential" data-uid="aws-ecs.ContainerDefinitionOptions.essential">essential</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether the container is marked essential.</p>
+<p>If the essential parameter of a container is marked as true, and that container fails or stops for any reason, all other containers that are part of the task are stopped. If the essential parameter of a container is marked as false, then its failure does not affect the rest of the containers in a task. All tasks must have at least one essential container.</p>
+<p>If this parameter is omitted, a container is assumed to be essential.</p>
+<p> true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly essential?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_extraHosts" data-uid="aws-ecs.ContainerDefinitionOptions.extraHosts">extraHosts</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A list of hostnames and IP address mappings to append to the /etc/hosts file on the container.</p>
+<ul>
+<li>No extra hosts.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly extraHosts?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [name: string]: string;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_gpuCount" data-uid="aws-ecs.ContainerDefinitionOptions.gpuCount">gpuCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of GPUs assigned to the container.</p>
+<ul>
+<li>No GPUs assigned.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly gpuCount?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_healthCheck" data-uid="aws-ecs.ContainerDefinitionOptions.healthCheck">healthCheck</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The health check command and associated configuration parameters for the container.</p>
+<ul>
+<li>Health check configuration from container.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly healthCheck?: HealthCheck;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">HealthCheck</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_hostname" data-uid="aws-ecs.ContainerDefinitionOptions.hostname">hostname</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The hostname to use for your container.</p>
+<ul>
+<li>Automatic hostname.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly hostname?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_image" data-uid="aws-ecs.ContainerDefinitionOptions.image">image</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The image used to start a container.</p>
+<p>This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. Other repositories are specified with either repository-url/image:tag or repository-url/image@digest. TODO: Update these to specify using classes of IContainerImage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly image: ContainerImage;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="containerimage.html#aws_ecs_ContainerImage">ContainerImage</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_linuxParameters" data-uid="aws-ecs.ContainerDefinitionOptions.linuxParameters">linuxParameters</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Linux-specific modifications that are applied to the container, such as Linux kernel capabilities. For more information see [KernelCapabilities](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_KernelCapabilities.html).</p>
+<ul>
+<li>No Linux paramters.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly linuxParameters?: LinuxParameters;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="linuxparameters.html#aws_ecs_LinuxParameters">LinuxParameters</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_logging" data-uid="aws-ecs.ContainerDefinitionOptions.logging">logging</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The log configuration specification for the container.</p>
+<ul>
+<li>Containers use the same logging driver that the Docker daemon uses.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly logging?: LogDriver;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="logdriver.html#aws_ecs_LogDriver">LogDriver</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_memoryLimitMiB" data-uid="aws-ecs.ContainerDefinitionOptions.memoryLimitMiB">memoryLimitMiB</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The amount (in MiB) of memory to present to the container.</p>
+<p>If your container attempts to exceed the allocated memory, the container is terminated.</p>
+<p>At least one of memoryLimitMiB and memoryReservationMiB is required for non-Fargate services.</p>
+<ul>
+<li>No memory limit.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly memoryLimitMiB?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_memoryReservationMiB" data-uid="aws-ecs.ContainerDefinitionOptions.memoryReservationMiB">memoryReservationMiB</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The soft limit (in MiB) of memory to reserve for the container.</p>
+<p>When system memory is under heavy contention, Docker attempts to keep the container memory to this soft limit. However, your container can consume more memory when it needs to, up to either the hard limit specified with the memory parameter (if applicable), or all of the available memory on the container instance, whichever comes first.</p>
+<p>At least one of memoryLimitMiB and memoryReservationMiB is required for non-Fargate services.</p>
+<ul>
+<li>No memory reserved.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly memoryReservationMiB?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_privileged" data-uid="aws-ecs.ContainerDefinitionOptions.privileged">privileged</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Specifies whether the container is marked as privileged. When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user).</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly privileged?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_readonlyRootFilesystem" data-uid="aws-ecs.ContainerDefinitionOptions.readonlyRootFilesystem">readonlyRootFilesystem</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>When this parameter is true, the container is given read-only access to its root file system.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly readonlyRootFilesystem?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_secrets" data-uid="aws-ecs.ContainerDefinitionOptions.secrets">secrets</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The secret environment variables to pass to the container.</p>
+<ul>
+<li>No secret environment variables.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly secrets?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: Secret;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_startTimeout" data-uid="aws-ecs.ContainerDefinitionOptions.startTimeout">startTimeout</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Time duration (in seconds) to wait before giving up on resolving dependencies for a container.</p>
+<ul>
+<li>none</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly startTimeout?: cdk.Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.Duration</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_stopTimeout" data-uid="aws-ecs.ContainerDefinitionOptions.stopTimeout">stopTimeout</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Time duration (in seconds) to wait before the container is forcefully killed if it doesn&#39;t exit normally on its own.</p>
+<ul>
+<li>none</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly stopTimeout?: cdk.Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.Duration</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_user" data-uid="aws-ecs.ContainerDefinitionOptions.user">user</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The user name to use inside the container.</p>
+<p> root</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly user?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_ContainerDefinitionOptions_workingDirectory" data-uid="aws-ecs.ContainerDefinitionOptions.workingDirectory">workingDirectory</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The working directory in which to run commands inside the container.</p>
+<p> /</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly workingDirectory?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

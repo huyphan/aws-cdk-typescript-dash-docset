@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface TrailProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface TrailProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-cloudtrail.TrailProps">
+  
+  
+  <h1 id="aws_cloudtrail_TrailProps" data-uid="aws-cloudtrail.TrailProps">Interface TrailProps
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_cloudtrail_TrailProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_bucket">bucket</a></td>
+        <td><p>The Amazon S3 bucket</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_cloudWatchLogsRetention">cloudWatchLogsRetention</a></td>
+        <td><p>How long to retain logs in CloudWatchLogs. Ignored if sendToCloudWatchLogs is false</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_enableFileValidation">enableFileValidation</a></td>
+        <td><p>To determine whether a log file was modified, deleted, or unchanged after CloudTrail delivered it, you can use CloudTrail log file integrity validation. This feature is built using industry standard algorithms: SHA-256 for hashing and SHA-256 with RSA for digital signing. This makes it computationally infeasible to modify, delete or forge CloudTrail log files without detection. You can use the AWS CLI to validate the files in the location where CloudTrail delivered them.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_includeGlobalServiceEvents">includeGlobalServiceEvents</a></td>
+        <td><p>For most services, events are recorded in the region where the action occurred. For global services such as AWS Identity and Access Management (IAM), AWS STS, Amazon CloudFront, and Route 53, events are delivered to any trail that includes global services, and are logged as occurring in US East (N. Virginia) Region.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_isMultiRegionTrail">isMultiRegionTrail</a></td>
+        <td><p>Whether or not this trail delivers log files from multiple regions to a single S3 bucket for a single account.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_kmsKey">kmsKey</a></td>
+        <td><p>The AWS Key Management Service (AWS KMS) key ID that you want to use to encrypt CloudTrail logs.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_managementEvents">managementEvents</a></td>
+        <td><p>When an event occurs in your account, CloudTrail evaluates whether the event matches the settings for your trails. Only events that match your trail settings are delivered to your Amazon S3 bucket and Amazon CloudWatch Logs log group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_s3KeyPrefix">s3KeyPrefix</a></td>
+        <td><p>An Amazon S3 object key prefix that precedes the name of all log files.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_sendToCloudWatchLogs">sendToCloudWatchLogs</a></td>
+        <td><p>If CloudTrail pushes logs to CloudWatch Logs in addition to S3. Disabled for cost out of the box.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_snsTopic">snsTopic</a></td>
+        <td><p>The name of an Amazon SNS topic that is notified when new log files are published.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="trailprops.html#aws_cloudtrail_TrailProps_trailName">trailName</a></td>
+        <td><p>The name of the trail. We recoomend customers do not set an explicit name.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_bucket" data-uid="aws-cloudtrail.TrailProps.bucket">bucket</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The Amazon S3 bucket</p>
+<ul>
+<li>if not supplied a bucket will be created with all the correct permisions</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly bucket?: s3.IBucket;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">s3.IBucket</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_cloudWatchLogsRetention" data-uid="aws-cloudtrail.TrailProps.cloudWatchLogsRetention">cloudWatchLogsRetention</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>How long to retain logs in CloudWatchLogs. Ignored if sendToCloudWatchLogs is false</p>
+<p> logs.RetentionDays.OneYear</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cloudWatchLogsRetention?: logs.RetentionDays;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">logs.RetentionDays</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_enableFileValidation" data-uid="aws-cloudtrail.TrailProps.enableFileValidation">enableFileValidation</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>To determine whether a log file was modified, deleted, or unchanged after CloudTrail delivered it, you can use CloudTrail log file integrity validation. This feature is built using industry standard algorithms: SHA-256 for hashing and SHA-256 with RSA for digital signing. This makes it computationally infeasible to modify, delete or forge CloudTrail log files without detection. You can use the AWS CLI to validate the files in the location where CloudTrail delivered them.</p>
+<p> true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly enableFileValidation?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_includeGlobalServiceEvents" data-uid="aws-cloudtrail.TrailProps.includeGlobalServiceEvents">includeGlobalServiceEvents</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>For most services, events are recorded in the region where the action occurred. For global services such as AWS Identity and Access Management (IAM), AWS STS, Amazon CloudFront, and Route 53, events are delivered to any trail that includes global services, and are logged as occurring in US East (N. Virginia) Region.</p>
+<p> true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly includeGlobalServiceEvents?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_isMultiRegionTrail" data-uid="aws-cloudtrail.TrailProps.isMultiRegionTrail">isMultiRegionTrail</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether or not this trail delivers log files from multiple regions to a single S3 bucket for a single account.</p>
+<p> true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly isMultiRegionTrail?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_kmsKey" data-uid="aws-cloudtrail.TrailProps.kmsKey">kmsKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The AWS Key Management Service (AWS KMS) key ID that you want to use to encrypt CloudTrail logs.</p>
+<ul>
+<li>No encryption.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly kmsKey?: kms.IKey;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">kms.IKey</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_managementEvents" data-uid="aws-cloudtrail.TrailProps.managementEvents">managementEvents</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>When an event occurs in your account, CloudTrail evaluates whether the event matches the settings for your trails. Only events that match your trail settings are delivered to your Amazon S3 bucket and Amazon CloudWatch Logs log group.</p>
+<p>This method sets the management configuration for this trail.</p>
+<p>Management events provide insight into management operations that are performed on resources in your AWS account. These are also known as control plane operations. Management events can also include non-API events that occur in your account. For example, when a user logs in to your account, CloudTrail logs the ConsoleLogin event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly managementEvents?: ReadWriteType;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="readwritetype.html#aws_cloudtrail_ReadWriteType">ReadWriteType</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_s3KeyPrefix" data-uid="aws-cloudtrail.TrailProps.s3KeyPrefix">s3KeyPrefix</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An Amazon S3 object key prefix that precedes the name of all log files.</p>
+<ul>
+<li>No prefix.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly s3KeyPrefix?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_sendToCloudWatchLogs" data-uid="aws-cloudtrail.TrailProps.sendToCloudWatchLogs">sendToCloudWatchLogs</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>If CloudTrail pushes logs to CloudWatch Logs in addition to S3. Disabled for cost out of the box.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly sendToCloudWatchLogs?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_snsTopic" data-uid="aws-cloudtrail.TrailProps.snsTopic">snsTopic</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of an Amazon SNS topic that is notified when new log files are published.</p>
+<ul>
+<li>No notifications.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly snsTopic?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_cloudtrail_TrailProps_trailName" data-uid="aws-cloudtrail.TrailProps.trailName">trailName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the trail. We recoomend customers do not set an explicit name.</p>
+<ul>
+<li>AWS CloudFormation generated name.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly trailName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

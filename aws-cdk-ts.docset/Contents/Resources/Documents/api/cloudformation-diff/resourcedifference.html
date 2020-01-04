@@ -1,0 +1,569 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResourceDifference
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResourceDifference
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="cloudformation-diff.ResourceDifference">
+  
+  
+  <h1 id="cloudformation_diff_ResourceDifference" data-uid="cloudformation-diff.ResourceDifference">Class ResourceDifference
+  </h1>
+  <div class="markdown level0 summary"><p>Change to a single resource between two CloudFormation templates</p>
+<p>This class can be mutated after construction.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="cloudformation_diff_ResourceDifference_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_constructor">constructor(oldValue, newValue, args)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference">ResourceDifference</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_changeImpact">changeImpact</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_differenceCount">differenceCount</a></td>
+        <td><p>Count of actual differences (not of elements)</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_isAddition">isAddition</a></td>
+        <td><p>Whether this resource was added</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_isDifferent">isDifferent</a></td>
+        <td><p>Whether this resource was modified at all</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_isRemoval">isRemoval</a></td>
+        <td><p>Whether this resource was removed</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_isUpdate">isUpdate</a></td>
+        <td><p>Whether the resource was updated in-place</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_newProperties">newProperties</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_newResourceType">newResourceType</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_newValue">newValue</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_oldProperties">oldProperties</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_oldResourceType">oldResourceType</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_oldValue">oldValue</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_otherChanges">otherChanges</a></td>
+        <td><p>All actual &quot;other&quot; updates</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_propertyUpdates">propertyUpdates</a></td>
+        <td><p>All actual property updates</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_resourceType">resourceType</a></td>
+        <td><p>Return the resource type if it was unchanged</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_resourceTypeChanged">resourceTypeChanged</a></td>
+        <td><p>Return whether the resource type was changed in this diff</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_forEachDifference">forEachDifference(cb)</a></td>
+        <td><p>Invoke a callback for each actual difference</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference_setPropertyChange">setPropertyChange(propertyName, change)</a></td>
+        <td><p>Replace a PropertyChange in this object</p></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_constructor" data-uid="cloudformation-diff.ResourceDifference.constructor">constructor(oldValue, newValue, args)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="resourcedifference.html#cloudformation_diff_ResourceDifference">ResourceDifference</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(oldValue: Resource | undefined, newValue: Resource | undefined, args: {
+        resourceType: {
+            oldType?: string;
+            newType?: string;
+        };
+        propertyDiffs: {
+            [key: string]: PropertyDifference&lt;any&gt;;
+        };
+        otherDiffs: {
+            [key: string]: Difference&lt;any&gt;;
+        };
+    });</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">oldValue</span> <span class="parametertype"><span class="xref">Resource | undefined</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">newValue</span> <span class="parametertype"><span class="xref">Resource | undefined</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">args</span> <span class="parametertype"><span class="xref">{
+        resourceType: {
+            oldType?: string;
+            newType?: string;
+        };
+        propertyDiffs: {
+            [key: string]: PropertyDifference&lt;any&gt;;
+        };
+        otherDiffs: {
+            [key: string]: Difference&lt;any&gt;;
+        };
+    }</span></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_changeImpact" data-uid="cloudformation-diff.ResourceDifference.changeImpact">changeImpact</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly changeImpact: ResourceImpact;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="resourceimpact.html#cloudformation_diff_ResourceImpact">ResourceImpact</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_differenceCount" data-uid="cloudformation-diff.ResourceDifference.differenceCount">differenceCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Count of actual differences (not of elements)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly differenceCount: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_isAddition" data-uid="cloudformation-diff.ResourceDifference.isAddition">isAddition</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether this resource was added</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly isAddition: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_isDifferent" data-uid="cloudformation-diff.ResourceDifference.isDifferent">isDifferent</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether this resource was modified at all</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly isDifferent: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_isRemoval" data-uid="cloudformation-diff.ResourceDifference.isRemoval">isRemoval</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether this resource was removed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly isRemoval: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_isUpdate" data-uid="cloudformation-diff.ResourceDifference.isUpdate">isUpdate</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether the resource was updated in-place</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly isUpdate: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_newProperties" data-uid="cloudformation-diff.ResourceDifference.newProperties">newProperties</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly newProperties: PropertyMap | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">PropertyMap | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_newResourceType" data-uid="cloudformation-diff.ResourceDifference.newResourceType">newResourceType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly newResourceType: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_newValue" data-uid="cloudformation-diff.ResourceDifference.newValue">newValue</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly newValue: Resource | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">Resource | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_oldProperties" data-uid="cloudformation-diff.ResourceDifference.oldProperties">oldProperties</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly oldProperties: PropertyMap | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">PropertyMap | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_oldResourceType" data-uid="cloudformation-diff.ResourceDifference.oldResourceType">oldResourceType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly oldResourceType: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_oldValue" data-uid="cloudformation-diff.ResourceDifference.oldValue">oldValue</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly oldValue: Resource | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">Resource | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_otherChanges" data-uid="cloudformation-diff.ResourceDifference.otherChanges">otherChanges</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>All actual &quot;other&quot; updates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly otherChanges:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: Difference&lt;any&gt;;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_propertyUpdates" data-uid="cloudformation-diff.ResourceDifference.propertyUpdates">propertyUpdates</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>All actual property updates</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly propertyUpdates:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: PropertyDifference&lt;any&gt;;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_resourceType" data-uid="cloudformation-diff.ResourceDifference.resourceType">resourceType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the resource type if it was unchanged</p>
+<p>If the resource type was changed, it&#39;s an error to call this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly resourceType: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_resourceTypeChanged" data-uid="cloudformation-diff.ResourceDifference.resourceTypeChanged">resourceTypeChanged</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return whether the resource type was changed in this diff</p>
+<p>This is not a valid operation in CloudFormation but to be defensive we&#39;re going to be aware of it anyway.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly resourceTypeChanged: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_forEachDifference" data-uid="cloudformation-diff.ResourceDifference.forEachDifference">forEachDifference(cb)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Invoke a callback for each actual difference</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">forEachDifference(cb: (type: 'Property' | 'Other', name: string, value: Difference&lt;any&gt; | PropertyDifference&lt;any&gt;) =&gt; any): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">cb</span> <span class="parametertype"><span class="xref">(type: &#39;Property&#39; | &#39;Other&#39;, name: string, value: Difference&lt;any&gt; | PropertyDifference&lt;any&gt;) =&gt; any</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="cloudformation_diff_ResourceDifference_setPropertyChange" data-uid="cloudformation-diff.ResourceDifference.setPropertyChange">setPropertyChange(propertyName, change)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Replace a PropertyChange in this object</p>
+<p>This affects the property diff as it is summarized to users, but it DOES NOT affect either the &quot;oldValue&quot; or &quot;newValue&quot; values; those still contain the actual template values as provided by the user (they might still be used for downstream processing).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">setPropertyChange(propertyName: string, change: PropertyDifference&lt;any&gt;): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">propertyName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">change</span> <span class="parametertype"><span class="xref">PropertyDifference&lt;any&gt;</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ServerDeploymentGroupProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ServerDeploymentGroupProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-codedeploy.ServerDeploymentGroupProps">
+  
+  
+  <h1 id="aws_codedeploy_ServerDeploymentGroupProps" data-uid="aws-codedeploy.ServerDeploymentGroupProps">Interface ServerDeploymentGroupProps
+  </h1>
+  <div class="markdown level0 summary"><p>Construction properties for <a class="xref" href="serverdeploymentgroup.html#aws_codedeploy_ServerDeploymentGroup">ServerDeploymentGroup</a><!-- -->.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_codedeploy_ServerDeploymentGroupProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_alarms">alarms</a></td>
+        <td><p>The CloudWatch alarms associated with this Deployment Group. CodeDeploy will stop (and optionally roll back) a deployment if during it any of the alarms trigger.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_application">application</a></td>
+        <td><p>The CodeDeploy EC2/on-premise Application this Deployment Group belongs to.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_autoRollback">autoRollback</a></td>
+        <td><p>The auto-rollback configuration for this Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_autoScalingGroups">autoScalingGroups</a></td>
+        <td><p>The auto-scaling groups belonging to this Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_deploymentConfig">deploymentConfig</a></td>
+        <td><p>The EC2/on-premise Deployment Configuration to use for this Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_deploymentGroupName">deploymentGroupName</a></td>
+        <td><p>The physical, human-readable name of the CodeDeploy Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_ec2InstanceTags">ec2InstanceTags</a></td>
+        <td><p>All EC2 instances matching the given set of tags when a deployment occurs will be added to this Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_ignorePollAlarmsFailure">ignorePollAlarmsFailure</a></td>
+        <td><p>Whether to continue a deployment even if fetching the alarm status from CloudWatch failed.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_installAgent">installAgent</a></td>
+        <td><p>If you&#39;ve provided any auto-scaling groups with the {@link} property, you can set this property to add User Data that installs the CodeDeploy agent on the instances.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_loadBalancer">loadBalancer</a></td>
+        <td><p>The load balancer to place in front of this Deployment Group. Can be created from either a classic Elastic Load Balancer, or an Application Load Balancer / Network Load Balancer Target Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_onPremiseInstanceTags">onPremiseInstanceTags</a></td>
+        <td><p>All on-premise instances matching the given set of tags when a deployment occurs will be added to this Deployment Group.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="serverdeploymentgroupprops.html#aws_codedeploy_ServerDeploymentGroupProps_role">role</a></td>
+        <td><p>The service Role of this Deployment Group.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_alarms" data-uid="aws-codedeploy.ServerDeploymentGroupProps.alarms">alarms</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The CloudWatch alarms associated with this Deployment Group. CodeDeploy will stop (and optionally roll back) a deployment if during it any of the alarms trigger.</p>
+<p>Alarms can also be added after the Deployment Group is created using the {@link} method.</p>
+<p> []  <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-create-alarms.html">https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-create-alarms.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly alarms?: cloudwatch.IAlarm[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.IAlarm[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_application" data-uid="aws-codedeploy.ServerDeploymentGroupProps.application">application</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The CodeDeploy EC2/on-premise Application this Deployment Group belongs to.</p>
+<ul>
+<li>A new Application will be created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly application?: IServerApplication;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="iserverapplication.html#aws_codedeploy_IServerApplication">IServerApplication</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_autoRollback" data-uid="aws-codedeploy.ServerDeploymentGroupProps.autoRollback">autoRollback</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The auto-rollback configuration for this Deployment Group.</p>
+<ul>
+<li>default AutoRollbackConfig.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly autoRollback?: AutoRollbackConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="autorollbackconfig.html#aws_codedeploy_AutoRollbackConfig">AutoRollbackConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_autoScalingGroups" data-uid="aws-codedeploy.ServerDeploymentGroupProps.autoScalingGroups">autoScalingGroups</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The auto-scaling groups belonging to this Deployment Group.</p>
+<p>Auto-scaling groups can also be added after the Deployment Group is created using the {@link} method.</p>
+<p>[disable-awslint:ref-via-interface] is needed because we update userdata for ASGs to install the codedeploy agent.</p>
+<p> []</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly autoScalingGroups?: autoscaling.AutoScalingGroup[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">autoscaling.AutoScalingGroup[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_deploymentConfig" data-uid="aws-codedeploy.ServerDeploymentGroupProps.deploymentConfig">deploymentConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The EC2/on-premise Deployment Configuration to use for this Deployment Group.</p>
+<p> ServerDeploymentConfig#OneAtATime</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly deploymentConfig?: IServerDeploymentConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="iserverdeploymentconfig.html#aws_codedeploy_IServerDeploymentConfig">IServerDeploymentConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_deploymentGroupName" data-uid="aws-codedeploy.ServerDeploymentGroupProps.deploymentGroupName">deploymentGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The physical, human-readable name of the CodeDeploy Deployment Group.</p>
+<ul>
+<li>An auto-generated name will be used.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly deploymentGroupName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_ec2InstanceTags" data-uid="aws-codedeploy.ServerDeploymentGroupProps.ec2InstanceTags">ec2InstanceTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>All EC2 instances matching the given set of tags when a deployment occurs will be added to this Deployment Group.</p>
+<ul>
+<li>No additional EC2 instances will be added to the Deployment Group.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly ec2InstanceTags?: InstanceTagSet;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="instancetagset.html#aws_codedeploy_InstanceTagSet">InstanceTagSet</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_ignorePollAlarmsFailure" data-uid="aws-codedeploy.ServerDeploymentGroupProps.ignorePollAlarmsFailure">ignorePollAlarmsFailure</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether to continue a deployment even if fetching the alarm status from CloudWatch failed.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly ignorePollAlarmsFailure?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_installAgent" data-uid="aws-codedeploy.ServerDeploymentGroupProps.installAgent">installAgent</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>If you&#39;ve provided any auto-scaling groups with the {@link} property, you can set this property to add User Data that installs the CodeDeploy agent on the instances.</p>
+<p> true  <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html">https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly installAgent?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_loadBalancer" data-uid="aws-codedeploy.ServerDeploymentGroupProps.loadBalancer">loadBalancer</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The load balancer to place in front of this Deployment Group. Can be created from either a classic Elastic Load Balancer, or an Application Load Balancer / Network Load Balancer Target Group.</p>
+<ul>
+<li>Deployment Group will not have a load balancer defined.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly loadBalancer?: LoadBalancer;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">LoadBalancer</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_onPremiseInstanceTags" data-uid="aws-codedeploy.ServerDeploymentGroupProps.onPremiseInstanceTags">onPremiseInstanceTags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>All on-premise instances matching the given set of tags when a deployment occurs will be added to this Deployment Group.</p>
+<ul>
+<li>No additional on-premise instances will be added to the Deployment Group.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly onPremiseInstanceTags?: InstanceTagSet;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="instancetagset.html#aws_codedeploy_InstanceTagSet">InstanceTagSet</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codedeploy_ServerDeploymentGroupProps_role" data-uid="aws-codedeploy.ServerDeploymentGroupProps.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The service Role of this Deployment Group.</p>
+<ul>
+<li>A new Role will be created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

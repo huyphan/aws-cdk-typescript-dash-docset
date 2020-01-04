@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationMultipleTargetGroupsServiceBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationMultipleTargetGroupsServiceBase
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase">
+  
+  
+  <h1 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase">Class ApplicationMultipleTargetGroupsServiceBase
+  </h1>
+  <div class="markdown level0 summary"><p>The base class for ApplicationMultipleTargetGroupsEc2Service and ApplicationMultipleTargetGroupsFargateService classes.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the ApplicationMultipleTargetGroupsServiceBase class.</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_cluster">cluster</a></td>
+        <td><p>The cluster that hosts the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_desiredCount">desiredCount</a></td>
+        <td><p>The desired number of instantiations of the task definition to keep running on the service.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_listener">listener</a></td>
+        <td><p>The default listener for the service (first added listener).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_listeners">listeners</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_loadBalancer">loadBalancer</a></td>
+        <td><p>The default Application Load Balancer for the service (first added load balancer).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_logDriver">logDriver</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_targetGroups">targetGroups</a></td>
+        <td></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_addPortMappingForTargets">addPortMappingForTargets(container, targets)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_createAWSLogDriver">createAWSLogDriver(prefix)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_findListener">findListener(name)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_getDefaultCluster">getDefaultCluster(scope, vpc)</a></td>
+        <td><p>Returns the default cluster.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationmultipletargetgroupsservicebase.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_registerECSTargets">registerECSTargets(service, container, targets)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_constructor" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the ApplicationMultipleTargetGroupsServiceBase class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: Construct, id: string, props?: ApplicationMultipleTargetGroupsServiceBaseProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="applicationmultipletargetgroupsservicebaseprops.html#aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBaseProps">ApplicationMultipleTargetGroupsServiceBaseProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_cluster" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.cluster">cluster</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The cluster that hosts the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cluster: ICluster;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ICluster</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_desiredCount" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.desiredCount">desiredCount</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The desired number of instantiations of the task definition to keep running on the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly desiredCount: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_listener" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.listener">listener</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The default listener for the service (first added listener).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly listener: ApplicationListener;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-elasticloadbalancingv2/applicationlistener.html#aws_elasticloadbalancingv2_ApplicationListener">ApplicationListener</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_listeners" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.listeners">listeners</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected listeners: ApplicationListener[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ApplicationListener[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_loadBalancer" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.loadBalancer">loadBalancer</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The default Application Load Balancer for the service (first added load balancer).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly loadBalancer: ApplicationLoadBalancer;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-elasticloadbalancingv2/applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer">ApplicationLoadBalancer</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_logDriver" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.logDriver">logDriver</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected logDriver?: LogDriver;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-ecs/logdriver.html#aws_ecs_LogDriver">LogDriver</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_targetGroups" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.targetGroups">targetGroups</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected targetGroups: ApplicationTargetGroup[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ApplicationTargetGroup[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_addPortMappingForTargets" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.addPortMappingForTargets">addPortMappingForTargets(container, targets)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected addPortMappingForTargets(container: ContainerDefinition, targets: ApplicationTargetProps[]): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">container</span> <span class="parametertype"><a class="xref" href="../aws-ecs/containerdefinition.html#aws_ecs_ContainerDefinition">ContainerDefinition</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">targets</span> <span class="parametertype"><span class="xref">ApplicationTargetProps[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_createAWSLogDriver" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.createAWSLogDriver">createAWSLogDriver(prefix)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected createAWSLogDriver(prefix: string): AwsLogDriver;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">prefix</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="../aws-ecs/awslogdriver.html#aws_ecs_AwsLogDriver">AwsLogDriver</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_findListener" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.findListener">findListener(name)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected findListener(name?: string): ApplicationListener;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">name</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="../aws-elasticloadbalancingv2/applicationlistener.html#aws_elasticloadbalancingv2_ApplicationListener">ApplicationListener</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_getDefaultCluster" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.getDefaultCluster">getDefaultCluster(scope, vpc)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Returns the default cluster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected getDefaultCluster(scope: Construct, vpc?: IVpc): Cluster;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">vpc</span> <span class="parametertype"><a class="xref" href="../aws-ec2/ivpc.html#aws_ec2_IVpc">IVpc</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">Cluster</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_patterns_ApplicationMultipleTargetGroupsServiceBase_registerECSTargets" data-uid="aws-ecs-patterns.ApplicationMultipleTargetGroupsServiceBase.registerECSTargets">registerECSTargets(service, container, targets)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected registerECSTargets(service: BaseService, container: ContainerDefinition, targets: ApplicationTargetProps[]): ApplicationTargetGroup;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">service</span> <span class="parametertype"><a class="xref" href="../aws-ecs/baseservice.html#aws_ecs_BaseService">BaseService</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">container</span> <span class="parametertype"><a class="xref" href="../aws-ecs/containerdefinition.html#aws_ecs_ContainerDefinition">ContainerDefinition</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">targets</span> <span class="parametertype"><span class="xref">ApplicationTargetProps[]</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="../aws-elasticloadbalancingv2/applicationtargetgroup.html#aws_elasticloadbalancingv2_ApplicationTargetGroup">ApplicationTargetGroup</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

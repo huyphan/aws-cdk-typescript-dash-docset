@@ -1,0 +1,889 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationLoadBalancer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationLoadBalancer
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer">
+  
+  
+  <h1 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer">Class ApplicationLoadBalancer
+  </h1>
+  <div class="markdown level0 summary"><p>Define an Application Load Balancer</p>
+<p> AWS::ElasticLoadBalancingV2::LoadBalancer</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Constructs a new instance of the <a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer">ApplicationLoadBalancer</a> class</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_connections">connections</a></td>
+        <td></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_addListener">addListener(id, props)</a></td>
+        <td><p>Add a new listener to this load balancer</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_fromApplicationLoadBalancerAttributes">fromApplicationLoadBalancerAttributes(scope, id, attrs)</a></td>
+        <td><p>Import an existing Application Load Balancer</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_logAccessLogs">logAccessLogs(bucket, prefix)</a></td>
+        <td><p>Enable access logging for this load balancer.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metric">metric(metricName, props)</a></td>
+        <td><p>Return the given named metric for this Application Load Balancer</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricActiveConnectionCount">metricActiveConnectionCount(props)</a></td>
+        <td><p>The total number of concurrent TCP connections active from clients to the load balancer and from the load balancer to targets.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricClientTlsNegotiationErrorCount">metricClientTlsNegotiationErrorCount(props)</a></td>
+        <td><p>The number of TLS connections initiated by the client that did not establish a session with the load balancer. Possible causes include a mismatch of ciphers or protocols.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricConsumedLCUs">metricConsumedLCUs(props)</a></td>
+        <td><p>The number of load balancer capacity units (LCU) used by your load balancer.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthError">metricElbAuthError(props)</a></td>
+        <td><p>The number of user authentications that could not be completed</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthFailure">metricElbAuthFailure(props)</a></td>
+        <td><p>The number of user authentications that could not be completed because the IdP denied access to the user or an authorization code was used more than once.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthLatency">metricElbAuthLatency(props)</a></td>
+        <td><p>The time elapsed, in milliseconds, to query the IdP for the ID token and user info.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthSuccess">metricElbAuthSuccess(props)</a></td>
+        <td><p>The number of authenticate actions that were successful.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpCodeElb">metricHttpCodeElb(code, props)</a></td>
+        <td><p>The number of HTTP 3xx/4xx/5xx codes that originate from the load balancer.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpCodeTarget">metricHttpCodeTarget(code, props)</a></td>
+        <td><p>The number of HTTP 2xx/3xx/4xx/5xx response codes generated by all targets in the load balancer.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpFixedResponseCount">metricHttpFixedResponseCount(props)</a></td>
+        <td><p>The number of fixed-response actions that were successful.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpRedirectCount">metricHttpRedirectCount(props)</a></td>
+        <td><p>The number of redirect actions that were successful.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpRedirectUrlLimitExceededCount">metricHttpRedirectUrlLimitExceededCount(props)</a></td>
+        <td><p>The number of redirect actions that couldn&#39;t be completed because the URL in the response location header is larger than 8K.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricIpv6ProcessedBytes">metricIpv6ProcessedBytes(props)</a></td>
+        <td><p>The total number of bytes processed by the load balancer over IPv6.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricIpv6RequestCount">metricIpv6RequestCount(props)</a></td>
+        <td><p>The number of IPv6 requests received by the load balancer.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricNewConnectionCount">metricNewConnectionCount(props)</a></td>
+        <td><p>The total number of new TCP connections established from clients to the load balancer and from the load balancer to targets.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricProcessedBytes">metricProcessedBytes(props)</a></td>
+        <td><p>The total number of bytes processed by the load balancer over IPv4 and IPv6.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRejectedConnectionCount">metricRejectedConnectionCount(props)</a></td>
+        <td><p>The number of connections that were rejected because the load balancer had reached its maximum number of connections.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRequestCount">metricRequestCount(props)</a></td>
+        <td><p>The number of requests processed over IPv4 and IPv6.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRuleEvaluations">metricRuleEvaluations(props)</a></td>
+        <td><p>The number of rules processed by the load balancer given a request rate averaged over an hour.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetConnectionErrorCount">metricTargetConnectionErrorCount(props)</a></td>
+        <td><p>The number of connections that were not successfully established between the load balancer and target.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetResponseTime">metricTargetResponseTime(props)</a></td>
+        <td><p>The time elapsed, in seconds, after the request leaves the load balancer until a response from the target is received.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetTLSNegotiationErrorCount">metricTargetTLSNegotiationErrorCount(props)</a></td>
+        <td><p>The number of TLS connections initiated by the load balancer that did not establish a session with the target.</p></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_constructor" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="applicationloadbalancer.html#aws_elasticloadbalancingv2_ApplicationLoadBalancer">ApplicationLoadBalancer</a> class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: Construct, id: string, props: ApplicationLoadBalancerProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">ApplicationLoadBalancerProps</span></span></dt>
+    <dd></dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_connections" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.connections">connections</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly connections: ec2.Connections;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ec2.Connections</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_addListener" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.addListener">addListener(id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Add a new listener to this load balancer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">addListener(id: string, props: BaseApplicationListenerProps): ApplicationListener;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><a class="xref" href="baseapplicationlistenerprops.html#aws_elasticloadbalancingv2_BaseApplicationListenerProps">BaseApplicationListenerProps</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="applicationlistener.html#aws_elasticloadbalancingv2_ApplicationListener">ApplicationListener</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_fromApplicationLoadBalancerAttributes" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.fromApplicationLoadBalancerAttributes">fromApplicationLoadBalancerAttributes(scope, id, attrs)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Import an existing Application Load Balancer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static fromApplicationLoadBalancerAttributes(scope: Construct, id: string, attrs: ApplicationLoadBalancerAttributes): IApplicationLoadBalancer;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><a class="xref" href="../core/construct.html#core_Construct">Construct</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">attrs</span> <span class="parametertype"><a class="xref" href="applicationloadbalancerattributes.html#aws_elasticloadbalancingv2_ApplicationLoadBalancerAttributes">ApplicationLoadBalancerAttributes</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="iapplicationloadbalancer.html#aws_elasticloadbalancingv2_IApplicationLoadBalancer">IApplicationLoadBalancer</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_logAccessLogs" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.logAccessLogs">logAccessLogs(bucket, prefix)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable access logging for this load balancer.</p>
+<p>A region must be specified on the stack containing the load balancer; you cannot enable logging on environment-agnostic stacks. See <a href="https://docs.aws.amazon.com/cdk/latest/guide/environments.html">https://docs.aws.amazon.com/cdk/latest/guide/environments.html</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">logAccessLogs(bucket: s3.IBucket, prefix?: string): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">bucket</span> <span class="parametertype"><span class="xref">s3.IBucket</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">prefix</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metric" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metric">metric(metricName, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Return the given named metric for this Application Load Balancer</p>
+<p> Average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metric(metricName: string, props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">metricName</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricActiveConnectionCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricActiveConnectionCount">metricActiveConnectionCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The total number of concurrent TCP connections active from clients to the load balancer and from the load balancer to targets.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricActiveConnectionCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricClientTlsNegotiationErrorCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricClientTlsNegotiationErrorCount">metricClientTlsNegotiationErrorCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of TLS connections initiated by the client that did not establish a session with the load balancer. Possible causes include a mismatch of ciphers or protocols.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricClientTlsNegotiationErrorCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricConsumedLCUs" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricConsumedLCUs">metricConsumedLCUs(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of load balancer capacity units (LCU) used by your load balancer.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricConsumedLCUs(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthError" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricElbAuthError">metricElbAuthError(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of user authentications that could not be completed</p>
+<p>Because an authenticate action was misconfigured, the load balancer couldn&#39;t establish a connection with the IdP, or the load balancer couldn&#39;t complete the authentication flow due to an internal error.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricElbAuthError(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthFailure" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricElbAuthFailure">metricElbAuthFailure(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of user authentications that could not be completed because the IdP denied access to the user or an authorization code was used more than once.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricElbAuthFailure(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthLatency" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricElbAuthLatency">metricElbAuthLatency(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The time elapsed, in milliseconds, to query the IdP for the ID token and user info.</p>
+<p>If one or more of these operations fail, this is the time to failure.</p>
+<p> Average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricElbAuthLatency(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricElbAuthSuccess" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricElbAuthSuccess">metricElbAuthSuccess(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of authenticate actions that were successful.</p>
+<p>This metric is incremented at the end of the authentication workflow, after the load balancer has retrieved the user claims from the IdP.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricElbAuthSuccess(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpCodeElb" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricHttpCodeElb">metricHttpCodeElb(code, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of HTTP 3xx/4xx/5xx codes that originate from the load balancer.</p>
+<p>This does not include any response codes generated by the targets.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHttpCodeElb(code: HttpCodeElb, props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">code</span> <span class="parametertype"><a class="xref" href="httpcodeelb.html#aws_elasticloadbalancingv2_HttpCodeElb">HttpCodeElb</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpCodeTarget" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricHttpCodeTarget">metricHttpCodeTarget(code, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of HTTP 2xx/3xx/4xx/5xx response codes generated by all targets in the load balancer.</p>
+<p>This does not include any response codes generated by the load balancer.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHttpCodeTarget(code: HttpCodeTarget, props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">code</span> <span class="parametertype"><a class="xref" href="httpcodetarget.html#aws_elasticloadbalancingv2_HttpCodeTarget">HttpCodeTarget</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpFixedResponseCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricHttpFixedResponseCount">metricHttpFixedResponseCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of fixed-response actions that were successful.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHttpFixedResponseCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpRedirectCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricHttpRedirectCount">metricHttpRedirectCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of redirect actions that were successful.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHttpRedirectCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricHttpRedirectUrlLimitExceededCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricHttpRedirectUrlLimitExceededCount">metricHttpRedirectUrlLimitExceededCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of redirect actions that couldn&#39;t be completed because the URL in the response location header is larger than 8K.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricHttpRedirectUrlLimitExceededCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricIpv6ProcessedBytes" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricIpv6ProcessedBytes">metricIpv6ProcessedBytes(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The total number of bytes processed by the load balancer over IPv6.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricIpv6ProcessedBytes(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricIpv6RequestCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricIpv6RequestCount">metricIpv6RequestCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of IPv6 requests received by the load balancer.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricIpv6RequestCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricNewConnectionCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricNewConnectionCount">metricNewConnectionCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The total number of new TCP connections established from clients to the load balancer and from the load balancer to targets.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricNewConnectionCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricProcessedBytes" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricProcessedBytes">metricProcessedBytes(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The total number of bytes processed by the load balancer over IPv4 and IPv6.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricProcessedBytes(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRejectedConnectionCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricRejectedConnectionCount">metricRejectedConnectionCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of connections that were rejected because the load balancer had reached its maximum number of connections.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricRejectedConnectionCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRequestCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricRequestCount">metricRequestCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of requests processed over IPv4 and IPv6.</p>
+<p>This count includes only the requests with a response generated by a target of the load balancer.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricRequestCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricRuleEvaluations" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricRuleEvaluations">metricRuleEvaluations(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of rules processed by the load balancer given a request rate averaged over an hour.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricRuleEvaluations(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetConnectionErrorCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricTargetConnectionErrorCount">metricTargetConnectionErrorCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of connections that were not successfully established between the load balancer and target.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricTargetConnectionErrorCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetResponseTime" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricTargetResponseTime">metricTargetResponseTime(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The time elapsed, in seconds, after the request leaves the load balancer until a response from the target is received.</p>
+<p> Average over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricTargetResponseTime(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_elasticloadbalancingv2_ApplicationLoadBalancer_metricTargetTLSNegotiationErrorCount" data-uid="aws-elasticloadbalancingv2.ApplicationLoadBalancer.metricTargetTLSNegotiationErrorCount">metricTargetTLSNegotiationErrorCount(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of TLS connections initiated by the load balancer that did not establish a session with the target.</p>
+<p>Possible causes include a mismatch of ciphers or protocols.</p>
+<p> Sum over 5 minutes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">metricTargetTLSNegotiationErrorCount(props?: cloudwatch.MetricOptions): cloudwatch.Metric;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">cloudwatch.MetricOptions</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">cloudwatch.Metric</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Arn
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Arn
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="core.Arn">
+  
+  
+  <h1 id="core_Arn" data-uid="core.Arn">Class Arn
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="core_Arn_synopsis">Synopsis</h3>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="arn.html#core_Arn_format">format(components, stack)</a></td>
+        <td><p>Creates an ARN from components.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="arn.html#core_Arn_parse">parse(arn, sepIfToken, hasName)</a></td>
+        <td><p>Given an ARN, parses it and returns components.</p></td>
+    </tr>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="core_Arn_format" data-uid="core.Arn.format">format(components, stack)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Creates an ARN from components.</p>
+<p>If <code>partition</code><!-- -->, <code>region</code> or <code>account</code> are not specified, the stack&#39;s partition, region and account will be used.</p>
+<p>If any component is the empty string, an empty string will be inserted into the generated ARN at the location that component corresponds to.</p>
+<p>The ARN will be formatted as follows:</p>
+<p>arn:{partition}:{service}:{region}:{account}:{resource}{sep}{resource-name}</p>
+<p>The required ARN pieces that are omitted will be taken from the stack that the &#39;scope&#39; is attached to. If all ARN pieces are supplied, the supplied scope can be &#39;undefined&#39;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static format(components: ArnComponents, stack: Stack): string;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">components</span> <span class="parametertype"><a class="xref" href="arncomponents.html#core_ArnComponents">ArnComponents</a></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">stack</span> <span class="parametertype"><a class="xref" href="stack.html#core_Stack">Stack</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Arn_parse" data-uid="core.Arn.parse">parse(arn, sepIfToken, hasName)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Given an ARN, parses it and returns components.</p>
+<p>If the ARN is a concrete string, it will be parsed and validated. The separator (<code>sep</code><!-- -->) will be set to &#39;/&#39; if the 6th component includes a &#39;/&#39;, in which case, <code>resource</code> will be set to the value before the &#39;/&#39; and <code>resourceName</code> will be the rest. In case there is no &#39;/&#39;, <code>resource</code> will be set to the 6th components and <code>resourceName</code> will be set to the rest of the string.</p>
+<p>If the ARN includes tokens (or is a token), the ARN cannot be validated, since we don&#39;t have the actual value yet at the time of this function call. You will have to know the separator and the type of ARN. The resulting <code>ArnComponents</code> object will contain tokens for the subexpressions of the ARN, not string literals. In this case this function cannot properly parse the complete final resourceName (path) out of ARNs that use &#39;/&#39; to both separate the &#39;resource&#39; from the &#39;resourceName&#39; AND to subdivide the resourceName further. For example, in S3 ARNs:</p>
+<p>arn:aws:s3:::my_corporate_bucket/path/to/exampleobject.png</p>
+<p>After parsing the resourceName will not contain &#39;path/to/exampleobject.png&#39; but simply &#39;path&#39;. This is a limitation because there is no slicing functionality in CloudFormation templates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static parse(arn: string, sepIfToken?: string, hasName?: boolean): ArnComponents;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">arn</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">sepIfToken</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+    <dt><span class="parametername">hasName</span> <span class="parametertype"><span class="xref">boolean</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="arncomponents.html#core_ArnComponents">ArnComponents</a></p>
+  <p><p>an ArnComponents object which allows access to the various components of the ARN.</p>
+</p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

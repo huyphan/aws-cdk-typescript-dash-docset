@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface CommonProjectProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface CommonProjectProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-codebuild.CommonProjectProps">
+  
+  
+  <h1 id="aws_codebuild_CommonProjectProps" data-uid="aws-codebuild.CommonProjectProps">Interface CommonProjectProps
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_codebuild_CommonProjectProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_allowAllOutbound">allowAllOutbound</a></td>
+        <td><p>Whether to allow the CodeBuild to send all network traffic</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_badge">badge</a></td>
+        <td><p>Indicates whether AWS CodeBuild generates a publicly accessible URL for your project&#39;s build badge. For more information, see Build Badges Sample in the AWS CodeBuild User Guide.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_buildSpec">buildSpec</a></td>
+        <td><p>Filename or contents of buildspec in JSON format.  https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-example</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_cache">cache</a></td>
+        <td><p>Caching strategy to use.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_description">description</a></td>
+        <td><p>A description of the project. Use the description to identify the purpose of the project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_encryptionKey">encryptionKey</a></td>
+        <td><p>Encryption key to use to read and write artifacts.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_environment">environment</a></td>
+        <td><p>Build environment to use for the build.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_environmentVariables">environmentVariables</a></td>
+        <td><p>Additional environment variables to add to the build environment.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_projectName">projectName</a></td>
+        <td><p>The physical, human-readable name of the CodeBuild Project.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_role">role</a></td>
+        <td><p>Service Role to assume while running the build.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_securityGroups">securityGroups</a></td>
+        <td><p>What security group to associate with the codebuild project&#39;s network interfaces. If no security group is identified, one will be created automatically.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_subnetSelection">subnetSelection</a></td>
+        <td><p>Where to place the network interfaces within the VPC.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_timeout">timeout</a></td>
+        <td><p>The number of minutes after which AWS CodeBuild stops the build if it&#39;s not complete. For valid values, see the timeoutInMinutes field in the AWS CodeBuild User Guide.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="commonprojectprops.html#aws_codebuild_CommonProjectProps_vpc">vpc</a></td>
+        <td><p>VPC network to place codebuild network interfaces</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_allowAllOutbound" data-uid="aws-codebuild.CommonProjectProps.allowAllOutbound">allowAllOutbound</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether to allow the CodeBuild to send all network traffic</p>
+<p>If set to false, you must individually add traffic rules to allow the CodeBuild project to connect to network targets.</p>
+<p>Only used if &#39;vpc&#39; is supplied.</p>
+<p> true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly allowAllOutbound?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_badge" data-uid="aws-codebuild.CommonProjectProps.badge">badge</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Indicates whether AWS CodeBuild generates a publicly accessible URL for your project&#39;s build badge. For more information, see Build Badges Sample in the AWS CodeBuild User Guide.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly badge?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_buildSpec" data-uid="aws-codebuild.CommonProjectProps.buildSpec">buildSpec</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Filename or contents of buildspec in JSON format.  https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec-ref-example</p>
+<ul>
+<li>Empty buildspec.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly buildSpec?: BuildSpec;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="buildspec.html#aws_codebuild_BuildSpec">BuildSpec</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_cache" data-uid="aws-codebuild.CommonProjectProps.cache">cache</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Caching strategy to use.</p>
+<p> Cache.none</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly cache?: Cache;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="cache.html#aws_codebuild_Cache">Cache</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_description" data-uid="aws-codebuild.CommonProjectProps.description">description</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A description of the project. Use the description to identify the purpose of the project.</p>
+<ul>
+<li>No description.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly description?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_encryptionKey" data-uid="aws-codebuild.CommonProjectProps.encryptionKey">encryptionKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Encryption key to use to read and write artifacts.</p>
+<ul>
+<li>The AWS-managed CMK for Amazon Simple Storage Service (Amazon S3) is used.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly encryptionKey?: kms.IKey;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">kms.IKey</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_environment" data-uid="aws-codebuild.CommonProjectProps.environment">environment</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Build environment to use for the build.</p>
+<p> BuildEnvironment.LinuxBuildImage.STANDARD_1_0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly environment?: BuildEnvironment;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="buildenvironment.html#aws_codebuild_BuildEnvironment">BuildEnvironment</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_environmentVariables" data-uid="aws-codebuild.CommonProjectProps.environmentVariables">environmentVariables</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Additional environment variables to add to the build environment.</p>
+<ul>
+<li>No additional environment variables are specified.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly environmentVariables?:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [name: string]: BuildEnvironmentVariable;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_projectName" data-uid="aws-codebuild.CommonProjectProps.projectName">projectName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The physical, human-readable name of the CodeBuild Project.</p>
+<ul>
+<li>Name is automatically generated.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly projectName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_role" data-uid="aws-codebuild.CommonProjectProps.role">role</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Service Role to assume while running the build.</p>
+<ul>
+<li>A role will be created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly role?: iam.IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">iam.IRole</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_securityGroups" data-uid="aws-codebuild.CommonProjectProps.securityGroups">securityGroups</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>What security group to associate with the codebuild project&#39;s network interfaces. If no security group is identified, one will be created automatically.</p>
+<p>Only used if &#39;vpc&#39; is supplied.</p>
+<ul>
+<li>Security group will be automatically created.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly securityGroups?: ec2.ISecurityGroup[];</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ec2.ISecurityGroup[]</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_subnetSelection" data-uid="aws-codebuild.CommonProjectProps.subnetSelection">subnetSelection</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Where to place the network interfaces within the VPC.</p>
+<p>Only used if &#39;vpc&#39; is supplied.</p>
+<ul>
+<li>All private subnets.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly subnetSelection?: ec2.SubnetSelection;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ec2.SubnetSelection</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_timeout" data-uid="aws-codebuild.CommonProjectProps.timeout">timeout</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The number of minutes after which AWS CodeBuild stops the build if it&#39;s not complete. For valid values, see the timeoutInMinutes field in the AWS CodeBuild User Guide.</p>
+<p> Duration.hours(1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly timeout?: Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/duration.html#core_Duration">Duration</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_codebuild_CommonProjectProps_vpc" data-uid="aws-codebuild.CommonProjectProps.vpc">vpc</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>VPC network to place codebuild network interfaces</p>
+<p>Specify this if the codebuild project needs to access resources in a VPC.</p>
+<ul>
+<li>No VPC is specified.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly vpc?: ec2.IVpc;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">ec2.IVpc</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

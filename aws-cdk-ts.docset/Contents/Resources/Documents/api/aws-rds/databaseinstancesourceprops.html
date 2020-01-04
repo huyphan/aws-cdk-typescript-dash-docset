@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface DatabaseInstanceSourceProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface DatabaseInstanceSourceProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-rds.DatabaseInstanceSourceProps">
+  
+  
+  <h1 id="aws_rds_DatabaseInstanceSourceProps" data-uid="aws-rds.DatabaseInstanceSourceProps">Interface DatabaseInstanceSourceProps
+  </h1>
+  <div class="markdown level0 summary"><p>Construction properties for a DatabaseInstanceSource</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_rds_DatabaseInstanceSourceProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_allocatedStorage">allocatedStorage</a></td>
+        <td><p>The allocated storage size, specified in gigabytes (GB).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_allowMajorVersionUpgrade">allowMajorVersionUpgrade</a></td>
+        <td><p>Whether to allow major version upgrades.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_databaseName">databaseName</a></td>
+        <td><p>The name of the database.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_engine">engine</a></td>
+        <td><p>The database engine.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_engineVersion">engineVersion</a></td>
+        <td><p>The engine version. To prevent automatic upgrades, be sure to specify the full version number.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_licenseModel">licenseModel</a></td>
+        <td><p>The license model.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_masterUserPassword">masterUserPassword</a></td>
+        <td><p>The master user password.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_parameterGroup">parameterGroup</a></td>
+        <td><p>The DB parameter group to associate with the instance.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_secretKmsKey">secretKmsKey</a></td>
+        <td><p>The KMS key to use to encrypt the secret for the master user password.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseinstancesourceprops.html#aws_rds_DatabaseInstanceSourceProps_timezone">timezone</a></td>
+        <td><p>The time zone of the instance.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_allocatedStorage" data-uid="aws-rds.DatabaseInstanceSourceProps.allocatedStorage">allocatedStorage</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The allocated storage size, specified in gigabytes (GB).</p>
+<p> 100</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly allocatedStorage?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_allowMajorVersionUpgrade" data-uid="aws-rds.DatabaseInstanceSourceProps.allowMajorVersionUpgrade">allowMajorVersionUpgrade</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether to allow major version upgrades.</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly allowMajorVersionUpgrade?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_databaseName" data-uid="aws-rds.DatabaseInstanceSourceProps.databaseName">databaseName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The name of the database.</p>
+<ul>
+<li>no name</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly databaseName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_engine" data-uid="aws-rds.DatabaseInstanceSourceProps.engine">engine</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The database engine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly engine: DatabaseInstanceEngine;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="databaseinstanceengine.html#aws_rds_DatabaseInstanceEngine">DatabaseInstanceEngine</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_engineVersion" data-uid="aws-rds.DatabaseInstanceSourceProps.engineVersion">engineVersion</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The engine version. To prevent automatic upgrades, be sure to specify the full version number.</p>
+<ul>
+<li>RDS default engine version</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly engineVersion?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_licenseModel" data-uid="aws-rds.DatabaseInstanceSourceProps.licenseModel">licenseModel</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The license model.</p>
+<ul>
+<li>RDS default license model</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly licenseModel?: LicenseModel;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="licensemodel.html#aws_rds_LicenseModel">LicenseModel</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_masterUserPassword" data-uid="aws-rds.DatabaseInstanceSourceProps.masterUserPassword">masterUserPassword</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The master user password.</p>
+<ul>
+<li>a Secrets Manager generated password</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly masterUserPassword?: SecretValue;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/secretvalue.html#core_SecretValue">SecretValue</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_parameterGroup" data-uid="aws-rds.DatabaseInstanceSourceProps.parameterGroup">parameterGroup</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The DB parameter group to associate with the instance.</p>
+<ul>
+<li>no parameter group</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly parameterGroup?: IParameterGroup;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="iparametergroup.html#aws_rds_IParameterGroup">IParameterGroup</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_secretKmsKey" data-uid="aws-rds.DatabaseInstanceSourceProps.secretKmsKey">secretKmsKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The KMS key to use to encrypt the secret for the master user password.</p>
+<ul>
+<li>default master key</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly secretKmsKey?: kms.IKey;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">kms.IKey</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseInstanceSourceProps_timezone" data-uid="aws-rds.DatabaseInstanceSourceProps.timezone">timezone</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The time zone of the instance.</p>
+<ul>
+<li>RDS default timezone</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly timezone?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Duration
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Duration
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="core.Duration">
+  
+  
+  <h1 id="core_Duration" data-uid="core.Duration">Class Duration
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a length of time.</p>
+<p>The amount can be specified either as a literal value (e.g: <code>10</code><!-- -->) which cannot be negative, or as an unresolved number token.</p>
+<p>Whent he amount is passed as an token, unit conversion is not possible.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="core_Duration_synopsis">Synopsis</h3>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_days">days(amount)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_hours">hours(amount)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_millis">millis(amount)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_minutes">minutes(amount)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_parse">parse(duration)</a></td>
+        <td><p>Parse a period formatted according to the ISO 8601 standard (see <a href="https://www.iso.org/fr/standard/70907.html">https://www.iso.org/fr/standard/70907.html</a>).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_seconds">seconds(amount)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toDays">toDays(opts)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toHours">toHours(opts)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toISOString">toISOString()</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toMilliseconds">toMilliseconds(opts)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toMinutes">toMinutes(opts)</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="duration.html#core_Duration_toSeconds">toSeconds(opts)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="core_Duration_days" data-uid="core.Duration.days">days(amount)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static days(amount: number): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">amount</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>a new <code>Duration</code> representing <code>amount</code> Days.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_hours" data-uid="core.Duration.hours">hours(amount)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static hours(amount: number): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">amount</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>a new <code>Duration</code> representing <code>amount</code> Hours.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_millis" data-uid="core.Duration.millis">millis(amount)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static millis(amount: number): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">amount</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>a new <code>Duration</code> representing <code>amount</code> ms.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_minutes" data-uid="core.Duration.minutes">minutes(amount)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static minutes(amount: number): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">amount</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>a new <code>Duration</code> representing <code>amount</code> Minutes.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_parse" data-uid="core.Duration.parse">parse(duration)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Parse a period formatted according to the ISO 8601 standard (see <a href="https://www.iso.org/fr/standard/70907.html">https://www.iso.org/fr/standard/70907.html</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static parse(duration: string): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">duration</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>the parsed <code>Duration</code><!-- -->.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_seconds" data-uid="core.Duration.seconds">seconds(amount)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">static seconds(amount: number): Duration;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">amount</span> <span class="parametertype"><span class="xref">number</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><a class="xref" href="duration.html#core_Duration">Duration</a></p>
+  <p><p>a new <code>Duration</code> representing <code>amount</code> Seconds.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toDays" data-uid="core.Duration.toDays">toDays(opts)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toDays(opts?: TimeConversionOptions): number;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">opts</span> <span class="parametertype"><a class="xref" href="timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p><p>the value of this <code>Duration</code> expressed in Days.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toHours" data-uid="core.Duration.toHours">toHours(opts)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toHours(opts?: TimeConversionOptions): number;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">opts</span> <span class="parametertype"><a class="xref" href="timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p><p>the value of this <code>Duration</code> expressed in Hours.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toISOString" data-uid="core.Duration.toISOString">toISOString()</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toISOString(): string;</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p><p>an ISO 8601 representation of this period (see <a href="https://www.iso.org/fr/standard/70907.html">https://www.iso.org/fr/standard/70907.html</a>).</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toMilliseconds" data-uid="core.Duration.toMilliseconds">toMilliseconds(opts)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toMilliseconds(opts?: TimeConversionOptions): number;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">opts</span> <span class="parametertype"><a class="xref" href="timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p><p>the value of this <code>Duration</code> expressed in Milliseconds.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toMinutes" data-uid="core.Duration.toMinutes">toMinutes(opts)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toMinutes(opts?: TimeConversionOptions): number;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">opts</span> <span class="parametertype"><a class="xref" href="timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p><p>the value of this <code>Duration</code> expressed in Minutes.</p>
+</p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="core_Duration_toSeconds" data-uid="core.Duration.toSeconds">toSeconds(opts)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">toSeconds(opts?: TimeConversionOptions): number;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">opts</span> <span class="parametertype"><a class="xref" href="timeconversionoptions.html#core_TimeConversionOptions">TimeConversionOptions</a></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p><p>the value of this <code>Duration</code> expressed in Seconds.</p>
+</p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,516 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface DatabaseClusterProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface DatabaseClusterProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-rds.DatabaseClusterProps">
+  
+  
+  <h1 id="aws_rds_DatabaseClusterProps" data-uid="aws-rds.DatabaseClusterProps">Interface DatabaseClusterProps
+  </h1>
+  <div class="markdown level0 summary"><p>Properties for a new database cluster</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_rds_DatabaseClusterProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_backup">backup</a></td>
+        <td><p>Backup settings</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_clusterIdentifier">clusterIdentifier</a></td>
+        <td><p>An optional identifier for the cluster</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_defaultDatabaseName">defaultDatabaseName</a></td>
+        <td><p>Name of a database which is automatically created inside the cluster</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_engine">engine</a></td>
+        <td><p>What kind of database to start</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_engineVersion">engineVersion</a></td>
+        <td><p>What version of the database to start</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_instanceIdentifierBase">instanceIdentifierBase</a></td>
+        <td><p>Base identifier for instances</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_instanceProps">instanceProps</a></td>
+        <td><p>Settings for the individual instances that are launched</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_instances">instances</a></td>
+        <td><p>How many replicas/instances to create</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_kmsKey">kmsKey</a></td>
+        <td><p>The KMS key for storage encryption. If specified <code>storageEncrypted</code> will be set to <code>true</code><!-- -->.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_masterUser">masterUser</a></td>
+        <td><p>Username and password for the administrative user</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_monitoringInterval">monitoringInterval</a></td>
+        <td><p>The interval, in seconds, between points when Amazon RDS collects enhanced monitoring metrics for the DB instances.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_monitoringRole">monitoringRole</a></td>
+        <td><p>Role that will be used to manage DB instances monitoring.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_parameterGroup">parameterGroup</a></td>
+        <td><p>Additional parameters to pass to the database engine</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_port">port</a></td>
+        <td><p>What port to listen on</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_preferredMaintenanceWindow">preferredMaintenanceWindow</a></td>
+        <td><p>A daily time range in 24-hours UTC format in which backups preferably execute.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_removalPolicy">removalPolicy</a></td>
+        <td><p>The removal policy to apply when the cluster and its instances are removed from the stack or replaced during an update.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="databaseclusterprops.html#aws_rds_DatabaseClusterProps_storageEncrypted">storageEncrypted</a></td>
+        <td><p>Whether to enable storage encryption</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_backup" data-uid="aws-rds.DatabaseClusterProps.backup">backup</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Backup settings</p>
+<ul>
+<li>Backup retention period for automated backups is 1 day. Backup preferred window is set to a 30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week.  https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html#USER_WorkingWithAutomatedBackups.BackupWindow</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly backup?: BackupProps;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="backupprops.html#aws_rds_BackupProps">BackupProps</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_clusterIdentifier" data-uid="aws-rds.DatabaseClusterProps.clusterIdentifier">clusterIdentifier</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>An optional identifier for the cluster</p>
+<ul>
+<li>A name is automatically generated.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly clusterIdentifier?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_defaultDatabaseName" data-uid="aws-rds.DatabaseClusterProps.defaultDatabaseName">defaultDatabaseName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Name of a database which is automatically created inside the cluster</p>
+<ul>
+<li>Database is not created in cluster.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly defaultDatabaseName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_engine" data-uid="aws-rds.DatabaseClusterProps.engine">engine</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>What kind of database to start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly engine: DatabaseClusterEngine;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="databaseclusterengine.html#aws_rds_DatabaseClusterEngine">DatabaseClusterEngine</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_engineVersion" data-uid="aws-rds.DatabaseClusterProps.engineVersion">engineVersion</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>What version of the database to start</p>
+<ul>
+<li>The default for the engine is used.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly engineVersion?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_instanceIdentifierBase" data-uid="aws-rds.DatabaseClusterProps.instanceIdentifierBase">instanceIdentifierBase</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Base identifier for instances</p>
+<p>Every replica is named by appending the replica number to this string, 1-based.</p>
+<ul>
+<li>clusterIdentifier is used with the word &quot;Instance&quot; appended. If clusterIdentifier is not provided, the identifier is automatically generated.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly instanceIdentifierBase?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_instanceProps" data-uid="aws-rds.DatabaseClusterProps.instanceProps">instanceProps</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Settings for the individual instances that are launched</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly instanceProps: InstanceProps;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">InstanceProps</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_instances" data-uid="aws-rds.DatabaseClusterProps.instances">instances</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>How many replicas/instances to create</p>
+<p>Has to be at least 1.</p>
+<p> 2</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly instances?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_kmsKey" data-uid="aws-rds.DatabaseClusterProps.kmsKey">kmsKey</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The KMS key for storage encryption. If specified <code>storageEncrypted</code> will be set to <code>true</code><!-- -->.</p>
+<ul>
+<li>default master key.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly kmsKey?: kms.IKey;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">kms.IKey</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_masterUser" data-uid="aws-rds.DatabaseClusterProps.masterUser">masterUser</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Username and password for the administrative user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly masterUser: Login;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="login.html#aws_rds_Login">Login</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_monitoringInterval" data-uid="aws-rds.DatabaseClusterProps.monitoringInterval">monitoringInterval</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The interval, in seconds, between points when Amazon RDS collects enhanced monitoring metrics for the DB instances.</p>
+<p> no enhanced monitoring</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly monitoringInterval?: Duration;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/duration.html#core_Duration">Duration</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_monitoringRole" data-uid="aws-rds.DatabaseClusterProps.monitoringRole">monitoringRole</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Role that will be used to manage DB instances monitoring.</p>
+<ul>
+<li>A role is automatically created for you</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly monitoringRole?: IRole;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../aws-iam/irole.html#aws_iam_IRole">IRole</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_parameterGroup" data-uid="aws-rds.DatabaseClusterProps.parameterGroup">parameterGroup</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Additional parameters to pass to the database engine</p>
+<ul>
+<li>No parameter group.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly parameterGroup?: IParameterGroup;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="iparametergroup.html#aws_rds_IParameterGroup">IParameterGroup</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_port" data-uid="aws-rds.DatabaseClusterProps.port">port</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>What port to listen on</p>
+<ul>
+<li>The default for the engine is used.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly port?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_preferredMaintenanceWindow" data-uid="aws-rds.DatabaseClusterProps.preferredMaintenanceWindow">preferredMaintenanceWindow</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>A daily time range in 24-hours UTC format in which backups preferably execute.</p>
+<p>Must be at least 30 minutes long.</p>
+<p>Example: &#39;01:00-02:00&#39;</p>
+<ul>
+<li>30-minute window selected at random from an 8-hour block of time for each AWS Region, occurring on a random day of the week.  https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_UpgradeDBInstance.Maintenance.html#Concepts.DBMaintenance</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly preferredMaintenanceWindow?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_removalPolicy" data-uid="aws-rds.DatabaseClusterProps.removalPolicy">removalPolicy</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>The removal policy to apply when the cluster and its instances are removed from the stack or replaced during an update.</p>
+<ul>
+<li>Retain cluster.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly removalPolicy?: RemovalPolicy;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/removalpolicy.html#core_RemovalPolicy">RemovalPolicy</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_rds_DatabaseClusterProps_storageEncrypted" data-uid="aws-rds.DatabaseClusterProps.storageEncrypted">storageEncrypted</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Whether to enable storage encryption</p>
+<p> false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly storageEncrypted?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface Channel
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface Channel
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-stepfunctions-tasks.Channel">
+  
+  
+  <h1 id="aws_stepfunctions_tasks_Channel" data-uid="aws-stepfunctions-tasks.Channel">Interface Channel
+  </h1>
+  <div class="markdown level0 summary"><p>Describes the training, validation or test dataset and the Amazon S3 location where it is stored.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_stepfunctions_tasks_Channel_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_channelName">channelName</a></td>
+        <td><p>Name of the channel</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_compressionType">compressionType</a></td>
+        <td><p>Compression type if training data is compressed</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_contentType">contentType</a></td>
+        <td><p>Content type</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_dataSource">dataSource</a></td>
+        <td><p>Location of the data channel</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_inputMode">inputMode</a></td>
+        <td><p>Input mode to use for the data channel in a training job.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_recordWrapperType">recordWrapperType</a></td>
+        <td><p>Record wrapper type</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="channel.html#aws_stepfunctions_tasks_Channel_shuffleConfig">shuffleConfig</a></td>
+        <td><p>Shuffle config option for input data in a channel.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_channelName" data-uid="aws-stepfunctions-tasks.Channel.channelName">channelName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Name of the channel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly channelName: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_compressionType" data-uid="aws-stepfunctions-tasks.Channel.compressionType">compressionType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Compression type if training data is compressed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly compressionType?: CompressionType;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="compressiontype.html#aws_stepfunctions_tasks_CompressionType">CompressionType</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_contentType" data-uid="aws-stepfunctions-tasks.Channel.contentType">contentType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Content type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly contentType?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_dataSource" data-uid="aws-stepfunctions-tasks.Channel.dataSource">dataSource</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Location of the data channel</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly dataSource: DataSource;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="datasource.html#aws_stepfunctions_tasks_DataSource">DataSource</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_inputMode" data-uid="aws-stepfunctions-tasks.Channel.inputMode">inputMode</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Input mode to use for the data channel in a training job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly inputMode?: InputMode;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="inputmode.html#aws_stepfunctions_tasks_InputMode">InputMode</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_recordWrapperType" data-uid="aws-stepfunctions-tasks.Channel.recordWrapperType">recordWrapperType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Record wrapper type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly recordWrapperType?: RecordWrapperType;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="recordwrappertype.html#aws_stepfunctions_tasks_RecordWrapperType">RecordWrapperType</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_stepfunctions_tasks_Channel_shuffleConfig" data-uid="aws-stepfunctions-tasks.Channel.shuffleConfig">shuffleConfig</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Shuffle config option for input data in a channel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly shuffleConfig?: ShuffleConfig;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="shuffleconfig.html#aws_stepfunctions_tasks_ShuffleConfig">ShuffleConfig</a></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

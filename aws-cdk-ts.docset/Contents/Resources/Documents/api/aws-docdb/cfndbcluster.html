@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CfnDBCluster
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CfnDBCluster
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-docdb.CfnDBCluster">
+  
+  
+  <h1 id="aws_docdb_CfnDBCluster" data-uid="aws-docdb.CfnDBCluster">Class CfnDBCluster
+  </h1>
+  <div class="markdown level0 summary"><p>A CloudFormation <code>AWS::DocDB::DBCluster</code></p>
+<p> AWS::DocDB::DBCluster  external  <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html">http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_docdb_CfnDBCluster_synopsis">Synopsis</h3>
+    <h4>Constructors
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_constructor">constructor(scope, id, props)</a></td>
+        <td><p>Create a new <code>AWS::DocDB::DBCluster</code><!-- -->.</p></td>
+    </tr>
+  </table>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_attrClusterResourceId">attrClusterResourceId</a></td>
+        <td><p>ClusterResourceId</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_attrEndpoint">attrEndpoint</a></td>
+        <td><p>Endpoint</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_attrPort">attrPort</a></td>
+        <td><p>Port</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_attrReadEndpoint">attrReadEndpoint</a></td>
+        <td><p>ReadEndpoint</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_availabilityZones">availabilityZones</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.AvailabilityZones</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-availabilityzones</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_backupRetentionPeriod">backupRetentionPeriod</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.BackupRetentionPeriod</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-backupretentionperiod</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_cfnProperties">cfnProperties</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_dbClusterIdentifier">dbClusterIdentifier</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.DBClusterIdentifier</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbclusteridentifier</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_dbClusterParameterGroupName">dbClusterParameterGroupName</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.DBClusterParameterGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbclusterparametergroupname</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_dbSubnetGroupName">dbSubnetGroupName</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.DBSubnetGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbsubnetgroupname</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_enableCloudwatchLogsExports">enableCloudwatchLogsExports</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.EnableCloudwatchLogsExports</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-enablecloudwatchlogsexports</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_engineVersion">engineVersion</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.EngineVersion</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-engineversion</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_kmsKeyId">kmsKeyId</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.KmsKeyId</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-kmskeyid</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_masterUsername">masterUsername</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.MasterUsername</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-masterusername</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_masterUserPassword">masterUserPassword</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.MasterUserPassword</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-masteruserpassword</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_port">port</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.Port</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-port</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_preferredBackupWindow">preferredBackupWindow</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.PreferredBackupWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-preferredbackupwindow</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_preferredMaintenanceWindow">preferredMaintenanceWindow</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.PreferredMaintenanceWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-preferredmaintenancewindow</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_snapshotIdentifier">snapshotIdentifier</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.SnapshotIdentifier</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-snapshotidentifier</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_storageEncrypted">storageEncrypted</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.StorageEncrypted</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-storageencrypted</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_tags">tags</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.Tags</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-tags</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_vpcSecurityGroupIds">vpcSecurityGroupIds</a></td>
+        <td><p><code>AWS::DocDB::DBCluster.VpcSecurityGroupIds</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-vpcsecuritygroupids</p></td>
+    </tr>
+  </table>
+    <h4>Methods
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_inspect">inspect(inspector)</a></td>
+        <td><p>Examines the CloudFormation resource and discloses attributes.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="cfndbcluster.html#aws_docdb_CfnDBCluster_renderProperties">renderProperties(props)</a></td>
+        <td></td>
+    </tr>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_constructor" data-uid="aws-docdb.CfnDBCluster.constructor">constructor(scope, id, props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Create a new <code>AWS::DocDB::DBCluster</code><!-- -->.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">constructor(scope: cdk.Construct, id: string, props: CfnDBClusterProps);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">scope</span> <span class="parametertype"><span class="xref">cdk.Construct</span></span></dt>
+    <dd><p>scope in which this resource is defined</p>
+</dd>
+    <dt><span class="parametername">id</span> <span class="parametertype"><span class="xref">string</span></span></dt>
+    <dd><p>scoped id of the resource</p>
+</dd>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">CfnDBClusterProps</span></span></dt>
+    <dd><p>resource properties</p>
+</dd>
+  </dl>
+  </div> <!-- indent -->
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_attrClusterResourceId" data-uid="aws-docdb.CfnDBCluster.attrClusterResourceId">attrClusterResourceId</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>ClusterResourceId</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrClusterResourceId: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_attrEndpoint" data-uid="aws-docdb.CfnDBCluster.attrEndpoint">attrEndpoint</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Endpoint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrEndpoint: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_attrPort" data-uid="aws-docdb.CfnDBCluster.attrPort">attrPort</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrPort: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_attrReadEndpoint" data-uid="aws-docdb.CfnDBCluster.attrReadEndpoint">attrReadEndpoint</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>ReadEndpoint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly attrReadEndpoint: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_availabilityZones" data-uid="aws-docdb.CfnDBCluster.availabilityZones">availabilityZones</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.AvailabilityZones</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-availabilityzones</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">availabilityZones: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_backupRetentionPeriod" data-uid="aws-docdb.CfnDBCluster.backupRetentionPeriod">backupRetentionPeriod</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.BackupRetentionPeriod</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-backupretentionperiod</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">backupRetentionPeriod: number | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_cfnProperties" data-uid="aws-docdb.CfnDBCluster.cfnProperties">cfnProperties</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected readonly cfnProperties:</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_dbClusterIdentifier" data-uid="aws-docdb.CfnDBCluster.dbClusterIdentifier">dbClusterIdentifier</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.DBClusterIdentifier</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbclusteridentifier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">dbClusterIdentifier: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_dbClusterParameterGroupName" data-uid="aws-docdb.CfnDBCluster.dbClusterParameterGroupName">dbClusterParameterGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.DBClusterParameterGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbclusterparametergroupname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">dbClusterParameterGroupName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_dbSubnetGroupName" data-uid="aws-docdb.CfnDBCluster.dbSubnetGroupName">dbSubnetGroupName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.DBSubnetGroupName</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-dbsubnetgroupname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">dbSubnetGroupName: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_enableCloudwatchLogsExports" data-uid="aws-docdb.CfnDBCluster.enableCloudwatchLogsExports">enableCloudwatchLogsExports</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.EnableCloudwatchLogsExports</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-enablecloudwatchlogsexports</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">enableCloudwatchLogsExports: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_engineVersion" data-uid="aws-docdb.CfnDBCluster.engineVersion">engineVersion</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.EngineVersion</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-engineversion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">engineVersion: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_kmsKeyId" data-uid="aws-docdb.CfnDBCluster.kmsKeyId">kmsKeyId</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.KmsKeyId</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-kmskeyid</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">kmsKeyId: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_masterUsername" data-uid="aws-docdb.CfnDBCluster.masterUsername">masterUsername</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.MasterUsername</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-masterusername</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">masterUsername: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_masterUserPassword" data-uid="aws-docdb.CfnDBCluster.masterUserPassword">masterUserPassword</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.MasterUserPassword</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-masteruserpassword</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">masterUserPassword: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_port" data-uid="aws-docdb.CfnDBCluster.port">port</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.Port</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">port: number | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_preferredBackupWindow" data-uid="aws-docdb.CfnDBCluster.preferredBackupWindow">preferredBackupWindow</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.PreferredBackupWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-preferredbackupwindow</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">preferredBackupWindow: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_preferredMaintenanceWindow" data-uid="aws-docdb.CfnDBCluster.preferredMaintenanceWindow">preferredMaintenanceWindow</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.PreferredMaintenanceWindow</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-preferredmaintenancewindow</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">preferredMaintenanceWindow: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_snapshotIdentifier" data-uid="aws-docdb.CfnDBCluster.snapshotIdentifier">snapshotIdentifier</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.SnapshotIdentifier</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-snapshotidentifier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">snapshotIdentifier: string | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_storageEncrypted" data-uid="aws-docdb.CfnDBCluster.storageEncrypted">storageEncrypted</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.StorageEncrypted</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-storageencrypted</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">storageEncrypted: boolean | cdk.IResolvable | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean | cdk.IResolvable | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_tags" data-uid="aws-docdb.CfnDBCluster.tags">tags</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.Tags</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-tags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly tags: cdk.TagManager;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">cdk.TagManager</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_vpcSecurityGroupIds" data-uid="aws-docdb.CfnDBCluster.vpcSecurityGroupIds">vpcSecurityGroupIds</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p><code>AWS::DocDB::DBCluster.VpcSecurityGroupIds</code>  http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-docdb-dbcluster.html#cfn-docdb-dbcluster-vpcsecuritygroupids</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">vpcSecurityGroupIds: string[] | undefined;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string[] | undefined</span></p>
+  <p>
+  </div> <!-- indent -->
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_inspect" data-uid="aws-docdb.CfnDBCluster.inspect">inspect(inspector)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Examines the CloudFormation resource and discloses attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">inspect(inspector: cdk.TreeInspector): void;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">inspector</span> <span class="parametertype"><span class="xref">cdk.TreeInspector</span></span></dt>
+    <dd><p>tree inspector to collect and process attributes</p>
+<p> experimental</p>
+</dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">void</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_docdb_CfnDBCluster_renderProperties" data-uid="aws-docdb.CfnDBCluster.renderProperties">renderProperties(props)</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">protected renderProperties:</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <dl>
+    <dt><span class="parametername">props</span> <span class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></span></dt>
+    <dd></dd>
+  </dl>
+  <h5 class="returns">Returns</h5>
+  <p class="parametertype"><span class="xref">{
+        [key: string]: any;
+    }</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

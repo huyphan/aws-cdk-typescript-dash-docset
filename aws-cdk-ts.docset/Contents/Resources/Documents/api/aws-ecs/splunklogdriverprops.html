@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  <!-- SiteCatalyst code version: H.25.2.
+      Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+      More info available at http://www.omniture.com -->
+  <script language="JavaScript" type="text/javascript" src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script><script language="JavaScript" type="text/javascript">
+      // Documentation Service Name
+      s.prop66='AWS Cloud Development Kit (AWS CDK)';
+      s.eVar66='D=c66';
+  
+      // Documentation Guide Name
+      s.prop65='API Reference';
+      s.eVar65='D=c65';
+  
+      var s_code=s.t();if(s_code)document.write(s_code);
+  </script>
+  <!-- End SiteCatalyst code version: H.25.2. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface SplunkLogDriverProps
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface SplunkLogDriverProps
+   ">
+    <meta name="generator" content="docfx 2.45.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../cdk-logo-small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="aws-ecs.SplunkLogDriverProps">
+  
+  
+  <h1 id="aws_ecs_SplunkLogDriverProps" data-uid="aws-ecs.SplunkLogDriverProps">Interface SplunkLogDriverProps
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies the splunk log driver configuration options.</p>
+<p>[Source](<a href="https://docs.docker.com/config/containers/logging/splunk/">https://docs.docker.com/config/containers/logging/splunk/</a>)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h3 id="aws_ecs_SplunkLogDriverProps_synopsis">Synopsis</h3>
+    <h4>Properties
+  </h4>
+    <table class="element-table">
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_caName">caName</a></td>
+        <td><p>Name to use for validating server certificate.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_caPath">caPath</a></td>
+        <td><p>Path to root certificate.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_format">format</a></td>
+        <td><p>Message format. Can be inline, json or raw.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_gzip">gzip</a></td>
+        <td><p>Enable/disable gzip compression to send events to Splunk Enterprise or Splunk Cloud instance.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_gzipLevel">gzipLevel</a></td>
+        <td><p>Set compression level for gzip. Valid values are -1 (default), 0 (no compression), 1 (best speed) ... 9 (best compression).</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_index">index</a></td>
+        <td><p>Event index.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_insecureSkipVerify">insecureSkipVerify</a></td>
+        <td><p>Ignore server certificate validation.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_source">source</a></td>
+        <td><p>Event source.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_sourceType">sourceType</a></td>
+        <td><p>Event source type.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_token">token</a></td>
+        <td><p>Splunk HTTP Event Collector token.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_url">url</a></td>
+        <td><p>Path to your Splunk Enterprise, self-service Splunk Cloud instance, or Splunk Cloud managed cluster (including port and scheme used by HTTP Event Collector) in one of the following formats: https://your_splunk_instance:8088 or <a href="https://input-prd-p-XXXXXXX.cloud.splunk.com:8088">https://input-prd-p-XXXXXXX.cloud.splunk.com:8088</a> or <a href="https://http-inputs-XXXXXXXX.splunkcloud.com">https://http-inputs-XXXXXXXX.splunkcloud.com</a>.</p></td>
+    </tr>
+    <tr>
+        <td><a class="xref" href="splunklogdriverprops.html#aws_ecs_SplunkLogDriverProps_verifyConnection">verifyConnection</a></td>
+        <td><p>Verify on start, that docker can connect to Splunk server.</p></td>
+    </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_caName" data-uid="aws-ecs.SplunkLogDriverProps.caName">caName</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Name to use for validating server certificate.</p>
+<ul>
+<li>The hostname of the splunk-url</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly caName?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_caPath" data-uid="aws-ecs.SplunkLogDriverProps.caPath">caPath</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Path to root certificate.</p>
+<ul>
+<li>caPath not set.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly caPath?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_format" data-uid="aws-ecs.SplunkLogDriverProps.format">format</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Message format. Can be inline, json or raw.</p>
+<ul>
+<li>inline</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly format?: SplunkLogFormat;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="splunklogformat.html#aws_ecs_SplunkLogFormat">SplunkLogFormat</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_gzip" data-uid="aws-ecs.SplunkLogDriverProps.gzip">gzip</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Enable/disable gzip compression to send events to Splunk Enterprise or Splunk Cloud instance.</p>
+<ul>
+<li>false</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly gzip?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_gzipLevel" data-uid="aws-ecs.SplunkLogDriverProps.gzipLevel">gzipLevel</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Set compression level for gzip. Valid values are -1 (default), 0 (no compression), 1 (best speed) ... 9 (best compression).</p>
+<ul>
+<li>-1 (Default Compression)</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly gzipLevel?: number;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">number</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_index" data-uid="aws-ecs.SplunkLogDriverProps.index">index</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Event index.</p>
+<ul>
+<li>index not set.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly index?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_insecureSkipVerify" data-uid="aws-ecs.SplunkLogDriverProps.insecureSkipVerify">insecureSkipVerify</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Ignore server certificate validation.</p>
+<ul>
+<li>insecureSkipVerify not set.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly insecureSkipVerify?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_source" data-uid="aws-ecs.SplunkLogDriverProps.source">source</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Event source.</p>
+<ul>
+<li>source not set.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly source?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_sourceType" data-uid="aws-ecs.SplunkLogDriverProps.sourceType">sourceType</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Event source type.</p>
+<ul>
+<li>sourceType not set.</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly sourceType?: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_token" data-uid="aws-ecs.SplunkLogDriverProps.token">token</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Splunk HTTP Event Collector token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly token: SecretValue;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><a class="xref" href="../core/secretvalue.html#core_SecretValue">SecretValue</a></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_url" data-uid="aws-ecs.SplunkLogDriverProps.url">url</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Path to your Splunk Enterprise, self-service Splunk Cloud instance, or Splunk Cloud managed cluster (including port and scheme used by HTTP Event Collector) in one of the following formats: https://your_splunk_instance:8088 or <a href="https://input-prd-p-XXXXXXX.cloud.splunk.com:8088">https://input-prd-p-XXXXXXX.cloud.splunk.com:8088</a> or <a href="https://http-inputs-XXXXXXXX.splunkcloud.com">https://http-inputs-XXXXXXXX.splunkcloud.com</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly url: string;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">string</span></p>
+  <p>
+  </div> <!-- indent -->
+  
+  
+  <h4 id="aws_ecs_SplunkLogDriverProps_verifyConnection" data-uid="aws-ecs.SplunkLogDriverProps.verifyConnection">verifyConnection</h4>
+  <div class="indent">
+  
+  <div class="markdown level1 summary"><p>Verify on start, that docker can connect to Splunk server.</p>
+<ul>
+<li>true</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-typeScript hljs">readonly verifyConnection?: boolean;</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <p class="parametertype"><span class="xref">boolean</span></p>
+  <p>
+  </div> <!-- indent -->
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
