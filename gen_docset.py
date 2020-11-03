@@ -130,33 +130,4 @@ for module_section in module_sections:
 
     logger.info(f"Wrote to {DESTINATION_DOCUMENT_BASE_DIR}/{output_path}")
 
-
-# entry_links = tree.xpath("//div[@id='toc']/ul/li/ul/li/a")
-# for entry_link in entry_links:
-#     # import IPython; IPython.embed()
-#     # 1/0
-#     # print(entry_link.text_content())
-#     if "href" not in entry_link.attrib:
-#         continue
-#     entry_url = entry_link.attrib["href"]
-#     entry_file = entry_url.split("#")[0]
-#     entry_content = open(f"{DOCUMENT_BASE_DIR}/api/{entry_file}", "r").read()
-#     title_element = html.fromstring(entry_content).xpath("//h1/text()")[0]
-#     if title_element.startswith("Class"):
-#         entry_type = "Class"
-#     elif title_element.startswith("Interface"):
-#         entry_type = "Interface"
-#     elif title_element.startswith("Enum"):
-#         entry_type = "Enum"
-#     else:
-#         print(title_element)
-#         raise RuntimeError
-
-#     name = entry_link.text
-#     path = "api/" + entry_url
-#     print(path)
-#     # entry_type = "Module"
-#     sql = "INSERT OR IGNORE INTO searchIndex(name, type, path) VALUES (?, ?, ?)"
-#     db.execute(sql, (name, entry_type, path))
-
 db.commit()
